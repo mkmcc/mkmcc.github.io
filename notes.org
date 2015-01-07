@@ -1,0 +1,7 @@
+to test locally, run
+
+bundle exec jekyll serve
+
+and point a browser to http://localhost:4000/
+
+to publish it, just push to github
