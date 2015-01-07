@@ -1,0 +1,34 @@
+#table-of-contents {
+  padding: 0.5em;
+  margin: 1em -15em 1em 1em;
+  display: block;
+  width: 15em;
+
+  float: right;
+  overflow: auto;
+
+  font-size: 80%;
+  line-height: 150%;
+  font-family: 'Droid Sans';
+
+  background-color: #eee8d5;
+}
+
+#table-of-contents li ul {
+  font-size: 90%;
+  font-weight: normal;
+}
+
+#table-of-contents > h2 {
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0.5ex 0 0.5ex 0;
+  border-width: 0;
+  width: 15em;
+}
+
+#table-of-contents a {
+  text-decoration: none;
+}

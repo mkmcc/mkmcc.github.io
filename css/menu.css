@@ -1,0 +1,62 @@
+#menu {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 7ex 1em;
+  position: fixed;
+  top: 0;
+  width: 9em;
+}
+
+#menu {
+  background: none repeat scroll 0 0 #eee8d5;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 0.5em;
+}
+
+#menu .head {
+  border-style: solid none none;
+  border-width: 1px;
+  height: 3ex;
+  margin: 1ex 0 0;
+  padding: 1ex 0 0;
+}
+
+#menu .head:first-child {
+    border-style: none;
+    margin-top: 0;
+}
+
+#menu .head {
+  border-color: #93a1a1;
+}
+
+
+/* add stubs to h2 which match the menu color */
+h2 {
+  border-style: none none none solid;
+  border-width: 4em;
+  margin: 3ex 0 1ex -6em;
+  padding: 0 0 0 0.5em;
+  width: 70%;
+}
+
+h2 {
+  border-color: #eee8d5;
+}
+
+
+/* leave room left of body for the menu */
+body {
+  margin-left: 15em;
+  margin-right: auto;
+}

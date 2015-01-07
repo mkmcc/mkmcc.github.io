@@ -1,0 +1,12 @@
+td {
+  padding: 0em 0.5em 0em 0.5em;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: bold;
+}
+
+.contact td {
+  padding: 0em 0.5em 0em 0.25em;
+}

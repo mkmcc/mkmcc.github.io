@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+<title>{{ page.title }}</title>
+<meta http-equiv="Content-Type" content="text/html"/>
+<meta charset="utf-8">
+<meta name="title" content={{ page.title }}/>
+<meta name="author" content="Michael McCourt"/>
+
+<link rel="stylesheet" type="text/css"
+      href="/css/screen.css"
+      media="screen, projection"/>
+<link rel="stylesheet" type="text/css"
+      href="/css/print.css"
+      media="print"/>
+
+</head>
+<body>
+
+<div id="content">
+<h1 class="title">{{ page.title }}</h1>
+
+
+<div id="menu">
+  <div class="head">My Pages:</div>
+  <ul>
+    <li><a href="../index.html"          > Home         </a></li>
+    <li><a href="../contact/index.html"  > Contact      </a></li>
+    <li><a href="../research/index.html" > Research     </a></li>
+    <li><a href="../biblio/index.html"   > Publications </a></li>
+    <li><a href="../teaching/index.html" > Teaching     </a></li>
+    <li><a href="../software/index.html" > Software     </a></li>
+    <li><a href="../colophon/index.html" > Colophon     </a></li>
+  </ul>
+  <div class="head">Berkeley:</div>
+  <ul>
+    <li><a href="http://astro.berkeley.edu/"       > Astronomy </a></li>
+    <li><a href="http://astro.berkeley.edu/~eliot/"> Eliot     </a></li>
+    <li><a href="http://astro.berkeley.edu/tac/"   > TAC       </a></li>
+  </ul>
+</div>
+
+{{ content }}
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+img { 
+  vertical-align:middle; 
+}
+
+/* Make sure that the floats from one section won't run into the next.  */
+.outline-text-1, .outline-text-2 {
+  overflow: auto;
+}
+
+img.pad {
+  margin: 1.5em 1.5em 1.5em 1.5em;
+  padding: 0;
+}
+
+img.frame {
+  padding: 10px;
+  background: #eee8d5;
+}
+
+img.top {
+  margin-top: 0em;
+}
+
+img.bottom {
+  margin-bottom: 0em;
+}
+
+img.right {
+  margin-right: 0em;
+  float: right;
+}
+
+img.left {
+  margin-left: 0em;
+  float: left;
+}
+
+img.center {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
