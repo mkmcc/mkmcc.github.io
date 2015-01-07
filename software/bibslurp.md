@@ -56,24 +56,24 @@ recommend installing it that way.  Adding the following code to your
 `.emacs` file should enable you to install `bibslurp` using `M-x
 package-install bibslurp RET`.
 
-```elisp
+{% highlight elisp %}
 ;; Use package.el. You'll need to add MELPA to your archives:
 (require 'package)
 (add-to-list 'package-archives
 '("melpa" . "http://melpa.milkbox.net/packages/") t)
-```
+{% endhighlight %}
 
 If you don't want to use MELPA, or if you want to use the 'old-lynx'
 branch, you'll need to install the file manually.  Once this file is
 somewhere visible to emacs, you can add the following to your
 `.emacs` to make it work.
 
-```elisp
+{% highlight elisp %}
 ;; make sure file is visible to emacs (if needed)
 (add-to-list 'load-path "/path/to/bibslurp.el")
 ;; load the file
 (require 'bibslurp)
-```
+{% endhighlight %}
 
 I hope you find BibSlurp useful.  If you find any bugs, or if you
 have any suggestions for improvements, please me know --- you can

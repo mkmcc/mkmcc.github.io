@@ -53,7 +53,7 @@ If you like, you can download the file
 somewhere visible to emacs, you can add the following to your `.emacs`
 to make it work.
 
-```elisp
+{% highlight elisp %}
 ;; make sure file is visible to emacs (if needed)
 (add-to-list 'load-path "/path/to/your/lisp/files")
     
@@ -66,17 +66,18 @@ to make it work.
 ;; automatically open files ending with .gp or .gnuplot in gnuplot mode
 (setq auto-mode-alist 
 (append '(("\\.\\(gp\\|gnuplot\\)$" . gnuplot-mode)) auto-mode-alist))
-```
+{% endhighlight %}
+
 
 Better yet, use MELPA!  If you add MELPA to your package archives
 using the following, you can install gnuplot mode with a simple `M-x
 package-install gnuplot-mode`.
 
-```elisp
+{% highlight elisp %}
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
-```
+{% endhighlight %}
 
 I hope you find this useful.  Please let me know if you encounter any
 problems with the mode, or if you have any suggestions for improving it.
