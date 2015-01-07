@@ -4,15 +4,21 @@
 @import "menu.css";
 @import "toc.css";
 @import "solarized.css";
-@import 'http://fonts.googleapis.com/css?family=PT+Sans|Vollkorn|Inconsolata';
+
+/* google web fonts */
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
+@import url(http://fonts.googleapis.com/css?family=Pompiere);
 
 
 /* text */
 body {
   max-width: 35em;
-  font-size: 14pt;
-  line-height: 20pt;
-  font-family: 'Vollkorn', serif;
+  font-size: 12pt;
+  line-height: 18pt;
+  /* font-family: 'Vollkorn', serif; */
+  font-family: 'Gentium Basic', serif;
   background-color: #fdf6e3;
   color: #657b83;
 }
@@ -62,7 +68,8 @@ pre.src {
 
 /* headings */
 h1, h2, h3, h4, h5 {
-  font-family: 'PT Sans', sans-serif;
+  /* font-family: 'Slabo 13px', sans-serif; */
+  font-family: 'Patua One', sans-serif;
 }
 
 h2 {
@@ -87,7 +94,9 @@ h4 {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 0.5em;
-  color: #b58900
+  color: #b58900;
+  /* font-family: 'Patua One'; */
+  font-family: 'Pompiere';
 }
 
 
