@@ -1,6 +1,6 @@
 #table-of-contents {
   padding: 0.5em;
-  margin: 1em -15em 1em 1em;
+  margin: 1em -20em 1em 1em;
   display: block;
   width: 15em;
 
@@ -9,8 +9,8 @@
 
   font-size: 80%;
   line-height: 150%;
-  font-family: sans-serif;
-
+  /* font-family: sans-serif; */
+  font-family: 'Patua One', sans-serif;
   background-color: #eee8d5;
 }
 
