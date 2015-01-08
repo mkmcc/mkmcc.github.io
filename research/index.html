@@ -4,6 +4,7 @@ layout: page
 ---
 
 
+
 <h2>Introduction</h2>
 <div class="section">
 
@@ -24,7 +25,8 @@ publications <a href="../biblio/index.html">here</a>.
 </div> <!-- end section -->
 
 
-<h2>Convection in Galaxy Clusters</h2>
+
+<h2>Do Galaxy Clusters Boil?</h2>
 <div class="section">
 
 <p>
@@ -33,21 +35,42 @@ publications <a href="../biblio/index.html">here</a>.
      alt="buoyancy-schematic"
      class="pad top left">
 </a>
-The plasma in galaxy clusters is magnetized, weakly collisional, and
-thermally conductive.  Together, these properties significantly
-modify the physics of convection.  Though clusters had long been
-assumed to be stable to convection, it now seems that the
-intracluster plasma probably boils.
+The hot plasma filling galaxy clusters is magnetized and thermally
+conductive.  This means this gas is susceptible to two
+recently-discovered instabilities known as the HBI and the MTI
+(pictured to the left) &mdash; these instabilities are a lot like
+normal convection, but they depend on <i>temperature</i> instead
+of <i>entropy</i>.  This is very interesting, because the gas in
+galaxy clusters is stable to the classical theory for convection, but
+unstable to these new instabilities.  So, while clusters have long
+been assumed to be convectively stable, it now seems that the
+intracluster plasma might boil vigorously.  This boiling represents a
+radical change in the dynamics of cluster gas and could affect the way
+we interpret a range of observations of galaxy clusters.  For
+example, convection efficiently mixes the gas and would distribute
+metals more efficiently through the galaxy cluster.  Boiling also
+drives turbulence, which influences the connection between gas
+pressure and gravity used to infer the masses of clusters.
 </p>
 
 <p>
-I&rsquo;ve worked a bit on this convection, in particular toward
-understanding the non-linear saturation of the convective
-instabilities.  The net effect appears to be that magnetic field
-lines wrap up near the centers of clusters, and that convection
-drives turbulence in the outskirts.  The magnitude of these effects
-is still uncertain, but it is probably a non-monotonic function of
-mass.
+I studied these new forms of convection as part of my Ph.D. thesis; in
+particular, I worked on understanding the differences between the HBI
+and the MTI and on understanding non-linear saturation of the
+convective instabilities.  Since the linear phases are so short-lived,
+understanding the non-linear behavior of the instabilities is
+essential for knowing their astrophysical implications.
+</p>
+
+<p>
+The HBI, pictured below, turns out to be a fairly quiescent
+instability.  As the instability grows, it reorients magnetic field
+lines to be preferentially horizontal.  This <i>stabilizes</i> the gas
+against the HBI, so the instability effectively shuts itself off
+before it really develops.  We end up with a stable atmosphere,
+without much turbulence, and with very horizontal magnetic field
+lines.  This happens when the temperature increases with radius, as in
+the centers of cool-core galaxy clusters.
 </p>
 
 <a href="{{site.url}}/figures/hbi_5panel.pdf">
@@ -55,6 +78,19 @@ mass.
      alt="hbi nonlinear evolution"
      class="pad center">
 </a>
+
+<p>
+The MTI occurs in the outer parts of galaxy clusters, where the
+temperature declines with radius.  In many ways, this instability is
+similar to the HBI: it creates buoyant plumes which rake out the
+magnetic field lines, reorienting an initially horizontal field to
+become predominantly vertical.  This is where the similarity with the
+HBI stops, however: while vertical field lines are linearly stable to
+the MTI, they are <i>non-linearly unstable</i> (i.e., they become
+unstable if given a big enough push).  So the MTI can&rsquo;t shut
+itself off as efficiently as the HBI; it continues to grow and can
+eventually drive vigorous convection.
+</p>
 
 <a href="{{site.url}}/figures/mti_5panel_h.pdf">
 <img src="{{site.url}}/figures/mti_5panel_h.png"
@@ -68,17 +104,20 @@ mass.
      class="pad top center">
 </a>
 
+<p>
+The simulations depicted above are very idealized and are only
+intended highlight the basic physics of these new forms of convection.
+I'm currently working on a method to study the instabilities in a
+realistic environment resembling a forming galaxy cluster.  I&lsquo;ve
+included a figure from a preliminary simulation below.  This is very
+much a work in progres... stay tuned!
+</p>
+
 <a href="{{site.url}}/figures/example-sim.pdf">
 <img src="{{site.url}}/figures/example-sim.png"
      alt="hbi nonlinear evolution"
      class="pad center">
 </a>
-
-<p>
-For more information, check out the poster above (click for a bigger
-file), or see
-my <a href="http://adsabs.harvard.edu/abs/2011MNRAS.413.1295M">paper</a>.
-</p>
 
 </div> <!-- end section -->
 
