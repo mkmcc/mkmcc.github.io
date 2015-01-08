@@ -1,6 +1,7 @@
 ---
 title: Publications
 layout: page
+Time-stamp: <2015-01-07 21:34:17 (mkmccjr)>
 ---
 
 Publications
