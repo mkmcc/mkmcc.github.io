@@ -1,16 +1,17 @@
 ---
 title: Contact
 layout: page
+Time-stamp: <2015-01-07 22:22:37 (mkmccjr)>
 ---
 
 
 Finding Me
 ----------
 
-| desk   | HFA D307                                                                         |
-| mail   | mkmcc astro berkeley edu                                                         |
-| post   | B-20 Hearst Field Annex <br/> Astronomy Department <br/> Berkeley, CA 94720-3411 |
-| github | [github.com/mkmcc](https://github.com/mkmcc/)                                    |
+| mail   | mkmcc astro berkeley edu                                                                     |
+| office | P-247                                                                                        |
+| post   | Harvard-Smithsonian Center for Astrophysics <br/> 60 Garden Street <br/> Cambridge, MA 02138 |
+| github | [github.com/mkmcc](https://github.com/mkmcc/)                                                |
 
 
 My GPG Key
