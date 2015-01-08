@@ -33,7 +33,7 @@ publications <a href="../biblio/index.html">here</a>.
 <a href="{{site.url}}/figures/buoyancy-schematic.pdf">
 <img src="{{site.url}}/figures/buoyancy-schematic.png"
      alt="buoyancy-schematic"
-     class="pad top left">
+     class="pad top bottom left">
 </a>
 The hot plasma filling galaxy clusters is magnetized and thermally
 conductive.  This means this gas is susceptible to two
@@ -122,6 +122,7 @@ much a work in progres... stay tuned!
 </div> <!-- end section -->
 
 
+
 <h2>Gas Clouds in the Galactic Center</h2>
 <div class="section">
 
@@ -155,36 +156,88 @@ much a work in progres... stay tuned!
 
 
 
-<h2>Thermal Instability</h2>
+<h2>Cold Gas in Hot Halos</h2>
 <div class="section">
+
+<p>
+Remarkably, some galaxy clusters contain thin filaments of cold
+(10<sup>4</sup> K) gas embedded right within the hot (10<sup>8</sup>
+K) plasma.  Below, the beautiful optical and x-ray images
+from <a href="http://adsabs.harvard.edu/abs/2011MNRAS.418.2154F">Fabian
+et al. (2011)</a> show the co-existence of these two phases of gas.
+</p>
+
+<div class="section">
+<img src="{{site.url}}/figures/fabian-2011-optical.png"
+     alt="hbi nonlinear evolution"
+     style="margin-right:0em;margin-left:0em"
+     class="pad frame left">
+
+<img src="{{site.url}}/figures/fabian-2011-xray.png"
+     alt="hbi nonlinear evolution"
+     style="margin-right:0em;margin-left:0em"
+     class="pad frame right">
+</div> <!-- keep figs together... -->
+
+<p>
+For part of my Ph.D. thesis, I studied thermal instability in galaxy
+clusters and whether it could produce filaments of cold gas like the
+ones observed.  Whether or not the plasma in clusters is thermally
+unstable is a surprisingly tricky question --- it depends on the
+unknown &ldquo;feedback&rdquo; process heating the plasma.  This is
+extremely difficult to model in detail and is still a very active
+field of research.  My approach was to <i>assume</i> that the gas is
+thermally unstable, then to see what other testable implications that
+would have for the gas in galaxy clusters.
+</p>
+
+<p>
+Even though I assumed that all of the plasma in every
+cluster <i>is</i> thermally unstable, the non-linear saturation turned
+out to have an interesting result: the instability only grows to
+large amplitudes at special locations in the cluster.  We should only
+expect to see cold gas develop at locations where the cooling time
+drops below the free-fall (or dynamical) time.  The plot below shows
+this result for various assumptions about the gas.  In all cases, we
+only see clumps or filaments of cold gas when the cooling time is
+shorter than the free-fall time.
+</p>
 
 <a href="{{site.url}}/figures/density-array.pdf">
 <img src="{{site.url}}/figures/density-array.png"
      alt="hbi nonlinear evolution"
-     class="pad center">
+     class="pad top center">
 </a>
 
 <p>
 <a href="{{site.url}}/figures/saturation-plot.pdf">
 <img src="{{site.url}}/figures/saturation-plot.png"
      alt="hbi nonlinear evolution"
-     style="background:white"
-     class="pad top left">
+     class="pad top bottom right">
 </a>
-I&rsquo;ve also studied thermal instability in galaxy clusters.  Whether
-or not the plasma in clusters is thermally unstable is a
-surprisingly tricky question --- it depends on the unknown
-&ldquo;feedback&rdquo; process heating the plasma.
+Though this result depends on the non-linear saturation of the thermal
+instability, we got lucky and it&rsquo;s surprisingly simple to
+understand.  The plot to the right tracks the growth of the
+instability in my simulations.  Perturbations initially grow
+exponentially, which is not surprising since I put in an instability
+by hand.  (The slower growth for the red curve happens because the
+instability switches to an overstability in that limit.)  The
+exponential growth can&rsquo;t continue forever, however; it stops
+when the damping rate due to internal gravity wave turbulence matches
+the driving rate due to thermal instability.  This balance picks out a
+final amplitude δρ/ρ~(t<sub>cool</sub>/t<sub>ff</sub>)<sup>-1</sup>.
+Multi-phase gas requires δρ/ρ>1, which explains the result above.
 </p>
 
 <p>
-Under the reasonable assumption that the plasma in clusters <i>is</i>
-thermally unstable, however, the non-linear saturation turns out to
-have an interesting result: the instability can only grow to large
-amplitudes at special locations in the cluster.  This location
-coincides with the &ldquo;filaments&rdquo; of cold gas seen in many
-clusters, and it offers a quantitative explanation of the x-ray
-luminosity-temperature relation.
+The figure below plots the ratio t<sub>cool</sub>/t<sub>ff</sub> as a
+function of radius in a handful of galaxy clusters.  The ones shown in
+blue are clusters which are known to have filaments of cold gas, while
+the ones shown in red are known <i>not</i> to contain filaments.
+There does seem to be a threshold separating the clusters with and
+without multiphase gas.  Interestingly, the curves all reach a minimum
+at a few tens of kiloparsecs; this is exactly where we see cold gas
+seen in many clusters!
 </p>
 
 <a href="{{site.url}}/figures/cluster-plot.pdf">
@@ -193,13 +246,6 @@ luminosity-temperature relation.
      style="background:white"
      class="pad center">
 </a>
-
-<p>
-Check out the poster above (click for a larger image), or see
-<a href="http://adsabs.harvard.edu/abs/2012MNRAS.419.3319M">this paper</a> and
-<a href="http://adsabs.harvard.edu/abs/2012MNRAS.427.1219S">this paper</a> for
-more details.
-</p>
 
 </div> <!-- end section -->
 
