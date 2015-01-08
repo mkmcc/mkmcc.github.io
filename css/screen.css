@@ -1,9 +1,8 @@
 @import "normalize.css"
-@import "images.css";
 @import "tables.css";
 @import "menu.css";
 @import "toc.css";
-@import "solarized.css";
+@import "images.css";
 
 /* google web fonts */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);

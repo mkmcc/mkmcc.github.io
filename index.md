@@ -1,11 +1,11 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: <2015-01-07 22:05:07 (mkmccjr)>
+Time-stamp: <2015-01-07 23:06:16 (mkmccjr)>
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
-<img src="{{site.url}}/images/me_1.png" width="180" style="float:left;margin-right:1.5em"/>
+<img src="{{site.url}}/images/me_1.png" width="180" class="pad top right"/>
 I'm an ITC Fellow at the
 [Harvard-Smithsonian Center for Astrophysics](http://cfa.harvard.edu).
 Until recently, I was a grad student in the
