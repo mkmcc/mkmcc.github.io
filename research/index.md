@@ -7,10 +7,12 @@ layout: page
 Introduction
 ------------
 
+<div class="section">
+
 <a href="{{site.url}}/images/research-word-cloud.pdf">
 <img src="{{site.url}}/images/research-word-cloud.png"
-     alt="research word cloud" title="research word cloud" width="600"
-     class="frame">
+     alt="research word cloud" title="research word cloud"
+     class="frame center">
 </a>
 
 This page aims to give a quick overview of the things I've worked on
@@ -18,16 +20,24 @@ in grad school.  If you want less detail, check out the "word cloud"
 visualization of my papers above; if you want more detail, you can
 browse my publications [here](../biblio/index.html).
 
+</div>
 
 
 Convection in Galaxy Clusters
 -----------------------------
 
-<a href="{{site.url}}/posters/buoyancy-saturation.pdf">
-<img src="{{site.url}}/posters/buoyancy-saturation-01.png"
-     alt="buoyancy saturation poster" title="buoyancy saturation poster" width="600" class="center">
-</a>
+<div class="section">
 
+<!-- <a href="{{site.url}}/posters/buoyancy-saturation.pdf"> -->
+<!-- <img src="{{site.url}}/posters/buoyancy-saturation-01.png" -->
+<!--      alt="buoyancy saturation poster" title="buoyancy saturation poster" width="600" class="center"> -->
+<!-- </a> -->
+
+<a href="{{site.url}}/figures/buoyancy-schematic.pdf">
+<img src="{{site.url}}/figures/buoyancy-schematic.png"
+     alt="buoyancy-schematic"
+     class="pad top left">
+</a>
 The plasma in galaxy clusters is magnetized, weakly collisional, and
 thermally conductive.  Together, these properties significantly
 modify the physics of convection.  Though clusters had long been
@@ -42,18 +52,80 @@ drives turbulence in the outskirts.  The magnitude of these effects
 is still uncertain, but it is probably a non-monotonic function of
 mass.
 
+<a href="{{site.url}}/figures/hbi_5panel.pdf">
+<img src="{{site.url}}/figures/hbi_5panel.png"
+     alt="hbi nonlinear evolution"
+     class="pad center">
+</a>
+
+<a href="{{site.url}}/figures/mti_5panel_h.pdf">
+<img src="{{site.url}}/figures/mti_5panel_h.png"
+     alt="hbi nonlinear evolution"
+     class="pad bottom center">
+</a>
+
+<a href="{{site.url}}/figures/mti_5panel_v.pdf">
+<img src="{{site.url}}/figures/mti_5panel_v.png"
+     alt="hbi nonlinear evolution"
+     class="pad top center">
+</a>
+
+<a href="{{site.url}}/figures/example-sim.pdf">
+<img src="{{site.url}}/figures/example-sim.png"
+     alt="hbi nonlinear evolution"
+     class="pad center">
+</a>
+
 For more information, check out the poster above (click for a bigger
 file), or see my [paper](http://adsabs.harvard.edu/abs/2011MNRAS.413.1295M).
+
+</div>
+
+
+Gas Clouds in the Galactic Center
+---------------------------------
+
+<div class="section">
+
+<a href="{{site.url}}/figures/mhd-hydro-comp.pdf">
+<img src="{{site.url}}/figures/mhd-hydro-comp.png"
+     alt="hbi nonlinear evolution"
+     class="pad center">
+</a>
+
+<a href="{{site.url}}/figures/3d-orbit-earthcoords.pdf">
+<img src="{{site.url}}/figures/3d-orbit-earthcoords.png"
+     alt="hbi nonlinear evolution"
+     style="background:white"
+     class="pad left">
+</a>
+
+<a href="{{site.url}}/figures/scatter-plots-short.pdf">
+<img src="{{site.url}}/figures/scatter-plots-short.png"
+     alt="hbi nonlinear evolution"
+     class="pad center">
+</a>
+
+<a href="{{site.url}}/figures/sim-vs-data.pdf">
+<img src="{{site.url}}/figures/sim-vs-data.png"
+     alt="hbi nonlinear evolution"
+     style="background:white"
+     class="pad center">
+</a>
+
+</div>
 
 
 
 Thermal Instability
 -------------------
 
-<a href="{{site.url}}/posters/thermal-instability.pdf">
-<img src="{{site.url}}/posters/thermal-instability-01.png"
-     alt="thermal instability poster" title="thermal instability poster" width="600" class="center">
-</a>
+<div class="section">
+
+<!-- <a href="{{site.url}}/posters/thermal-instability.pdf"> -->
+<!-- <img src="{{site.url}}/posters/thermal-instability-01.png" -->
+<!--      alt="thermal instability poster" title="thermal instability poster" width="600" class="center"> -->
+<!-- </a> -->
 
 I've also studied thermal instability in galaxy clusters.  Whether
 or not the plasma in clusters is thermally unstable is a
@@ -73,18 +145,27 @@ Check out the poster above (click for a larger image), or see
 [this paper](http://adsabs.harvard.edu/abs/2012MNRAS.427.1219S) for
 more details.
 
+</div>
 
 
 Structure Formation and Cluster Outskirts
 -----------------------------------------
 
-<a href="{{site.url}}/posters/outer-parts.pdf">
-<img src="{{site.url}}/posters/outer-parts-01.png"
-     alt="outer parts poster" title="outer parts poster" width="600" class="center">
-</a>
+<div class="section">
 
-Somehow, clusters maintain their large-scale temperature gradients
+<!-- <a href="{{site.url}}/posters/outer-parts.pdf"> -->
+<!-- <img src="{{site.url}}/posters/outer-parts-01.png" -->
+<!--      alt="outer parts poster" title="outer parts poster" width="600" class="center"> -->
+<!-- </a> -->
+
+somehow, clusters maintain their large-scale temperature gradients
 in spite of thermal conduction and convection.
+
+<a href="{{site.url}}/figures/formation-schematic.pdf">
+<img src="{{site.url}}/figures/formation-schematic.png"
+     alt="hbi nonlinear evolution"
+     class="pad center">
+</a>
 
 The work described in the poster to the right (and in
 [this](http://adsabs.harvard.edu/abs/2013MNRAS.432..404M) paper)
@@ -93,10 +174,22 @@ maintains this temperature gradient.  Measuring the properties of the
 gas in clusters may thus directly constrain for formation histories of
 clusters.
 
+<a href="{{site.url}}/figures/constant-temp-profiles.pdf">
+<img src="{{site.url}}/figures/constant-temp-profiles.png"
+     alt="hbi nonlinear evolution"
+     class="pad right">
+</a>
 The paper also outlines a method for using the (known) scatter in
 accretion histories to predict the (unknown) scatter in cluster
 observables.  My collaborators and I are currently using this method
 to better understand potential biases in some cosmological
 measurements.
 
+<a href="{{site.url}}/figures/conduction-temp-mach.pdf">
+<img src="{{site.url}}/figures/conduction-temp-mach.png"
+     alt="hbi nonlinear evolution"
+     class="pad right">
+</a>
 
+
+</div>

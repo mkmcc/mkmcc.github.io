@@ -3,7 +3,7 @@ img {
 }
 
 /* Make sure that the floats from one section won't run into the next.  */
-.outline-text-1, .outline-text-2 {
+.section, .outline-text-1, .outline-text-2 {
   overflow: auto;
 }
 
