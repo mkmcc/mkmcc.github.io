@@ -1,6 +1,7 @@
 ---
 title: Bibslurp
 layout: page
+Time-stamp: <2015-01-07 22:13:18 (mkmccjr)>
 ---
 
 Introduction
@@ -14,7 +15,7 @@ process annoying, I wrote `BibSlurp`, a set of emacs functions to
 speed it along.
 
 BibSlurp enables you to query nasa ads without leaving emacs.  As an
-example, typing `M-x bibslurp-query-ads white rees RET` brings up
+example, typing `M-x bibslurp-query-ads RET white rees RET` brings up
 the following buffer: (the search string is sent directly to ADS, so
 things like `^white rees` or `^white 1978` will also work as
 expected.)
