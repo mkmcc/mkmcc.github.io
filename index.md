@@ -1,7 +1,7 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: <2015-01-07 23:32:59 (mkmccjr)>
+Time-stamp: "2015-01-07 23:36:54 (mkmccjr)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->

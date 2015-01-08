@@ -1,7 +1,7 @@
 ---
 title: Gnuplot Mode
 layout: page
-Time-stamp: <2015-01-07 21:32:16 (mkmccjr)>
+Time-stamp: "2015-01-07 23:37:38 (mkmccjr)"
 ---
 
 

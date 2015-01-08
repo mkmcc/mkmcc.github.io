@@ -1,7 +1,7 @@
 ---
 title: Colophon
 layout: page
-Time-stamp: <2015-01-07 21:34:26 (mkmccjr)>
+Time-stamp: "2015-01-07 23:37:17 (mkmccjr)"
 ---
 
 Of course, I should to give credit where it is due.  This site uses

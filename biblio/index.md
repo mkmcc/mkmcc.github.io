@@ -1,7 +1,7 @@
 ---
 title: Publications
 layout: page
-Time-stamp: <2015-01-07 21:34:17 (mkmccjr)>
+Time-stamp: "2015-01-07 23:37:11 (mkmccjr)"
 ---
 
 Publications

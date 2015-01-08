@@ -1,7 +1,7 @@
 ---
 title: Bibslurp
 layout: page
-Time-stamp: <2015-01-07 22:13:18 (mkmccjr)>
+Time-stamp: "2015-01-07 23:37:33 (mkmccjr)"
 ---
 
 Introduction
