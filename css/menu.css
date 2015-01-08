@@ -24,7 +24,8 @@
 }
 
 #menu .head {
-  border-style: solid none none;
+  /* border-style: solid none none; */
+  border-style: none;
   border-width: 1px;
   height: 3ex;
   margin: 1ex 0 0;
