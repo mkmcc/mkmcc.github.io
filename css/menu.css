@@ -31,6 +31,50 @@
   margin-top: 0;
 }
 
+/* mobile */
+@media screen and (max-device-width: 480px){
+  #menu {
+    width:100%;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    position: absolute;
+    background-color: #268bdd2;
+    padding:1em;
+  }
+
+  #menu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  #menu li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu li:not(:first-of-type) {
+    margin-left: 10px;
+  }
+
+  #menu .head {
+    display:none;
+  }
+
+  #menu .head:first-child {
+    display:none;
+  }
+
+  #menu ul.keep-mobile {
+    display:block;
+  }
+}
+
+
+
 
 
 /* add stubs to h2 which match the menu color */
@@ -48,4 +92,19 @@ h2 {
 body {
   margin-left: 15em;
   margin-right: auto;
+}
+
+
+@media screen and (max-device-width: 480px){
+  body {
+    margin-left: 1em;
+    margin-right: auto;
+  }
+
+  h2 {
+    border-style: none;
+    margin: 1em;
+    padding: 0;
+    width: 100%;
+  }
 }

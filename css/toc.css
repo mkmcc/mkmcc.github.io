@@ -36,3 +36,10 @@
   border-width: 0;
   width: 100%;
 }
+
+/* mobile */
+@media screen and (max-device-width: 480px){
+  #table-of-contents {
+    display:none;
+  }
+}

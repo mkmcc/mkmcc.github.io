@@ -23,6 +23,13 @@ body {
   color: #657b83;
 }
 
+/* mobile */
+@media screen and (max-device-width: 480px){
+  body {
+    width:100%;
+  }
+}
+
 a {
   color: #268bd2;
   text-decoration: none;
@@ -93,6 +100,15 @@ h4 {
   padding-bottom: 0.5em;
   color: #b58900;
   font-family: 'Pompiere';
+}
+
+/* mobile */
+@media screen and (max-device-width: 480px){
+  *.title {
+    pading:0;
+    margin:0;
+    padding-top: 2em;
+  }
 }
 
 
