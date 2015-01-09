@@ -1,22 +1,30 @@
 #table-of-contents {
-  padding: 0.5em;
-  margin: 1em -20em 1em 1em;
+  padding: 1.0em;
+  margin: 0;
   display: block;
   width: 15em;
 
-  float: right;
-  overflow: auto;
+  position:fixed;
+  top:2.5em;
+  right:2.5em;
 
   font-size: 80%;
   line-height: 150%;
-  /* font-family: sans-serif; */
   font-family: 'Patua One', sans-serif;
   background-color: #eee8d5;
 }
 
-#table-of-contents li ul {
+#table-of-contents ul li {
   font-size: 90%;
   font-weight: normal;
+  list-style-position: outside;
+}
+
+#table-of-contents ul {
+  padding:0;
+  margin-left: 2em;
+  margin-top: 0.5em;
+  margin-bottom:0;
 }
 
 #table-of-contents > h2 {
@@ -26,9 +34,5 @@
   margin: 0;
   padding: 0.5ex 0 0.5ex 0;
   border-width: 0;
-  width: 15em;
-}
-
-#table-of-contents a {
-  text-decoration: none;
+  width: 100%;
 }

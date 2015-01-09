@@ -13,7 +13,9 @@
 
 /* text */
 body {
-  max-width: 35em;
+  /* use px rather than em so I know what image size to use */
+  width:600px;
+  /* max-width: 35em; */
   font-size: 12pt;
   line-height: 18pt;
   font-family: 'Gentium Basic', serif;
@@ -46,12 +48,10 @@ pre {
   padding: 1.0em;
   margin: 1.5ex 0 1.5ex 0;
   font-family: 'Inconsolata', monospace;
-  /* font-size: 85%; */
 }
 
 code {
   font-family: 'Inconsolata', monospace;
-  /* font-size: 85%; */
 }
 
 pre.example {
@@ -66,7 +66,6 @@ pre.src {
 
 /* headings */
 h1, h2, h3, h4, h5 {
-  /* font-family: 'Slabo 13px', sans-serif; */
   font-family: 'Patua One', sans-serif;
 }
 
@@ -93,7 +92,6 @@ h4 {
   padding-top: 1em;
   padding-bottom: 0.5em;
   color: #b58900;
-  /* font-family: 'Patua One'; */
   font-family: 'Pompiere';
 }
 
@@ -104,7 +102,7 @@ div#postamble {
   font-size: 8pt;
   text-align: right;
   line-height: 120%;
-  font-family: 'PT Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 div#postamble-extra {
