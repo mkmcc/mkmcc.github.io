@@ -26,7 +26,7 @@ body {
 /* mobile */
 @media screen and (max-device-width: 480px){
   body {
-    width:100%;
+    width:90%;
     font-size: 14pt;
     line-height: 18pt;
   }
@@ -134,6 +134,12 @@ div#postamble-extra {
 
 p.validation {
   padding: 10pt 0 0 0;
+}
+
+@media screen and (max-device-width: 480px){
+  p.validation {
+    display:none;
+  }
 }
 
 #postamble p {
