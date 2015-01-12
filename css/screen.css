@@ -53,7 +53,7 @@ p {
 
 ol > li {
   list-style-type: decimal;
-  list-style-position: inside;
+  /* list-style-position: inside; */
   padding-left: 0em;
 }
 
