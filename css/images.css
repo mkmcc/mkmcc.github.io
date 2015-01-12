@@ -46,6 +46,8 @@ img.center {
     width:100%;
     height:auto;
 
+    /* hacky... shouldn't need to use important here */
+    border:none !important;
     margin:0 !important;
     padding:0 !important;
     float:none !important;
