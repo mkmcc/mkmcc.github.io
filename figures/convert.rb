@@ -14,6 +14,8 @@ puts "#{file} is #{width} inches wide"
 gs_res = (size.to_i / width)          # pixels/in
 
 gs_opt = '-dGraphicsAlphaBits=4 -dTextAlphaBits=4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pngalpha'
+puts gs_res
+
 gs_cmd = "gs -r#{gs_res} #{gs_opt} -sOutputFile=#{outfile} #{file}"
 
 system(gs_cmd)
