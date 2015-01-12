@@ -48,12 +48,13 @@ a:hover {
 
 p {
   margin: 0.75em 0 0.75em 0;
+  /* this seems to be needed for Chrome's iphone emulation... */
+  /* should have no effect */
   max-height: 100000000em;
 }
 
 ol > li {
   list-style-type: decimal;
-  /* list-style-position: inside; */
   padding-left: 0em;
 }
 
