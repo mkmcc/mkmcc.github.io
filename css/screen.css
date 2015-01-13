@@ -36,12 +36,12 @@ body {
   }
 }
 
-a {
+a, a:link {
   color: #268bd2;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   border-bottom-color: #6c71c4;
   color: #6c71c4;
 }

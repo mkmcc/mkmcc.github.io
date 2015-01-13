@@ -1,12 +1,14 @@
+/* sidebar menu is a vertical stack of uls */
 #menu {
   bottom: 0;
   left: 0;
   top: 0;
-  width: 9em;
   position: fixed;
   margin: 0;
-  padding: 7ex 1em;
-  background: none repeat scroll 0 0 #eee8d5;
+  /* total width is 10em */
+  width: 8em;
+  padding: 3em 1em;
+  background: #eee8d5;
 }
 
 #menu ul {
@@ -31,7 +33,10 @@
   margin-top: 0;
 }
 
+
 /* mobile */
+/* sidebar menu is a horizontal layout in a fixed position at the top
+   of the page */
 @media screen and (max-device-width: 480px){
   #menu {
     width:auto;
@@ -75,25 +80,23 @@
 
 
 
-
-
 /* add stubs to h2 which match the menu color */
 h2 {
   border-color: #eee8d5;
   border-style: none none none solid;
-  border-width: 4em;
-  margin: 3ex 0 1ex -6em;
+  border-width: 1.75em;
+  /* extends 1em into the sidebar */
+  margin: 3ex 0 1ex -3em;
   padding: 0 0 0 0.5em;
   width: 70%;
 }
 
-
 /* leave room left of body for the menu */
+/* sidebar is 11em wide */
 body {
-  margin-left: 15em;
+  margin-left: 13em;
   margin-right: auto;
 }
-
 
 @media screen and (max-device-width: 480px){
   body {
