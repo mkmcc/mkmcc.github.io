@@ -1,7 +1,7 @@
 ---
 title: Research
 layout: page
-Time-stamp: "2015-02-07 15:48:52 (mkmccjr)"
+Time-stamp: "2015-02-07 16:48:32 (mkmccjr)"
 ---
 
 <div id="table-of-contents">
@@ -192,18 +192,46 @@ our theories of the galactic center and simulations of G2.
 <h4>Using G2 to probe the galactic center accretion flow</h4>
 
 <p>
-A magnetically-enhanced drag force is very interesting, because
-there&rsquo;s potentially a detection of a drag force on G2&rsquo;s
-orbit!
-How to motivate the next project without going into too much detail?
+Much of the excitement about G2 stems from the idea that part of it
+will fall into the black hole, causing an energetic outburst.  But
+equally exciting is the opportunity to use the gas cloud to learn
+about the dynamics in the galactic center: several theories predict
+different properties for the accretion flow feeding the black hole,
+but there&rsquo;s currently no observational test to determine which
+one is right.
 </p>
 
 <p>
-The figure below shows a perspective rendering of the best model I
-found.  I rotated the coordinate system so that G2 originates at
-apocenter along the <i>x</i>-axis and that the rotation axis of the
-accretion flow is in the <i>x-z</i> plane.  This more clearly shows
-the rotation of the cloud&rsquo;s orbital plane.
+One result from our MHD simulations (see the previous section) is that
+magnetic fields can significantly amplify the drag force acting on gas
+clouds like G2.  This is an interesting possibility because
+there&rsquo;s a similar cloud in the galactic center
+(&ldquo;G1&rdquo;) which is on almost exactly the same orbit, but with
+less energy.  An
+interesting <a href="http://adsabs.harvard.edu/abs/2015ApJ...798..111P">paper</a>
+by Oliver Pfuhl suggested that, if G1 and G2 started out along the
+same orbit, the lower energy for G1 could be the result of a drag
+force slowing it down.
+</p>
+
+<p>
+Ann-Marie Madigan and I further explored this possibility.  We found
+that, by modeling G2&rsquo;s orbit in detail, we can begin to
+constrain properties of the gas in the galactic center and to test the
+various theories for it.  Though it&rsquo;s a bit speculative, we hope
+this will be a useful result!
+</p>
+
+<p>
+The figure below shows a few different views of our model for
+G2&rsquo;s orbit.  The gas cloud initially comes in from apocenter on
+a nearly radial orbit.  The cloud&rsquo;s orbital plane is misaligned
+with the rotation of the background flow; in addition to slowing the
+cloud down, the drag force twists its orbital plane.  After about five
+pericenter passages, the orbital plane is aligned with the rotation
+axis of the accretion flow.  No further twisting occurs, but the orbit
+circularizes and the cloud becomes approximately co-moving with the
+rotating gas.
 </p>
 
 <a href="{{site.url}}/figures/3d-array.pdf">
@@ -216,31 +244,13 @@ the rotation of the cloud&rsquo;s orbital plane.
 </a>
 
 <p>
-The gas cloud comes in from apocenter on a nearly radial orbit.  The
-cloud&rsquo;s orbital plane is misaligned with the rotation of the
-background flow; this results in a perpendicular component to the drag
-force.  As the cloud approaches the black hole, the perpendicular drag
-force increases due to both the increasing background density and the
-increasing rotation velocity.  The resulting torque rapidly re-orients
-the orbital plane.  After about five pericenter passages, the orbital
-plane is aligned with the rotation axis of the accretion flow.  No
-further rotation occurs, but the orbit circularizes and the cloud
-becomes approximately co-moving with the rotating gas.  The drag force
-thus drops significantly; the cloud slowly sinks in toward the black
-hole.  Of course, after many pericenter passages, the cloud may be
-tidally distorted to the point where it intersects itself; this
-process could lead to much more rapid circularization and inflow, but
-is not accounted for in our calculation.
-</p>
-
-<p>
 I&rsquo;ll admit that the orbit above looks slightly crazy, so I want
 to emphasize that it <i>is</i> in fact consistent with the
 observations.  The plot below shows the trajectory of the cloud in the
 plane of the sky, along with the astrometric measurements for G1 and
 G2.  I also show the line-of-sight velocities determined from
 spectroscopy of the Br-γ line.  <i>This model does just as well as
-fitting the G1 and G2 with two unrelated Keplerian orbits.</i>
+fitting G1 and G2 with two unrelated Keplerian orbits.</i>
 </p>
 
 <a href="{{site.url}}/figures/sim-vs-data.pdf">
@@ -252,20 +262,30 @@ fitting the G1 and G2 with two unrelated Keplerian orbits.</i>
 </a>
 
 <p>
-My long-term goal is to be able to do something useful with this type
-of analysis.  Below I show probability distributions for six
-parameters in the model: the angular coordinates for the rotation axis
-of the accretion flow, the magnetic field strength and density profile
-for the gas in the galactic center, the shape of the cloud, and the
-rotation profile for the galactic center.  Already, this constrains
-the rotation axis quite closely.  The other parameters are strongly
-degenerate; the magnetic field strength and the density profile both
-control the magnitude of the drag force, and the cloud doesn&rsquo;t
-really care where it came from.  This does mean that measuring the
-magnetic field strength would yield a constraint on the density
-profile, however.  Similarly, measuring the shape of the cloud would
-yield a constraint on the rotation profile for the galactic center
-accretion flow &mdash; both are very exciting prospects!
+We&rsquo;re almost to the point where we can use this analysis to test
+theories for black hole accretion.  Below I show probability
+distributions for six parameters in the model: the angular coordinates
+for the rotation axis of the accretion flow, the magnetic field
+strength and density profile for the gas in the galactic center, the
+shape of the cloud, and the rotation profile for the galactic center.
+Already, we constrain the rotation axis quite closely, and this
+prediction will be tested in the next year by the Event Horizon
+Telescope.
+</p>
+
+<p>
+The other parameters in our model are unfortunately still degenerate.
+For example, the magnetic field strength and the density profile both
+control the magnitude of the drag force; since the cloud cares only
+about the total strength of the drag force, we can&rsquo;t determine
+the density or magnetic field strength individually.  However,
+measuring the magnetic field strength by some other means would yield
+a constraint on the density profile &mdash; that would provide a
+quantitative test for theories of the accretion flow feeding the black
+hole in our galactic center.  Similarly, measuring the shape of the
+cloud would yield a constraint on the rotation profile for the
+galactic center accretion flow &mdash; both are very exciting
+prospects, and Ann-Marie and I are continuing to explore them!
 </p>
 
 <a href="{{site.url}}/figures/scatter-plots-short.pdf">
