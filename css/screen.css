@@ -113,7 +113,6 @@ h4 {
 /* mobile */
 @media screen and (max-device-width: 480px){
   *.title {
-    pading:0;
     margin:0;
     padding-top: 2em;
   }
