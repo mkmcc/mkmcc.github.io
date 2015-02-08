@@ -1,7 +1,7 @@
 ---
 title: Colophon
 layout: page
-Time-stamp: "2015-01-08 10:48:03 (mkmcc)"
+Time-stamp: "2015-02-08 00:35:04 (mkmccjr)"
 ---
 
 I should to give credit where it is due.  This site uses the
@@ -33,5 +33,5 @@ Feel free to copy and adapt anything you like.
 I made all of the figures and plots on this site (and in my papers)
 using the wonderful [tioga](https://rubygems.org/gems/tioga) library.
 Not only is it the best plotting program I've ever used, but it's
-named after the gorgeous Tioga pass in California.  It would be
-unthinkable not to use it.
+named after Tioga pass in California.  It would be unthinkable not to
+use it.
