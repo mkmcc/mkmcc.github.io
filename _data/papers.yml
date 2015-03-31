@@ -1,7 +1,12 @@
-- url: http://adsabs.harvard.edu/abs/2014arXiv1409.6719M
+- url: http://adsabs.harvard.edu/abs/2015arXiv150304801M
+  authors: "McCourt & Madigan"
+  year: 2015
+  pub: eprint arXiv:1503.04801
+
+- url: http://adsabs.harvard.edu/abs/2015MNRAS.449....2M
   authors: "McCourt, O'Leary, Madigan, & Quataert"
-  year: 2014
-  pub: eprint arXiv:1409.6719
+  year: 2015
+  pub: Monthly Notices of the Royal Astronomical Society, Volume 449, Issue 1, p.2-7
 
 - url: http://adsabs.harvard.edu/abs/2014MNRAS.442..838M
   authors: McBride & McCourt
