@@ -1,3 +1,15 @@
+- name: Lunch Talk
+  place: Harvard ITC
+  date: April 2015
+
+- name: Lunch Talk
+  place: UCSB
+  date: April 2015
+
+- name: Lunch Talk
+  place: UC Berkeley
+  date: March 2015
+
 - name: Contributed Talk
   place: Black Holes in Dense Star Clusters
   date: January 2015
@@ -9,6 +21,10 @@
 - name: CIERA Astrophysics Seminar
   place: Northwestern University
   date: September 2014
+
+- name: Lunch Talk
+  place: UC Berkeley
+  date: February 2014
 
 - name: TAPIR Seminar
   place: Caltech
