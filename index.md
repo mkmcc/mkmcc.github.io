@@ -1,16 +1,18 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: "2015-01-07 23:36:54 (mkmccjr)"
+Time-stamp: "2016-02-11 11:10:42 (mike)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
 <img src="{{site.url}}/images/me_1.png" width="180" class="pad top right" alt="me"/>
-I'm an ITC Fellow at the
-[Harvard-Smithsonian Center for Astrophysics](http://cfa.harvard.edu).
-Until recently, I was a grad student in the
-[astronomy department](http://astro.berkeley.edu) at
-[UC Berkeley](http://www.berkeley.edu).  For my thesis, I worked with
+
+I'm a Hubble and KITP fellow at [UC Santa
+Barbara](http://web.physics.ucsb.edu/~astrogroup/).  Before that, I
+was an ITC Fellow at the [Harvard-Smithsonian Center for
+Astrophysics](http://cfa.harvard.edu), and a grad student in the
+[astronomy department](http://astro.berkeley.edu) at [UC
+Berkeley](http://www.berkeley.edu).  For my thesis, I worked with
 Professor [Eliot Quataert](http://astro.berkeley.edu/~eliot), studying
 the intracluster medium of galaxy clusters.
 

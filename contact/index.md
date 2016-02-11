@@ -1,17 +1,17 @@
 ---
 title: Contact
 layout: page
-Time-stamp: "2015-01-07 23:37:24 (mkmccjr)"
+Time-stamp: "2016-02-11 11:14:21 (mike)"
 ---
 
 
 Finding Me
 ----------
 
-| mail   | mkmcc astro berkeley edu                                                                     |
-| office | P-247                                                                                        |
-| post   | Harvard-Smithsonian Center for Astrophysics <br/> 60 Garden Street <br/> Cambridge, MA 02138 |
-| github | [github.com/mkmcc](https://github.com/mkmcc/)                                                |
+| mail   | mkmcc astro berkeley edu                               |
+| office | Broida Hall, 2015H                                     |
+| post   | University of California <br/> Santa Barbara, CA 93106 |
+| github | [github.com/mkmcc](https://github.com/mkmcc/)          |
 
 
 My GPG Key
