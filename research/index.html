@@ -1,7 +1,7 @@
 ---
 title: Research
 layout: page
-Time-stamp: "2016-02-12 00:23:56 (mkmccjr)"
+Time-stamp: "2016-02-12 16:51:34 (mike)"
 ---
 
 <div id="table-of-contents">
@@ -139,7 +139,7 @@ highlight the basic physics of these new forms of convection.
 I&rsquo;m currently working on a method to study the instabilities in
 a more realistic environment resembling a forming galaxy cluster.
 I&rsquo;ve included a figure from a preliminary simulation below.
-This is a work in progress... stay tuned!
+This is a work in progress&hellip; stay tuned!
 </p>
 
 <a href="{{site.url}}/figures/example-sim.pdf">
@@ -319,7 +319,7 @@ It's a subtle effect, but we see definite improvement!
 <p>
 Physically, precession (or an increase in the argument of pericenter
 &omega;) corresponds to delaying cloud&rsquo;s closest approach to the
-black hole.  The plot below summarizes our finding... we find that the
+black hole.  The plot below summarizes our finding&hellip; we find that the
 cloud passed the black hole in late summer of 2014, roughly 5 months
 after previous predictions!  <i> This delay is so significant that the
 pericenter passage probably happened after most of the observing
@@ -468,7 +468,7 @@ it to a range of observations in galaxy and cluster formation.
 <p>
 Somehow, galaxy clusters maintain their large-scale temperature
 gradients in spite of thermal conduction and convection.  Conduction
-and convection are enemies of temperature differences... they should
+and convection are enemies of temperature differences&hellip; they should
 only take a few billion years (less than the age of a typical cluster)
 to equilibrate and make the gas isothermal.  But for some reason,
 clusters aren&rsquo;t becoming isothermal.  Since the convective
@@ -599,6 +599,31 @@ jets underestimates the pressure in this one by a factor of almost 30.
 <h2 id="sec:kelvin">Mixing and the Kelvin-Helmholtz Instability</h2>
 <div class="section">
 
+<p>
+A funny (and at first surprising) prediction of the fluid dynamics
+equations is that it&rsquo;s impossible to <i>mix</i> different
+fluids.  True mixing is caused by molecular diffusion, which
+isn&rsquo;t included in the fluid equations.  From a fluid dynamics
+standpoint, when you stir cream into your coffee, all you&rsquo;re
+doing is folding and stretching the different layers of fluid into
+thinner and thinner sheets&hellip; once the sheets get microscopically
+thin, the fluid equations break down, diffusion takes over, and you
+finally mix the two liquids.  <!-- Most astrophysics simulations
+don&rsquo;t account for this molecular diffusion, however; any mixing
+which occurs in these simulations represents errors accrued by
+approximations in the code. -->
+</p>
+
+<p>
+The <i>Kelvin-Helmholtz Instability</i> is a fluid dynamics
+instability which rapidly rolls up sheets of fluid, accelerating this
+folding-and-stretching process.  This instability is an important
+process in fluid dynamics, and it crops up almost everywhere you look:
+in meteorology, oceanography, engineering, and astrophysics.
+It&rsquo;s definitely something we want to make sure we can simulate
+accurately.
+</p>
+
 <img src="{{site.url}}/figures/kelvin-highres.png"
      alt="hbi nonlinear evolution"
      width="525"
@@ -609,16 +634,33 @@ jets underestimates the pressure in this one by a factor of almost 30.
 <p>
 High-resolution simulations of the Kelvin-Helmholtz instability
 develop a beautiful, almost fractal-like structure of swirls within
-swirls.  The small-scale swirls rapidly mix the fluid and lead to the
-development of turbulence.  Scientists use this effect to showcase
-their codes, assuming the fine features signal a high-fidelity
-numerical solution... The only problem is these features probably
-aren&rsquo;t real!
+swirls.  The small-scale swirls mix the fluid and play a role in the
+development of turbulence.  Scientists highlight this effect to
+showcase their new codes, assuming fine features signal a
+high-fidelity numerical solution&hellip; The only problem is that many of
+these features may not be real!
+</p>
+
+<p>
+An important feature of the Kelvin-Helmholtz instability shown above
+is that it doesn't converge: there is no well-defined
+&ldquo;answer&rdquo; that a code should reproduce, and simulations
+with increasing resolution find increasingly discrepant solutions with
+more and more swirls.  At a glance, you can look at a simulation and
+guess how modern (and how expensive) it was.
 </p>
 
 <p>
 In a <a href="http://arxiv.org/abs/1509.03630">collaborative paper</a>
-with Daniel Lecoanet, 
+with Daniel Lecoanet and Ryan O&rsquo;Leary, we study a modified
+version of the instability.  We carefully designed the problem so
+it <i>does</i> have a well-defined answer and then we set out to find
+it.  We show that low-resolution, inaccurate solutions produce
+small-scale &ldquo;swirl-within-swirl&rdquo; features like I showed
+above.  But they disappear with increasing resolution, and are totally
+absent in the true solution!  The figure below shows the features
+disappearing as we push to higher resolution and to more accurate
+solutions:
 </p>
 
 <img src="{{site.url}}/figures/drat-early.png"
@@ -628,35 +670,66 @@ with Daniel Lecoanet,
      class="pad center">
 
 <p>
+At least in case we studied, we know these small-scale swirls
+aren&rsquo;t real&hellip; they represent an artificial instability
+introduced by approximations made in the code.  But we did modify the
+problem slightly so that it has a well-defined answer.  Perhaps the
+small-scale features <i>are</i> a correct feature of the original
+problem?
+</p>
+
+<p>
 <img src="{{site.url}}/figures/nodiff.png"
      alt="hbi nonlinear evolution"
      width="300"
      height="598"
      class="pad top left">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor
-est tortor, eu pellentesque erat dapibus ut. Sed scelerisque fermentum
-placerat. Ut id augue fringilla augue finibus accumsan quis non
-odio. Vestibulum sagittis ex lacus. Praesent malesuada nisl eu rhoncus
-pharetra. Class aptent taciti sociosqu ad litora torquent per conubia
-nostra, per inceptos himenaeos. Phasellus porttitor finibus arcu a
-ultrices. Etiam eget fermentum lectus. Phasellus ut purus tincidunt,
-suscipit est quis, dignissim augue. Aenean consequat lectus ut cursus
-vulputate. Suspendisse dictum erat lectus, vel pellentesque enim
-lacinia nec. Nullam odio tortor, commodo ut tellus quis, pharetra
-molestie tellus.
-
-Class aptent taciti sociosqu ad litora torquent per conubia
-nostra, per inceptos himenaeos. Phasellus porttitor finibus arcu a
-ultrices. Etiam eget fermentum lectus. Phasellus ut purus tincidunt,
-suscipit est quis, dignissim augue. Aenean consequat lectus ut cursus
-vulputate. Suspendisse dictum erat lectus, vel pellentesque enim
-lacinia nec. Nullam odio tortor, commodo ut tellus quis, pharetra
-molestie tellus.
+It&rsquo;s a little tricky to answer that question.  Since the
+unmodified problem doesn&rsquo;t have a solution, we can&rsquo;t say
+how close we are to that solution.  So I&rsquo;m not convinced
+it&rsquo;s meaningful to discuss what&rsquo;s real in the old problem.
 </p>
 
 <p>
-These features are beautiful, though... if they're not real,
+We do, however, present a few lines of evidence that what we did is
+more likely to be physically meaningful.  One is shown in the two
+simulations to the left.  This compares one of our new simulations
+(<i>left column</i>) with a very high-resolution simulation without
+any diffusion (<i>right column</i>).  Time increases as you move down
+the columns.
+</p>
+
+<p>
+In the first image in this section, I showed that simulations with no
+dissipation produce an intricate, &ldquo;swirl-within-swirl&rdquo;
+structure.  When we push to absurdly high resolution, as shown in the
+right column, we&rsquo;d naively expect to find <i>very</i> accurate
+solutions, with very little mixing.  Instead, we find tons of tiny
+instabilities which grow incredibly quickly and shred apart the main
+vortex.
+</p>
+
+<p>
+This is perhaps the most unexpected result from our work: we show
+that <i>including diffusion</i> in our simulations provides a very
+effective way to <i>reduce</i> reduce mixing in astrophysical
+simulation.  Even if the diffusion we add is unrealistically large due
+to computational constraints, it&rsquo;s worse to add none at all.
+Predictable mixing we intentionally put into our simulations is better
+than the unpredictable mixing due to numeric errors in the method.
+</p>
+
+<p>
+Diffusion is funny in fluid dynamics, though, and even a vanishingly
+small amount of dissipation leads to different results than none at
+all.  This has come up more than once in
+well-known <a href="https://en.wikipedia.org/wiki/D%27Alembert%27s_paradox">paradoxes</a>
+in fluid dynamics.
+</p>
+
+<p>
+These features are beautiful, though&hellip; if they're not real,
 it&rsquo;s kind of a shame.
 </p>
 
