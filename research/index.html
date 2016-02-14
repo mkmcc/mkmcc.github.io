@@ -1,7 +1,7 @@
 ---
 title: Research
 layout: page
-Time-stamp: "2016-02-12 16:51:34 (mike)"
+Time-stamp: "2016-02-13 23:08:38 (mkmccjr)"
 ---
 
 <div id="table-of-contents">
@@ -70,7 +70,8 @@ dynamics of cluster gas, and could affect the way we interpret
 observations of galaxy clusters.  Convection efficiently mixes the gas
 and would distribute metals more efficiently through the cluster.
 Boiling also drives turbulence, which influences the connection
-between gas pressure and gravity used to infer the masses of clusters.
+between gas pressure and gravity used to infer the masses of clusters,
+and thus to constrain things like dark energy.
 </p>
 
 <p>
@@ -634,11 +635,11 @@ accurately.
 <p>
 High-resolution simulations of the Kelvin-Helmholtz instability
 develop a beautiful, almost fractal-like structure of swirls within
-swirls.  The small-scale swirls mix the fluid and play a role in the
-development of turbulence.  Scientists highlight this effect to
+swirls.  The small-scale swirls accelerate mixing and play a role in
+the development of turbulence.  Scientists highlight this effect to
 showcase their new codes, assuming fine features signal a
-high-fidelity numerical solution&hellip; The only problem is that many of
-these features may not be real!
+high-fidelity numerical solution&hellip; The only problem is that many
+of these features may not be real!
 </p>
 
 <p>
@@ -707,17 +708,20 @@ structure.  When we push to absurdly high resolution, as shown in the
 right column, we&rsquo;d naively expect to find <i>very</i> accurate
 solutions, with very little mixing.  Instead, we find tons of tiny
 instabilities which grow incredibly quickly and shred apart the main
-vortex.
+vortex.  These instabilities are numerical in origin, and no matter
+how big we make our simulation the instabilities grow in the smallest
+scales available, which cannot be calculated accurately by the code.
 </p>
 
 <p>
 This is perhaps the most unexpected result from our work: we show
 that <i>including diffusion</i> in our simulations provides a very
 effective way to <i>reduce</i> reduce mixing in astrophysical
-simulation.  Even if the diffusion we add is unrealistically large due
-to computational constraints, it&rsquo;s worse to add none at all.
+simulations.  Even if the diffusion we add is unrealistically large
+due to computational constraints, it&rsquo;s worse to add none at all.
 Predictable mixing we intentionally put into our simulations is better
-than the unpredictable mixing due to numeric errors in the method.
+than the unpredictable (and very often violent) mixing due to numeric
+errors in the method.
 </p>
 
 <p>
