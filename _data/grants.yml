@@ -19,7 +19,7 @@
   pi: false
 
 
-# XSEDE - clouds
+# SEED - clouds
 #
 - agency: NSF
   type: computing
@@ -76,6 +76,13 @@
   type: funding
   year: 3
   dollar: 620
+  pi: true
+
+- agency: NASA
+  title: Einstein Fellowship
+  type: funding
+  year: 0
+  dollar: 0
   pi: true
 
 # - agency: NASA
