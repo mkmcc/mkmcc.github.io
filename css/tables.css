@@ -1,6 +1,11 @@
+table {
+    border-collapse: collapse;
+}
+
 td {
   padding: 0em 0.5em 0em 0.5em;
   vertical-align: middle;
+  position: relative;
 }
 
 th {
@@ -9,4 +14,13 @@ th {
 
 .contact td {
   padding: 0em 0.5em 0em 0.25em;
+}
+
+tr.strikeout td:before {
+    content: " ";
+    position: absolute;
+    top: 45%;
+    left: 0;
+    border-bottom: 1px dashed #111;
+    width: 100%;
 }

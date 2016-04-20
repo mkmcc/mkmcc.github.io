@@ -1,0 +1,104 @@
+# COMPUTING GRANTS
+# - cpu is cpu-hours in millions
+# - dollar is dollar value in thousands
+
+# pleiades
+#
+- agency: NASA
+  type: computing
+  grant: SMD-14-5164
+  cpu: 2.4
+  dollar: 75
+  pi: false
+
+- agency: NASA
+  type: computing
+  grant: SMD-15-6582
+  cpu: 4.7
+  dollar: 100
+  pi: false
+
+
+# XSEDE - clouds
+#
+- agency: NSF
+  type: computing
+  grant: AST140047
+  cpu: 2.6
+  dollar: 89
+  pi: true
+
+- agency: NSF
+  type: computing
+  grant: AST140047
+  cpu: 3.2
+  dollar: 110
+  pi: false
+
+
+# XSEDE - clusters
+#
+- agency: NSF
+  type: computing
+  grant: AST140083
+  cpu: 0.0
+  dollar: 0
+  pi: true
+
+- agency: NSF
+  type: computing
+  grant: AST140083
+  cpu: 0.6
+  dollar: 20
+  pi: true
+
+- agency: NSF
+  type: computing
+  grant: AST140083
+  cpu: 1.2
+  dollar: 40
+  pi: true
+
+
+
+# FUNDING
+# 
+- agency: NASA
+  type: funding
+  title: Chandra Theory Grant
+  year: 1
+  grant: 13800122
+  dollar: 60
+  pi: true
+
+- agency: NASA
+  title: Hubble Fellowship
+  type: funding
+  year: 3
+  dollar: 620
+  pi: true
+
+# - agency: NASA
+#   title: HST Theory Grant
+#   type: funding
+#   year: 1
+#   dollar: 0
+#   pi: false
+
+# - agency: NSF
+#   title: AST Grant
+#   type: funding
+#   year: 1
+#   dollar: 0
+#   pi: true
+
+
+
+# TELESCOPE
+#
+- agency: NRAO
+  type: telescope
+  title: VLA Observation
+  grant: VLA/14A-097
+  hours: 6.0
+  pi: false
