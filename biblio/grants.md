@@ -1,8 +1,14 @@
 ---
 title: Grants
 layout: page
-Time-stamp: "2016-04-19 22:27:24 (mkmccjr)"
+Time-stamp: "2016-04-19 22:41:01 (mkmccjr)"
 ---
+
+<style>
+    td.raligned {text-align: right;}
+    td.laligned {text-align: left;}
+    td.caligned {text-align: center;}
+</style>
 
 <p>This page lists all of the grant proposals I have submitted; for
 completeness, I include unsuccessful proposals on this page and mark
@@ -28,10 +34,10 @@ Computing Resources
   <!-- Table Header -->
   <tr>
     <th> </th>
-    <th align="center"> Agency  </th>
-    <th align="center"> Award   </th>
-    <th align="center"> (Value) </th>
-    <th align="center"> Year    </th>
+    <th class="caligned"> Agency  </th>
+    <th class="caligned"> Award   </th>
+    <th class="caligned"> (Value) </th>
+    <th class="caligned"> Year    </th>
   </tr>
 
   {% assign counter=0 %}
@@ -52,12 +58,12 @@ Computing Resources
   {% else %}
     <tr class="strikeout">
   {% endif %}
-    <td align="left" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
-    <td align="left" > {{ grant.agency }} </td>
+    <td class="laligned" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
+    <td class="laligned" > {{ grant.agency }} </td>
 
-    <td align="right"> {{grant.cpu}}&times;10<sup>6</sup> h  </td>
-    <td align="right"> ${{grant.dollar}}k </td>
-    <td align="right"> {{grant.year}} </td>
+    <td class="raligned"> {{grant.cpu}}&times;10<sup>6</sup> h  </td>
+    <td class="raligned"> ${{grant.dollar}}k </td>
+    <td class="raligned"> {{grant.year}} </td>
   </tr>
   {% endif %}
   {% endfor %}
@@ -65,7 +71,7 @@ Computing Resources
 
   <!-- Print a Total -->
   <tr>
-    <th colspan="2" align="right"> Total: </th>
+    <th colspan="2" class="raligned"> Total: </th>
     <td> <b> {{tot_cpu}}&times;10<sup>6</sup> h </b> </td>
     <td> <b> ${{tot_dollar}}k </b> </td>
     <td></td>
@@ -81,10 +87,10 @@ Funding
   <!-- Table Header -->
   <tr>
     <th> </th>
-    <th align="center"> Agency </th>
-    <th align="center"> Type   </th>
-    <th align="center"> Award  </th>
-    <th align="center"> Year    </th>
+    <th class="caligned"> Agency </th>
+    <th class="caligned"> Type   </th>
+    <th class="caligned"> Award  </th>
+    <th class="caligned"> Year    </th>
   </tr>
 
   {% assign counter=0 %}
@@ -103,12 +109,12 @@ Funding
   {% else %}
     <tr class="strikeout">
   {% endif %}
-    <td align="left" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
-    <td align="left" > {{ grant.agency }} </td>
-    <td align="left" > {{ grant.title }} </td>
+    <td class="laligned" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
+    <td class="laligned" > {{ grant.agency }} </td>
+    <td class="laligned" > {{ grant.title }} </td>
 
-    <td align="right"> ${{grant.dollar}}k </td>
-    <td align="right"> {{grant.year}} </td>
+    <td class="raligned"> ${{grant.dollar}}k </td>
+    <td class="raligned"> {{grant.year}} </td>
   </tr>
   {% endif %}
   {% endfor %}
@@ -116,7 +122,7 @@ Funding
 
   <!-- Print a Total -->
   <tr>
-    <th colspan="3" align="right"> Total: </th>
+    <th colspan="3" class="raligned"> Total: </th>
     <td> <b> ${{ tot_dollar }}k </b> </td>
     <td></td>
   </tr>
@@ -131,10 +137,10 @@ Telescope
   <!-- Table Header -->
   <tr>
     <th> </th>
-    <th align="center"> Agency </th>
-    <th align="center"> Type   </th>
-    <th align="center"> Award  </th>
-    <th align="center"> Year   </th>
+    <th class="caligned"> Agency </th>
+    <th class="caligned"> Type   </th>
+    <th class="caligned"> Award  </th>
+    <th class="caligned"> Year   </th>
   </tr>
 
   {% assign counter=0 %}
@@ -151,12 +157,12 @@ Telescope
   {% else %}
     <tr class="strikeout">
   {% endif %}
-    <td align="left" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
-    <td align="left" > {{ grant.agency }} </td>
-    <td align="left" > {{ grant.title }} </td>
+    <td class="laligned" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
+    <td class="laligned" > {{ grant.agency }} </td>
+    <td class="laligned" > {{ grant.title }} </td>
 
-    <td align="right"> {{grant.hours}} hours </td>
-    <td align="right"> {{grant.year}}  </td>
+    <td class="raligned"> {{grant.hours}} hours </td>
+    <td class="raligned"> {{grant.year}}  </td>
   </tr>
   {% endif %}
   {% endfor %}
