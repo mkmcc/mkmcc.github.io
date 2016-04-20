@@ -1,22 +1,25 @@
 ---
 title: Grants
 layout: page
-Time-stamp: "2016-04-19 19:43:01 (mike)"
+Time-stamp: "2016-04-19 20:22:50 (mike)"
 ---
 
 <p>This page lists all of the grant proposals I have submitted; for
 completeness, I include unsuccessful proposals on this page and mark
 them with a strikeout.</p>
 
-<p>Many of these projects were collaborative.  I mark the grant with
-an asterisk if I was <i>not</i> the primary author of the proposal.  I
-include such grants only if I contributed a significant (of order
-50&#37;) share of the responsibility for the propsoal.</p>
+<p>Essentially all of the projects listed here were collaborative.  I
+mark the grant with an asterisk if I was <i>not</i> the primary author
+of the proposal.  I include such grants only if I contributed a
+significant (of order 50&#37;) share of the responsibility for the
+propsoal.</p>
 
-<p>Note that I do not include fellowship offers from indivudual
+<p>Note that I do not include fellowship offers from individual
 universities.  University fellowships have a very different review
 process, and success with them may not correlate well with federal
-grants.  My CV lists the fellowship positions I have taken.</p>
+grants.  If you need this information, my CV lists the fellowship
+positions I have accepted.</p>
+
 
 
 Computing Resources
