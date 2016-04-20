@@ -1,14 +1,8 @@
 ---
 title: Grants
 layout: page
-Time-stamp: "2016-04-19 22:41:01 (mkmccjr)"
+Time-stamp: "2016-04-19 22:44:13 (mkmccjr)"
 ---
-
-<style>
-    td.raligned {text-align: right;}
-    td.laligned {text-align: left;}
-    td.caligned {text-align: center;}
-</style>
 
 <p>This page lists all of the grant proposals I have submitted; for
 completeness, I include unsuccessful proposals on this page and mark

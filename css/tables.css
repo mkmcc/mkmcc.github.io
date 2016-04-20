@@ -24,3 +24,7 @@ tr.strikeout td:before {
     border-bottom: 1px dashed #111;
     width: 100%;
 }
+
+td.raligned {text-align: right;}
+td.laligned {text-align: left;}
+td.caligned {text-align: center;}
