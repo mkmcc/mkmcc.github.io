@@ -10,6 +10,7 @@
   cpu: 2.4
   dollar: 75
   pi: false
+  year: 2014
 
 - agency: NASA
   type: computing
@@ -17,6 +18,7 @@
   cpu: 4.7
   dollar: 100
   pi: false
+  year: 2015
 
 
 # SEED - clouds
@@ -27,6 +29,7 @@
   cpu: 2.6
   dollar: 89
   pi: true
+  year: 2014
 
 - agency: NSF
   type: computing
@@ -34,6 +37,7 @@
   cpu: 3.2
   dollar: 110
   pi: false
+  year: 2015
 
 
 # XSEDE - clusters
@@ -44,6 +48,7 @@
   cpu: 0.0
   dollar: 0
   pi: true
+  year: 2014
 
 - agency: NSF
   type: computing
@@ -51,6 +56,7 @@
   cpu: 0.6
   dollar: 20
   pi: true
+  year: 2015
 
 - agency: NSF
   type: computing
@@ -58,6 +64,7 @@
   cpu: 1.2
   dollar: 40
   pi: true
+  year: 2016
 
 
 
@@ -70,13 +77,15 @@
   grant: 13800122
   dollar: 60
   pi: true
+  year: 2011
 
 - agency: NASA
   title: Hubble Fellowship
   type: funding
   year: 3
-  dollar: 620
+  dollar: 0
   pi: true
+  year: 2013
 
 - agency: NASA
   title: Einstein Fellowship
@@ -84,6 +93,15 @@
   year: 0
   dollar: 0
   pi: true
+  year: 2015
+
+- agency: NASA
+  title: Hubble Fellowship
+  type: funding
+  year: 3
+  dollar: 620
+  pi: true
+  year: 2015
 
 # - agency: NASA
 #   title: HST Theory Grant
@@ -91,6 +109,7 @@
 #   year: 1
 #   dollar: 0
 #   pi: false
+#   year: 2016
 
 # - agency: NSF
 #   title: AST Grant
@@ -98,6 +117,7 @@
 #   year: 1
 #   dollar: 0
 #   pi: true
+#   year: 2015
 
 
 
@@ -109,3 +129,4 @@
   grant: VLA/14A-097
   hours: 6.0
   pi: false
+  year: 2014

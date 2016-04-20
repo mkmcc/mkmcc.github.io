@@ -1,24 +1,23 @@
 ---
 title: Grants
 layout: page
-Time-stamp: "2016-04-19 20:22:50 (mike)"
+Time-stamp: "2016-04-19 22:27:24 (mkmccjr)"
 ---
 
 <p>This page lists all of the grant proposals I have submitted; for
 completeness, I include unsuccessful proposals on this page and mark
 them with a strikeout.</p>
 
-<p>Essentially all of the projects listed here were collaborative.  I
-mark the grant with an asterisk if I was <i>not</i> the primary author
-of the proposal.  I include such grants only if I contributed a
-significant (of order 50&#37;) share of the responsibility for the
-propsoal.</p>
+<p>Most of the projects listed here were collaborative.  I mark the
+grant with an asterisk if I was <i>not</i> the primary author of the
+proposal.  I include such grants only if I contributed a significant
+(of order 50&#37;) share of the responsibility for the propsoal.</p>
 
-<p>Note that I do not include fellowship offers from individual
-universities.  University fellowships have a very different review
-process, and success with them may not correlate well with federal
-grants.  If you need this information, my CV lists the fellowship
-positions I have accepted.</p>
+<p>Though they are significant, I do not include fellowship offers
+from individual universities.  University fellowships have a very
+different review process, and success with them may not correlate well
+with federal grants.  If you need this information, my CV lists the
+fellowship positions I have accepted.</p>
 
 
 
@@ -29,9 +28,10 @@ Computing Resources
   <!-- Table Header -->
   <tr>
     <th> </th>
-    <th align="center"> Agency </th>
-    <th align="center"> Award  </th>
-    <th align="center"> (Value)  </th>
+    <th align="center"> Agency  </th>
+    <th align="center"> Award   </th>
+    <th align="center"> (Value) </th>
+    <th align="center"> Year    </th>
   </tr>
 
   {% assign counter=0 %}
@@ -55,8 +55,9 @@ Computing Resources
     <td align="left" > {{counter}}{% if grant.pi == false %}<sup>*</sup>{% endif %} </td>
     <td align="left" > {{ grant.agency }} </td>
 
-    <td align="right"> {{grant.cpu }}&times;10<sup>6</sup> h  </td>
+    <td align="right"> {{grant.cpu}}&times;10<sup>6</sup> h  </td>
     <td align="right"> ${{grant.dollar}}k </td>
+    <td align="right"> {{grant.year}} </td>
   </tr>
   {% endif %}
   {% endfor %}
@@ -65,8 +66,9 @@ Computing Resources
   <!-- Print a Total -->
   <tr>
     <th colspan="2" align="right"> Total: </th>
-    <td> <b> {{ tot_cpu }}&times;10<sup>6</sup> h </b> </td>
-    <td> <b> ${{ tot_dollar }}k </b> </td>
+    <td> <b> {{tot_cpu}}&times;10<sup>6</sup> h </b> </td>
+    <td> <b> ${{tot_dollar}}k </b> </td>
+    <td></td>
   </tr>
 </table>
 
@@ -82,6 +84,7 @@ Funding
     <th align="center"> Agency </th>
     <th align="center"> Type   </th>
     <th align="center"> Award  </th>
+    <th align="center"> Year    </th>
   </tr>
 
   {% assign counter=0 %}
@@ -105,6 +108,7 @@ Funding
     <td align="left" > {{ grant.title }} </td>
 
     <td align="right"> ${{grant.dollar}}k </td>
+    <td align="right"> {{grant.year}} </td>
   </tr>
   {% endif %}
   {% endfor %}
@@ -114,6 +118,7 @@ Funding
   <tr>
     <th colspan="3" align="right"> Total: </th>
     <td> <b> ${{ tot_dollar }}k </b> </td>
+    <td></td>
   </tr>
 </table>
 
@@ -129,6 +134,7 @@ Telescope
     <th align="center"> Agency </th>
     <th align="center"> Type   </th>
     <th align="center"> Award  </th>
+    <th align="center"> Year   </th>
   </tr>
 
   {% assign counter=0 %}
@@ -150,6 +156,7 @@ Telescope
     <td align="left" > {{ grant.title }} </td>
 
     <td align="right"> {{grant.hours}} hours </td>
+    <td align="right"> {{grant.year}}  </td>
   </tr>
   {% endif %}
   {% endfor %}
