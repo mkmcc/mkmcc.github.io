@@ -90,7 +90,7 @@
 - agency: NASA
   title: Einstein Fellowship
   type: funding
-  year: 0
+  year: 3
   dollar: 0
   pi: true
   year: 2015
@@ -104,6 +104,14 @@
   pi: true
   year: 2015
 
+- agency: NSF
+  title: AST Grant
+  type: funding
+  year: 3
+  dollar: 0
+  pi: true
+  year: 2015
+
 # - agency: NASA
 #   title: HST Theory Grant
 #   type: funding
@@ -112,13 +120,6 @@
 #   pi: false
 #   year: 2016
 
-# - agency: NSF
-#   title: AST Grant
-#   type: funding
-#   year: 1
-#   dollar: 0
-#   pi: true
-#   year: 2015
 
 
 
