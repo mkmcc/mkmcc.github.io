@@ -21,7 +21,7 @@
   year: 2015
 
 
-# SEED - clouds
+# XSEDE - clouds
 #
 - agency: NSF
   type: computing
@@ -63,6 +63,17 @@
   grant: AST140083
   cpu: 1.2
   dollar: 40
+  pi: true
+  year: 2016
+
+
+# XSEDE - gas dynamics
+#
+- agency: NSF
+  type: computing
+  grant: AST140086
+  cpu: 1.6
+  dollar: 55
   pi: true
   year: 2016
 
