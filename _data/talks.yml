@@ -1,3 +1,11 @@
+- name: Seminar
+  place: Cold Universe Workshop
+  date: June 2016
+
+- name: Astronomy Seminar
+  place: UC Santa Barbara
+  date: April 2016
+
 - name: Lunch Talk
   place: Harvard ITC
   date: April 2015
