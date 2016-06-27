@@ -1,7 +1,7 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2015-10-19 10:46:46 (mike)"
+Time-stamp: "2016-06-26 21:01:21 (mkmccjr)"
 ---
 
 <!-- no easy way to do this in markdown, i don't think... -->
@@ -14,7 +14,7 @@ Publications
 <ol reversed>
 {% for paper in site.data.papers %}
   <li markdown="span">
-    [{{ paper.authors }} ({{paper.year }})]({{paper.url}})
+    [{{ paper.authors }}, <i>{{paper.pub}}</i> ({{paper.year }})]({{paper.url}})
   </li>
 {% endfor %}
 </ol>
