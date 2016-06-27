@@ -1,13 +1,13 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2016-06-26 21:01:21 (mkmccjr)"
+Time-stamp: "2016-06-26 21:14:08 (mkmccjr)"
 ---
 
 <!-- no easy way to do this in markdown, i don't think... -->
 <h2>
 Publications
-(<a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&amp;libname=my-papers&amp;libid=54eca64ca4&quot;ADS&quot;">ADS</a>,
+(<a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&amp;libname=my-papers&amp;libid=54eca64ca4">ADS</a>,
 <a href="https://arxiv.org/a/mccourt_m_1.html">arxiv</a>)
 </h2>
 
