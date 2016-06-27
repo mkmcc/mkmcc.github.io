@@ -1,7 +1,7 @@
 ---
 title: “CV of Failure”
 layout: page
-Time-stamp: "2016-06-26 22:47:16 (mkmccjr)"
+Time-stamp: "2016-06-27 00:13:23 (mkmccjr)"
 ---
 
 <p>This page lists all of the grant proposals I have submitted; for
@@ -288,11 +288,6 @@ Ph.D. Programs
 Ph.D. Fellowships
 -----------------
 
-<p>Over most of my graduate career, I dutifully applied for every
-funding opportunity I could find&hellip; and was <i>completely</i>
-shut out.  I found this very discouraging at the time, and am sorry to
-admit I eventually gave up.</p>
-
 <table>
   <!-- Table Header -->
   <tr>
@@ -323,3 +318,22 @@ admit I eventually gave up.</p>
   {% endif %}
   {% endfor %}
 </table>
+
+
+
+Useless skills I wasted good time and money developing:
+-------------------------------------------------------
+
+<ol>
+    <li>building boats</li>
+    <li>making furniture</li>
+    <li>picking locks</li>
+    <li>switched-mode power supplies</li>
+    <li>photography</li>
+    <li>guitar (unsuccessfully)</li>
+    <li>restoring vintage fountain pens</li>
+    <li>growing heirloom tomatoes and peppers in inappropriate
+        climates</li>
+    <li>adjusting automatic watches</li>
+</ol>
+
