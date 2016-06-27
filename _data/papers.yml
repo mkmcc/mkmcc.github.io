@@ -1,101 +1,90 @@
 - url: http://adsabs.harvard.edu/abs/2016arXiv160606734F
-  authors: "Fielding, Quataert, McCourt, & Thompson"
+  authors: Fielding, Quataert, McCourt, Thompson, et. al
   year: 2016
-  pub: exprint arXiv:1606.06734
-
-- url: http://adsabs.harvard.edu/abs/2016arXiv160202760M
-  authors: "Madigan, McCourt, & O'Leary"
-  year: 2016
-  pub: eprint arXiv:1602.02760
-
-- url: http://adsabs.harvard.edu/abs/2016MNRAS.457L..89M
-  authors: "Madigan & McCourt"
-  year: 2016
-  pub: Monthly Notices of the Royal Astronomical Society, Letters, Volume 457, Issue 1, p.L89-L93
-
-- url: http://adsabs.harvard.edu/abs/2016MNRAS.455.4274L
-  authors: "Lecoanet, McCourt, et al."
-  year: 2016
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 455, Issue 4, p.4274-4288
-
-- url: http://adsabs.harvard.edu/abs/2016MNRAS.455.2187M
-  authors: "McCourt & Madigan"
-  year: 2016
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 455, Issue 2, p.2187-2199
+  pub: arxiv
 
 - url: http://adsabs.harvard.edu/abs/2016ApJ...822...48G
-  authors: "Guillochon, McCourt, Chen, Johnson, & Berger"
+  authors: Guillochon, McCourt, Chen, Johnson, et. al
   year: 2016
-  pub: The Astrophysical Journal, Volume 822, Issue 1, article id. 48, pp. (2016)
+  pub: ApJ
 
+- url: http://adsabs.harvard.edu/abs/2016MNRAS.457L..89M
+  authors: Madigan & McCourt
+  year: 2016
+  pub: MNRAS
 
+- url: http://adsabs.harvard.edu/abs/2016MNRAS.455.4274L
+  authors: Lecoanet, McCourt, Quataert, Burns, et. al
+  year: 2016
+  pub: MNRAS
+
+- url: http://adsabs.harvard.edu/abs/2016arXiv160202760M
+  authors: Madigan, McCourt, & O’Leary
+  year: 2016
+  pub: arxiv
+
+- url: http://adsabs.harvard.edu/abs/2016MNRAS.455.2187M
+  authors: McCourt & Madigan
+  year: 2016
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2015MNRAS.449....2M
-  authors: "McCourt, O'Leary, Madigan, & Quataert"
+  authors: McCourt, O’Leary, Madigan, Quataert, et. al
   year: 2015
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 449, Issue 1, p.2-7
-
-
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2014MNRAS.442..838M
   authors: McBride & McCourt
   year: 2014
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 442, Issue 1, p.838-843
+  pub: MNRAS
 
-
+- url: http://adsabs.harvard.edu/abs/2014MNRAS.439.2822W
+  authors: Wagh, Sharma, & McCourt
+  year: 2014
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2013MNRAS.432..404M
   authors: McCourt, Quataert, & Parrish
   year: 2013
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 432, Issue 1, p.404-416 
-
-- url: http://adsabs.harvard.edu/abs/2014MNRAS.439.2822W
-  authors: Wagh, Sharma, & McCourt
-  year: 2013
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 439, Issue 3, p.2822-2827
-
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2012MNRAS.427.1219S
-  authors: Sharma, McCourt, Quataert, & Parrish
+  authors: Sharma, McCourt, Parrish, Quataert, et. al
   year: 2012
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 427, Issue 2, pp. 1219-1228.
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2012MNRAS.422..704P
-  authors: Parrish, McCourt, Quataert, & Sharma
+  authors: Parrish, McCourt, Quataert, Sharma, et. al
   year: 2012
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 422, Issue 1, pp. 704-718.
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2012MNRAS.420.3174S
-  authors: Sharma, McCourt, Quataert, & Parrish
+  authors: Sharma, McCourt, Quataert, Parrish, et. al
   year: 2012
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 420, Issue 4, pp. 3174-3194. 
-
-- url: http://adsabs.harvard.edu/abs/2012MNRAS.419L..29P
-  authors: Parrish, McCourt, Quataert, & Sharma
-  year: 2012
-  pub: Monthly Notices of the Royal Astronomical Society Letters, Volume 419, Issue 1, pp. L29-L33.
-
-
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2012MNRAS.419.3319M
-  authors: McCourt, Sharma, Quataert, & Parrish
-  year: 2011
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 419, Issue 4, pp. 3319-3337.
+  authors: McCourt, Sharma, Quataert, Parrish, et. al
+  year: 2012
+  pub: MNRAS
+
+- url: http://adsabs.harvard.edu/abs/2012MNRAS.419L..29P
+  authors: Parrish, McCourt, Quataert, Sharma, et. al
+  year: 2012
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2011MNRAS.413.1295M
-  authors: McCourt, Parrish, Sharma, & Quataert
+  authors: McCourt, Parrish, Sharma, Quataert, et. al
   year: 2011
-  pub: Monthly Notices of the Royal Astronomical Society, Volume 413, Issue 2, pp. 1295-1310.
-
-
+  pub: MNRAS
 
 - url: http://adsabs.harvard.edu/abs/2008ApJ...681..187B
-  authors: Bradac, Schrabback, Erben, McCourt, et al. 
+  authors: Bradač, Schrabback, Erben, McCourt, et. al
   year: 2008
-  pub: The Astrophysical Journal, Volume 681, Issue 1, pp. 187-196.
+  pub: ApJ
 
 - url: http://adsabs.harvard.edu/abs/2006PhRvB..73j0407S
-  authors: Samulon, Islam, Sebastian, et al. 
-  pub: Physical Review B, vol. 73, Issue 10
+  authors: Samulon, Islam, Sebastian, Brooks, et. al
   year: 2006
+  pub: Phys. Rev. B
 
