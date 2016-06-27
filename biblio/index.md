@@ -4,8 +4,12 @@ layout: page
 Time-stamp: "2015-10-19 10:46:46 (mike)"
 ---
 
-Publications [(NASA ADS)](http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&libname=my-papers&libid=54eca64ca4 "ADS")
------------------------------------------------------------------------------------------------------------------------------
+<!-- no easy way to do this in markdown, i don't think... -->
+<h2>
+Publications
+(<a href="http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&amp;libname=my-papers&amp;libid=54eca64ca4&quot;ADS&quot;">ADS</a>,
+<a href="https://arxiv.org/a/mccourt_m_1.html">arxiv</a>)
+</h2>
 
 <ol reversed>
 {% for paper in site.data.papers %}
