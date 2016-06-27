@@ -1,0 +1,8 @@
+to update publication list:
+- go to my ads page:
+  http://adsabs.harvard.edu/cgi-bin/nph-abs_connect?library&libname=my-papers&libid=54eca64ca4
+- "select all records"
+- "return" "bibtex reference list" "save to file" "sort by date (most
+  recent first)"
+- move the file to my-papers.bib
+- ./convert-bib.sh my-papers.bib
