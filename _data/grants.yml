@@ -2,8 +2,6 @@
 # - cpu is cpu-hours in millions
 # - dollar is dollar value in thousands
 
-# pleiades
-#
 - agency: NASA
   type: computing
   grant: SMD-14-5164
@@ -12,17 +10,6 @@
   pi: false
   year: 2014
 
-- agency: NASA
-  type: computing
-  grant: SMD-15-6582
-  cpu: 4.7
-  dollar: 100
-  pi: false
-  year: 2015
-
-
-# XSEDE - clouds
-#
 - agency: NSF
   type: computing
   grant: AST140047
@@ -33,22 +20,27 @@
 
 - agency: NSF
   type: computing
-  grant: AST140047
-  cpu: 3.2
-  dollar: 110
-  pi: false
-  year: 2015
-
-
-# XSEDE - clusters
-#
-- agency: NSF
-  type: computing
   grant: AST140083
   cpu: 0.0
   dollar: 0
   pi: true
   year: 2014
+
+- agency: NASA
+  type: computing
+  grant: SMD-15-6582
+  cpu: 4.7
+  dollar: 100
+  pi: false
+  year: 2015
+
+- agency: NSF
+  type: computing
+  grant: AST140047
+  cpu: 3.2
+  dollar: 110
+  pi: false
+  year: 2015
 
 - agency: NSF
   type: computing
@@ -66,9 +58,6 @@
   pi: true
   year: 2016
 
-
-# XSEDE - gas dynamics
-#
 - agency: NSF
   type: computing
   grant: AST140086
@@ -90,31 +79,6 @@
   pi: true
   year: 2011
 
-- agency: NASA
-  title: Hubble Fellowship
-  type: funding
-  year: 3
-  dollar: 0
-  pi: true
-  year: 2013
-
-- agency: NASA
-  title: Einstein Fellowship
-  type: funding
-  year: 3
-  dollar: 0
-  pi: true
-  year: 2015
-
-- agency: NASA
-  title: Hubble Fellowship
-  type: funding
-  grant: HST-HF2-51376
-  year: 3
-  dollar: 620
-  pi: true
-  year: 2015
-
 - agency: NSF
   title: AST Grant
   type: funding
@@ -123,14 +87,99 @@
   pi: true
   year: 2015
 
-# - agency: NASA
-#   title: HST Theory Grant
-#   type: funding
-#   year: 1
-#   dollar: 0
-#   pi: false
-#   year: 2016
+- agency: NASA
+  title: HST Theory Grant
+  type: funding
+  year: 1
+  dollar: 0
+  pi: false
+  year: 2016
 
+
+
+# DEPARTMENTAL FELLOWSHIPS
+#
+- title: KITP
+  type: fellowship-departmental
+  year: 3
+  award: true
+  year: 2013
+
+- title: KIPAC
+  type: fellowship-departmental
+  year: 3
+  award: true
+  year: 2013
+
+- title: IAS
+  type: fellowship-departmental
+  year: 3
+  award: true
+  year: 2013
+
+- title: ITC
+  type: fellowship-departmental
+  year: 4
+  award: true
+  year: 2013
+
+- title: CITA
+  type: fellowship-departmental
+  year: 3
+  award: false
+  year: 2013
+
+- title: Caltech
+  type: fellowship-departmental
+  year: 3
+  award: false
+  year: 2013
+
+- title: Spitzer
+  type: fellowship-departmental
+  year: 3
+  award: false
+  year: 2013
+
+- title: KITP
+  type: fellowship-departmental
+  year: 3
+  award: true
+  year: 2015
+
+
+
+# FEDERAL FELLOWSHIPS
+#
+- agency: NASA
+  title: Einstein Fellowship
+  type: fellowship-federal
+  notes: literally next on the waitlist&hellip;
+  year: 3
+  dollar: 0
+  year: 2013
+
+- agency: NASA
+  title: Hubble Fellowship
+  type: fellowship-federal
+  year: 3
+  dollar: 0
+  year: 2013
+
+- agency: NASA
+  title: Einstein Fellowship
+  type: fellowship-federal
+  year: 3
+  dollar: 0
+  year: 2015
+
+- agency: NASA
+  title: Hubble Fellowship
+  type: fellowship-federal
+  grant: HST-HF2-51376
+  year: 3
+  dollar: 350
+  year: 2015
 
 
 
@@ -143,3 +192,83 @@
   hours: 6.0
   pi: false
   year: 2014
+
+
+
+
+# PHD PROGRAMS
+#
+- school: Stanford
+  type: phd
+  year: 2008
+  accepted: false
+
+- school: Berkeley
+  type: phd
+  year: 2008
+  accepted: true
+
+- school: U. Chicago
+  type: phd
+  year: 2008
+  accepted: true
+
+- school: Caltech
+  type: phd
+  year: 2008
+  accepted: true
+
+- school: UCSB
+  type: phd
+  year: 2008
+  accepted: true
+
+- school: Harvard
+  type: phd
+  year: 2008
+  accepted: false
+
+- school: Princeton
+  type: phd
+  year: 2008
+  accepted: false
+
+
+
+# PHD FELLOWSHIPS
+#
+- title: NSF
+  type: phd-fellowship
+  year: 2008
+  accepted: false
+
+- title: NSF
+  type: phd-fellowship
+  year: 2009
+  accepted: false
+
+- title: SGFP
+  type: phd-fellowship
+  year: 2009
+  accepted: false
+
+- title: NSF
+  type: phd-fellowship
+  year: 2010
+  accepted: false
+
+- title: NESSF
+  type: phd-fellowship
+  year: 2010
+  accepted: false
+
+- title: NESSF
+  type: phd-fellowship
+  year: 2011
+  accepted: false
+
+- title: de Karman
+  type: phd-fellowship
+  year: 2012
+  accepted: false
+
