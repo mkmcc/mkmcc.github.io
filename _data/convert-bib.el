@@ -19,11 +19,12 @@
 
 ;;; first, define some long boring lists of replacements...
 
-;; copied from iso-cvt, so that i can add entries as needed
+;; translate tex character commands to unicode equivalents
+;  -  copied from iso-cvt, so that i can add entries as needed
 (defvar cb-iso-tex2iso-trans-tab
   "Translation table for translating TeX sequences to ISO 8859-1 characters.
-This table is not exhaustive (and due to TeX's power can never
-be).  It only contains commonly used sequences.")
+This local variable contains additions to `iso-tex2iso-trans-tab' defined in
+`iso-cvt'")
 
 (setq cb-iso-tex2iso-trans-tab
       (-union iso-tex2iso-trans-tab
@@ -38,6 +39,7 @@ Translate the region between FROM and TO using the table
  (interactive "*r")
  (iso-translate-conventions from to cb-iso-tex2iso-trans-tab))
 
+;; convert journal macros to names
 (defvar cb-journal-replacement
   '()
   "cons list of replacements for journal abbreviations")
@@ -101,27 +103,29 @@ Translate the region between FROM and TO using the table
 ;;; Functions to navigate and parse bibtex entries:
 
 (defun cb-bibtex-next-entry ()
-  "Jump to the beginning of the next bibtex entry.
-N is a prefix argument.  If it is numeric, jump that many entries
-forward.  Negative numbers do nothing."
-  ;; Note if we start at the beginning of an entry, nothing
-  ;; happens. We need to move forward a char, and call again.
-  (when (= (point) (save-excursion
-                     (bibtex-beginning-of-entry)))
+  "Jump to the beginning of the next bibtex entry."
+
+  ;; if at the beginning of an entry, move forward one char, and call again
+  (when (= (point) (save-excursion (bibtex-beginning-of-entry)))
     (forward-char)
     (cb-bibtex-next-entry))
 
   ;; search forward for an entry
-  (when
-      (re-search-forward bibtex-entry-head nil t)
-    ;; go to beginning of the entry
+  (when (re-search-forward bibtex-entry-head nil t)
     (bibtex-beginning-of-entry)))
 
 (defun cb-format-author (author-string)
-  "format the author list for printing"
+  "Format the author list for printing."
 
   ;; first, split the string on "and"s, and take only the last name
   ;; store last names in a list called `authors'
+  ;;
+  ;; NB. i'm presuming the data comes from ADS, which formats author
+  ;; lists as "{Last}, F.~M."
+  ;;
+  ;; possible bug: first or middle initials may contain braces, if
+  ;; they're tex commands.  this would screw up my regexp.  it's
+  ;; probably unusual to have an accented first letter, though?
   (let* ((tmp (-map 's-trim (s-split "and" author-string)))
          (authors
           (--map (replace-regexp-in-string "{\\(.*\\)}.*" "\\1" it) tmp)))
@@ -141,7 +145,7 @@ forward.  Negative numbers do nothing."
                 l)))))
 
 (defun cb-parse-entry ()
-  "parse a bibtex entry into a list of desired elements"
+  "Parse a bibtex entry into a list of desired elements."
   (save-excursion
     (bibtex-beginning-of-entry)
     (let* ((data (bibtex-parse-entry t)) ; bibtex entry in alist format
