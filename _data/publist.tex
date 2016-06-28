@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[style=nature,sorting=ydnt,defernumbers]{biblatex}
+\usepackage{astrojournals}
+\usepackage{WarnockPro}
+
+% show up to 4 authors, then et al.
+\ExecuteBibliographyOptions{
+  maxnames     = 4 ,
+  minnames     = 4 ,
+}
+
+\DeclareFieldFormat
+  [article]
+  {title}{\textit{#1}}
+\DeclareFieldFormat
+  [book]
+  {title}{\textit{#1}}
+
+
+%% newline in bib entry
+\newbibmacro*{bbx:parunit}{%
+  \ifbibliography
+    {\setunit{\bibpagerefpunct}\newblock
+     \usebibmacro{pageref}%
+     \clearlist{pageref}%
+     \setunit{\adddot\par\nobreak}}
+    {}}
+
+
+
+% New bibliography drivers, using the required order of fields. These
+% are mainly copied from nature.bbx then modified.
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  \usebibmacro{begentry}%
+  \usebibmacro{author/translator+others}%
+  \setunit{\labelnamepunct}\newblock
+  \printlist{language}%
+  \newunit\newblock
+  \usebibmacro{byauthor}%
+  %
+  \newunit\newblock
+  \usebibmacro{bbx:parunit}\usebibmacro{journal+issuetitle}%
+  %
+  \newunit
+  \usebibmacro{note+pages}%
+  \newunit
+  %
+  \newunit\newblock
+  \iffieldundef{pages}
+    {\usebibmacro{doi+eprint+url}}
+    {}%
+    %
+  \setunit{\addspace}\newblock
+  \usebibmacro{issue+date}%
+  %
+  \newunit\newblock
+  \usebibmacro{bbx:parunit}\printfield{title}%
+  \newblock
+  \usebibmacro{finentry}%
+}
+
+\AtDataInput{%
+  \csnumgdef{entrycount:\strfield{prefixnumber}}{%
+    \csuse{entrycount:\strfield{prefixnumber}}+1}}
+
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}    
+\newrobustcmd*{\mkbibdesc}[1]{%
+  \number\numexpr\csuse{entrycount:\strfield{prefixnumber}}+1-#1\relax}
+
+\addbibresource{my-papers.bib}
+
+
+\begin{document}
+\nocite{*}
+
+\begin{center}
+  {\Large Mike McCourt --- Publications}
+\end{center}
+
+%\printbibheading
+\printbibliography[prefixnumbers={},type=article,title={Articles},
+                   heading=subbibliography]
+\printbibliography[prefixnumbers={R},type=report,title={Reports},
+                   heading=subbibliography]
+\printbibliography[prefixnumbers={P},type=inproceedings,title={Presentations},
+                   heading=subbibliography]
+
+\end{document}
