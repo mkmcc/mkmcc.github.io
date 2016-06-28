@@ -131,7 +131,7 @@ Translate the region between FROM and TO using the table
           (--map (replace-regexp-in-string "{\\(.*\\)}.*" "\\1" it) tmp)))
 
     ;; only show three authors
-    (if (< 3 (length authors))
+    (if (< 4 (length authors))
         ;; add an "et. al" if the list is longer than three...
         (mapconcat 'identity
                    (-snoc (-take 4 authors) "et. al")
