@@ -3,19 +3,19 @@
 \usepackage{astrojournals}
 \usepackage{WarnockPro}
 
-% show up to 4 authors, then et al.
+%% show up to 4 authors, then et al.
 \ExecuteBibliographyOptions{
   maxnames     = 4 ,
   minnames     = 4 ,
 }
 
+%% italicize titles
 \DeclareFieldFormat
   [article]
   {title}{\textit{#1}}
 \DeclareFieldFormat
   [book]
   {title}{\textit{#1}}
-
 
 %% newline in bib entry
 \newbibmacro*{bbx:parunit}{%
@@ -26,21 +26,29 @@
      \setunit{\adddot\par\nobreak}}
     {}}
 
+%% year, not month+year
+\renewbibmacro*{issue+date}{%
+  \iffieldundef{year}
+    {}
+    {%
+      {\printtext[parens]{\printfield{year}}}
+    }%
+  \newunit
+}
 
-
-% New bibliography drivers, using the required order of fields. These
-% are mainly copied from nature.bbx then modified.
+% new bibliography driver, copied from nature.bbx then modified.
 \DeclareBibliographyDriver{article}{%
   \usebibmacro{bibindex}%
   \usebibmacro{begentry}%
   \usebibmacro{author/translator+others}%
   \setunit{\labelnamepunct}\newblock
   \printlist{language}%
+  %
   \newunit\newblock
   \usebibmacro{byauthor}%
   %
   \newunit\newblock
-  \usebibmacro{bbx:parunit}\usebibmacro{journal+issuetitle}%
+  \usebibmacro{journal+issuetitle}%
   %
   \newunit
   \usebibmacro{note+pages}%
@@ -60,17 +68,21 @@
   \usebibmacro{finentry}%
 }
 
+%% this came from stackexchange... not a clue how it works!
 \AtDataInput{%
   \csnumgdef{entrycount:\strfield{prefixnumber}}{%
     \csuse{entrycount:\strfield{prefixnumber}}+1}}
 
-\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}    
+\DeclareFieldFormat{labelnumber}{\mkbibdesc{#1}}
 \newrobustcmd*{\mkbibdesc}[1]{%
   \number\numexpr\csuse{entrycount:\strfield{prefixnumber}}+1-#1\relax}
 
+
+%% load bibtex database...
 \addbibresource{my-papers.bib}
 
 
+%% ...and make the document!
 \begin{document}
 \nocite{*}
 
