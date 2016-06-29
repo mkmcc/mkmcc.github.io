@@ -6,7 +6,7 @@
 
 \usepackage[letterpaper]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage{enumitem,calc}
+\usepackage{enumitem}
 
 \usepackage{dcolumn}
 
@@ -24,12 +24,19 @@
 \usepackage{textcomp}
 
 \usepackage[nochapters,minionpro]{classicthesis}
-\usepackage[LabelsAligned]{currvita}
+\usepackage[LabelsAligned,NoDate]{currvita}
 
-\renewcommand{\cvheadingfont}{\LARGE\color{BrickRed}}
+\definecolor{halfgray}{gray}{0.55}
+\definecolor{medgray}{gray}{0.3}
+\definecolor{webgreen}{rgb}{0.10,0.29,0.19}
+\definecolor{webbrown}{rgb}{.5,.2,0}
+\definecolor{darkblue}{rgb}{0.15,0.41,0.66}
+
+
+\renewcommand{\cvheadingfont}{\LARGE\color{webbrown}}
 
 \usepackage{hyperref}
-\hypersetup{colorlinks, breaklinks, urlcolor=RoyalBlue, linkcolor=MidnightBlue}
+\hypersetup{colorlinks, breaklinks, urlcolor=darkblue, linkcolor=darkblue}
 
 \newlength{\datebox}\settowidth{\datebox}{2016--present} % Set the width of the date box in each block
 
@@ -43,12 +50,12 @@
 \newcommand{\Description}[1]{%
   \raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} 
 
-\newcommand{\papertitle}[1]{\vspace{0.5ex}\Description{``\textit{#1}''}}
+\newcommand{\papertitle}[1]{\vspace{0.5ex}\Description{\makebox[0pt][r]{``}\textit{#1}''}}
 
 \newcommand{\cvsection}[1]{\section*{#1}}
 \titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip} 
 \titleformat{\section}
-        {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\color{BrickRed}\spacedlowsmallcaps}
+        {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\color{webbrown}\spacedlowsmallcaps}
 
 
 \newenvironment{pubnumerate}
@@ -59,11 +66,14 @@
 {\begin{etaremune}[leftmargin=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
 {\end{etaremune}}
 
+\newlength{\templength}
+\setlength{\templength}{\datebox}
+\addtolength{\templength}{1.5em}
 \newenvironment{innerlist}
  {\vspace{-1.0em}
   \begingroup
   \small\itshape
-  \begin{itemize}[label=$\cdotp$,leftmargin=\datebox+1.5em,itemsep=-1ex]}
+  \begin{itemize}[label=$\cdotp$,leftmargin=\templength,itemsep=-1ex]}
  {\end{itemize}
 \endgroup}
 
@@ -79,14 +89,20 @@
 %%
 \begin{cv}{\spacedsmallcaps{Michael K.\ McCourt}}\vspace{1em} % Your name
 
-\begin{tabular}{rl}
-  \textit{\small email} &
-  \href{mailto:mkmcc@astro.berkeley.edu}{\color{black} mkmcc@astro.berkeley.edu} \\
-  \textit{\small website} &
-  \href{http://mkmcc.github.io/}{\color{black} astro.berkeley.edu/\texttildelow{}mkmcc}
-  \\
-  \textit{\small phone} & (310) 923--2656
-\end{tabular}
+\NewEntry{email}%
+{\href{mailto:mkmcc@astro.berkeley.edu}{\color{black} mkmcc@astro.berkeley.edu}}
+
+\vspace*{-0.5em}
+
+\NewEntry{website}%
+{\href{http://mkmcc.github.io/}{\color{black} astro.berkeley.edu/\texttildelow{}mkmcc}}
+
+\vspace*{-0.5em}
+
+\NewEntry{phone}%
+{(310) 923--2656}
+
+\vspace*{-0.5em}
 
 \vspace{0.5em}
 
@@ -163,6 +179,32 @@ peer-mentoring system.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% teaching experience
+%%
+\cvsection{Teaching Experience}
+
+\MarginText{UC Santa \\ Barbara}\NewEntry{2016--present}{Supervising
+  undergraduate research}
+
+\begin{innerlist}
+  \item Teaching advanced fluid dynamics to two undergraduate students
+\end{innerlist}
+
+\MarginText{UC Berkeley}\NewEntry{2008--2009}{Graduate Student
+  Instructor}
+
+\MarginText{Stanford \\ University}\NewEntry{2008}{Undergraduate
+  Instructor}
+
+\begin{innerlist}
+  \item co-designed and taught a course on numerical methods (Physics
+    90\textsc{SI}) under the student-initiated course program.
+\end{innerlist}
+
+\end{cv}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% computing grants
 %%
 \cvsection{Computing Grants}
@@ -189,22 +231,40 @@ peer-mentoring system.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% teaching experience
+%% talks
 %%
-\cvsection{Teaching Experience}
+\cvsection{Useless and Unusual Skills}
 
-\MarginText{UC Berkeley}\NewEntry{2008-2009}{Graduate Student
-  Instructor}
+\vspace*{-1ex}
+\begingroup
+\small\itshape
+\begin{itemize}[label=$\cdotp$,itemsep=0pt,leftmargin=0pt,topsep=0pt,partopsep=0pt]
+  \item building boats
+  \item making furniture
+  \item picking locks
+  \item restoring vintage fountain pens
+  \item designing and building lightweight camping gear
+  \item growing heirloom tomatoes and peppers in inappropriate climates
+  \item adjusting automatic watches
+\end{itemize}
+\endgroup
 
-\MarginText{Stanford \\ University}\NewEntry{2008}{Undergraduate
-  Instructor}
-
-\begin{innerlist}
-  \item co-designed and taught a course on numerical methods (Physics
-    90\textsc{SI}) under the student-initiated course program.
-\end{innerlist}
-
-
-\end{cv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Postamble
+\vfill
+\begin{minipage}[h!]{\linewidth}
+  \hspace*{\fill}
+  \begin{center}
+    {\scriptsize  Last updated: \today \\
+      current version: 
+      \href{http://mkmcc.github.io/cv/mkmcc-cv.pdf}%
+      {mkmcc.github.io/cv/mkmcc-cv.pdf}}
+  \end{center}
+  \hspace*{\fill}
+\end{minipage}
 
 \end{document}
+
+%% Local Variables:
+%% compile-command: "rubber --pdf --force --warn all mkmcc-cv"
+%% End:
