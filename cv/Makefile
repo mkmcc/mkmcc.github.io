@@ -1,9 +1,9 @@
 .PHONY: clean all
 
-all:    cv
+all:    mkmcc-cv.pdf
 	@echo  finished
 
-cv: computinglist.tex publist.tex talklist.tex
+mkmcc-cv.pdf: computinglist.tex publist.tex talklist.tex mkmcc-cv.tex
 	rubber --pdf --force --warn all mkmcc-cv
 
 computinglist.tex: convert-computing.sh convert-computing.el ../_data/grants.yml
