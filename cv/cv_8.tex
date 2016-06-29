@@ -1,0 +1,211 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\usepackage[letterpaper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem,calc}
+
+\usepackage{dcolumn}
+
+\usepackage{etaremune}
+\usepackage{astrojournals}
+\makeatletter\let\jnl@style=\makeatother
+
+\setlength{\parindent}{0em}
+
+\newcommand*{\spacedsmallcaps}[1]{\textls[160]{\textsc{#1}}}%
+
+\reversemarginpar
+\newcommand{\MarginText}[1]{\hspace{0em}\marginpar{\raggedleft\itshape\small#1}}
+
+\usepackage{textcomp}
+
+\usepackage[nochapters,minionpro]{classicthesis}
+\usepackage[LabelsAligned]{currvita}
+
+\renewcommand{\cvheadingfont}{\LARGE\color{BrickRed}}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks, breaklinks, urlcolor=RoyalBlue, linkcolor=MidnightBlue}
+
+\newlength{\datebox}\settowidth{\datebox}{2016--present} % Set the width of the date box in each block
+
+% Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\newcommand{\NewEntry}[3]{%
+  \parbox{\datebox}{\small \textit{#1}}\hspace{0.5em} #2 #3 
+  % Add some white space after each new entry
+  \vspace{0.5em}} 
+
+% Define a command for descriptions of each entry - change spacing and font sizes here
+\newcommand{\Description}[1]{%
+  \raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} 
+
+\newcommand{\papertitle}[1]{\vspace{0.5ex}\Description{``\textit{#1}''}}
+
+\newcommand{\cvsection}[1]{\section*{#1}}
+\titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip} 
+\titleformat{\section}
+        {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\color{BrickRed}\spacedlowsmallcaps}
+
+
+\newenvironment{pubnumerate}
+{\begin{etaremune}[leftmargin=0pt,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+{\end{etaremune}}
+
+\newenvironment{talkenum}
+{\begin{etaremune}[leftmargin=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+{\end{etaremune}}
+
+\newenvironment{innerlist}
+ {\vspace{-1.0em}
+  \begingroup
+  \small\itshape
+  \begin{itemize}[label=$\cdotp$,leftmargin=\datebox+1.5em,itemsep=-1ex]}
+ {\end{itemize}
+\endgroup}
+
+\raggedbottom
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% title and contact
+%%
+\begin{cv}{\spacedsmallcaps{Michael K.\ McCourt}}\vspace{1em} % Your name
+
+\begin{tabular}{rl}
+  \textit{\small email} &
+  \href{mailto:mkmcc@astro.berkeley.edu}{\color{black} mkmcc@astro.berkeley.edu} \\
+  \textit{\small website} &
+  \href{http://mkmcc.github.io/}{\color{black} astro.berkeley.edu/\texttildelow{}mkmcc}
+  \\
+  \textit{\small phone} & (310) 923--2656
+\end{tabular}
+
+\vspace{0.5em}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% degrees and positions
+%%
+\cvsection{Education and Academic Positions}
+
+\MarginText{UC Santa \\ Barbara}\NewEntry{2016--present}{KITP and Hubble Fellow}
+
+\NewEntry{2015--2016}{Postdoc}
+
+\MarginText{Harvard}\NewEntry{2014--2015}{ITC Fellow}
+
+\MarginText{UC Berkeley}\NewEntry{2008--2014}{Graduate Student}
+
+\begin{innerlist}
+\item 2014: Ph.D. astrophysics
+\item 2010: M.A. astrophysics
+\item advisor: Eliot Quataert
+\end{innerlist}
+
+\MarginText{Stanford \\ University}\NewEntry{2005--2008}{Undergraduate Student}
+
+\begin{innerlist}
+\item 2008: B.S. physics
+\item concentration in theoretical physics
+\item advisor: Roger Blandford
+\end{innerlist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% awards
+%%
+\cvsection{Awards}
+
+\MarginText{UC Berkeley}\NewEntry{April 2014}{Mary Elizabeth Uhl
+  Prize}
+
+\NewEntry{May 2012}{Robert J.\ Trumpler Graduate Student Excellence
+  Award}
+
+\MarginText{Stanford \\ University}\NewEntry{Fall 2007}{Nomination for
+  the Churchill Scholarship}
+
+\NewEntry{Summer 2006}{VPUE Grant for Undergraduate Research}
+
+\MarginText{Rose Hills Foundation}\NewEntry{Summer 2007}{Rose Hills
+  Award for Undergraduate Research}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% professional service
+%%
+\cvsection{Professional Service}
+
+\begin{itemize}[leftmargin=0pt,topsep=0pt,partopsep=0pt]
+\item Organizer (``Mentor Master'') for the UC Berkeley Astronomy Department
+peer-mentoring system.
+
+\item Referee for the \textit{Astrophysical Journal}, \textit{MNRAS},
+  \textit{Astrophysics and Space Science}, and \textit{Nature
+    Letters}.
+
+\item Author of several open-source emacs packages, including a
+  popular
+  \href{https://mkmcc.github.io/software/gnuplot-mode.html}{major
+    mode} for editing gnuplot scripts and a
+  \href{https://mkmcc.github.io/software/bibslurp.html}{browser} for
+  fetching BibTeX entries from ADS. Both are available in the
+  \href{https://melpa.org/#/}{\textsc{melpa}} package repository
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% computing grants
+%%
+\cvsection{Computing Grants}
+
+\MarginText{most of these proposals are collaborative; I include
+  grants only if I was either the primary author, or a
+  closely-involved second}
+\input{computinglist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% publications
+%%
+\cvsection{Publications}
+
+\input{publist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% talks
+%%
+\cvsection{Selected Presentations}
+
+\input{talklist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% teaching experience
+%%
+\cvsection{Teaching Experience}
+
+\MarginText{UC Berkeley}\NewEntry{2008-2009}{Graduate Student
+  Instructor}
+
+\MarginText{Stanford \\ University}\NewEntry{2008}{Undergraduate
+  Instructor}
+
+\begin{innerlist}
+  \item co-designed and taught a course on numerical methods (Physics
+    90\textsc{SI}) under the student-initiated course program.
+\end{innerlist}
+
+
+\end{cv}
+
+\end{document}
