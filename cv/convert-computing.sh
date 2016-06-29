@@ -1,3 +1,2 @@
 #!/bin/bash
-#emacs --batch -q -f 'package-initialize' -l convert-bib.el --eval '(parse-bib "'$1'")'
-emacs --batch -q -f 'package-initialize' -l convert-grants-computing.el --eval '(ct-parse-talks "../_data/grants.yml")'
+emacs --batch -q -f 'package-initialize' -l convert-computing.el --eval '(ct-parse-talks "../_data/grants.yml")'

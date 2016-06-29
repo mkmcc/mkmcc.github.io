@@ -94,8 +94,8 @@
         (--map (insert it "\n\n") (reverse data)))
 
       (insert (concat "\\\\[-0.5ex] " "\\multicolumn{2}{r}{\\textit{total:}} & "
-                      (format "$%.1f\\times{10^6}$" tot-cpu) "  & "
-                      (format "\\$$%.0f$k" tot-dollar) " & " "\\\\"))
+                      (format "%.1f" tot-cpu) "  & "
+                      (format "%.0f" tot-dollar) " & " "\\\\"))
 
       (insert "\\bottomrule")
       (insert "\\end{tabular}" "\n"))))
