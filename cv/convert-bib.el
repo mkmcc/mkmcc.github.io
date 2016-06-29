@@ -106,11 +106,11 @@
       (erase-buffer)
       (insert "\\begin{pubnumerate}" "\n%\n")
 
-      (--map (insert "\\item " (nth 1 it)
+      (--map (insert "\\item \\begin{samepage} " (nth 1 it)
                      (format ", \\textit{%s} (\\href{%s}{%s})"
                              (nth 3 it) (nth 0 it) (nth 2 it))
                      "\\\\" "\n"
-                     (format "  \\papertitle{%s}" (nth 4 it))
+                     (format "  \\papertitle{%s}" (nth 4 it)) "\\end{samepage}"
                      "\n"
                      "\n")
              cb-bib-list)
