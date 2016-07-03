@@ -50,7 +50,7 @@
     (if (< 4 (length authors))
         ;; add an "et. al" if the list is longer than three...
         (mapconcat 'identity
-                   (-snoc (-take 4 authors) "et. al")
+                   (-snoc (-take 4 authors) "et al.")
                    ", ")
 
       ;; ... otherwise, use commas and an &
