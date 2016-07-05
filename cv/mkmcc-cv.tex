@@ -1,19 +1,26 @@
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{scrartcl}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% basic packages
+%% 
 \usepackage[letterpaper]{geometry}
 \usepackage[utf8]{inputenc}
+
 \usepackage{enumitem}
-
-\usepackage{dcolumn}
-
 \usepackage{etaremune}
+
 \usepackage{astrojournals}
 \makeatletter\let\jnl@style=\makeatother
 
+\usepackage{textcomp}
+
+\usepackage[nochapters,minionpro]{classicthesis}
+\usepackage[LabelsAligned,NoDate]{currvita}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% tweak formatting
+%% 
 \setlength{\parindent}{0em}
 
 \newcommand*{\spacedsmallcaps}[1]{\textls[160]{\textsc{#1}}}%
@@ -21,42 +28,56 @@
 \reversemarginpar
 \newcommand{\MarginText}[1]{\hspace{0em}\marginpar{\raggedleft\itshape\small#1}}
 
-\usepackage{textcomp}
-
-\usepackage[nochapters,minionpro]{classicthesis}
-\usepackage[LabelsAligned,NoDate]{currvita}
-
 \definecolor{halfgray}{gray}{0.55}
 \definecolor{medgray}{gray}{0.3}
 \definecolor{webgreen}{rgb}{0.10,0.29,0.19}
 \definecolor{webbrown}{rgb}{.5,.2,0}
 \definecolor{darkblue}{rgb}{0.15,0.41,0.66}
 
-
-\renewcommand{\cvheadingfont}{\LARGE\color{webbrown}}
-
 \usepackage{hyperref}
 \hypersetup{colorlinks, breaklinks, urlcolor=darkblue, linkcolor=darkblue}
 
-\newlength{\datebox}\settowidth{\datebox}{2016--present} % Set the width of the date box in each block
 
-% Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% section
+\renewcommand{\cvheadingfont}{\LARGE\color{webbrown}}
+
+\newcommand{\cvsection}[1]{\section*{#1}}
+\titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip} 
+\titleformat{\section}
+        {\relax}
+        {\textsc{\MakeTextLowercase{\thesection}}}
+        {1em}
+        {\color{webbrown}\spacedlowsmallcaps}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% entries
+%% 
+% Set the width of the date box in each block
+\newlength{\datebox}\settowidth{\datebox}{2016--present}
+
+% Define a command for each new block
+% - change spacing and font sizes here:
+%   #1 is the left margin,
+%   #2 is the italic date field and
+%   #3 is the position/employer/location field
 \newcommand{\NewEntry}[3]{%
   \parbox{\datebox}{\small \textit{#1}}\hspace{0.5em} #2 #3 
   % Add some white space after each new entry
   \vspace{0.5em}} 
 
-% Define a command for descriptions of each entry - change spacing and font sizes here
+% Define a command for descriptions of each entry
+% - change spacing and font sizes here
 \newcommand{\Description}[1]{%
   \raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} 
 
-\newcommand{\papertitle}[1]{\vspace{0.5ex}\Description{\makebox[0pt][r]{``}\textit{#1}''}}
 
-\newcommand{\cvsection}[1]{\section*{#1}}
-\titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip} 
-\titleformat{\section}
-        {\relax}{\textsc{\MakeTextLowercase{\thesection}}}{1em}{\color{webbrown}\spacedlowsmallcaps}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% custom list environments
+%% 
+\newcommand{\papertitle}[1]{%
+  \vspace{0.5ex}\Description{\makebox[0pt][r]{``}\textit{#1}''}}
 
 \newenvironment{pubnumerate}
 {\begin{etaremune}[leftmargin=0pt,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
@@ -78,8 +99,14 @@
 \endgroup}
 
 \raggedbottom
-%----------------------------------------------------------------------------------------
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% document starts here
+%% 
 \begin{document}
 \thispagestyle{empty} % Stop the page count at the bottom of the first page
 
@@ -246,11 +273,13 @@ peer-mentoring system.
   \item designing and building lightweight camping gear
   \item growing heirloom tomatoes and peppers in inappropriate climates
   \item adjusting automatic watches
+  \item onetime holder of a federal pyrotechnics permit
 \end{itemize}
 \endgroup
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Postamble
+%% 
 \vfill
 \begin{minipage}[h!]{\linewidth}
   \hspace*{\fill}
