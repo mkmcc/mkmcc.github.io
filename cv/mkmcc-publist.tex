@@ -1,14 +1,62 @@
 \documentclass[11pt]{article}
-\usepackage{revnum}
-\usepackage{hyperref}
-\usepackage{astrojournals}
 
+% basic packages
+%\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[letterpaper]{geometry}
+\usepackage{microtype}
+\usepackage{astrojournals}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{etaremune}
+
+% font
+\usepackage[scaled=0.85]{UniversStd}
+\usepackage{WarnockPro}         % also try ChaparralPro
+
+% links and color
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{halfgray}{gray}{0.55}
+\definecolor{medgray}{gray}{0.3}
+\definecolor{webgreen}{rgb}{0.10,0.29,0.19}
+\definecolor{webbrown}{rgb}{.5,.2,0}
+\definecolor{darkblue}{rgb}{0.15,0.41,0.66}
+
+\hypersetup{colorlinks, breaklinks, urlcolor=darkblue, linkcolor=darkblue}
+
+% custom enumerate list for papers
+\newenvironment{pubnumerate}
+{\begin{etaremune}[leftmargin=0pt,itemsep=16pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+{\end{etaremune}}
+
+\newcommand{\papertitle}[1]{\makebox[0pt][r]{``}\textit{#1}''}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% actual document
 \begin{document}
+\raggedbottom
+\raggedright
 
 \begin{center}
   {\Large Mike McCourt --- Publications}
 \end{center}
 
 \input{publist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Postamble
+\vfill
+\begin{minipage}[h!]{\linewidth}
+  \hspace*{\fill}
+  \begin{center}
+    {\scriptsize  Last updated: \today \\
+      current version: 
+      \href{http://mkmcc.github.io/cv/mkmcc-publist.pdf}%
+      {mkmcc.github.io/cv/mkmcc-publist.pdf}}
+  \end{center}
+  \hspace*{\fill}
+\end{minipage}
 
 \end{document}
