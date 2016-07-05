@@ -1,7 +1,10 @@
 .PHONY: clean all
 
-all:    mkmcc-cv.pdf
+all:    mkmcc-cv.pdf mkmcc-publist.pdf
 	@echo  finished
+
+mkmcc-publist.pdf: publist.tex mkmcc-publist.tex
+	rubber --pdf --force --warn all mkmcc-publist
 
 mkmcc-cv.pdf: computinglist.tex publist.tex talklist.tex mkmcc-cv.tex
 	rubber --pdf --force --warn all mkmcc-cv
