@@ -58,6 +58,48 @@ ol > li {
   padding-left: 0em;
 }
 
+
+/* block quote */
+blockquote {
+  padding: 0.5em 10px;
+  margin: 1.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p.firstquote {
+  display: inline;
+}
+
+blockquote p {
+  font-size: 90%;
+  font-style: italic;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite a {
+  color: #999999;
+}
+ 
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+
 /* pre boxes */
 pre {
   padding: 1.0em;

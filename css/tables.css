@@ -28,3 +28,7 @@ tr.strikeout td:before {
 td.raligned {text-align: right;}
 td.laligned {text-align: left;}
 td.caligned {text-align: center;}
+
+th.raligned {text-align: right;}
+th.laligned {text-align: left;}
+th.caligned {text-align: center;}
