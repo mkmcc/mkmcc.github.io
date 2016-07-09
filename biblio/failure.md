@@ -1,22 +1,22 @@
 ---
 title: “CV of Failure”
 layout: page
-Time-stamp: "2016-07-09 13:47:25 (mike)"
+Time-stamp: "2016-07-09 16:03:17 (mike)"
 ---
 
 I recently read an interesting
 [article](http://www.nature.com/naturejobs/science/articles/10.1038/nj7322-467a)
 advocating for a "CV of Failure."  It's common practice for academics
-to maintain a "CV" listing *all* of our successes and achievements, no
+to maintain a CV listing *all* of our successes and achievements, no
 matter how trivial.  This masks the fact that most things don't work
 out, and I know from experience how the practice can be intimidating
-or discouraging to people early in their careers.
+and discouraging to people early in their careers.
 
 While I doubt I'd ever intimidate anyone, I thought I'd write up my CV
-of Failure nonetheless.  It seems somehow more honest than [my
-(redacted) CV](../cv/mkmcc-cv.pdf) and, if nothing else, it reminds me
-that, any time I *need* a grant, I should plan to put in between 2 and
-5 applications!
+of Failure nonetheless.  It seems somehow more honest than my
+(redacted) [professional CV](../cv/mkmcc-cv.pdf) and, if nothing else,
+it reminds me that, any time I *need* a grant, I should plan to put in
+anything from 2 to 5 applications.
 
 It should go without saying that many of the projects listed here were
 collaborative efforts.  I mark the grant with an asterisk if I was
@@ -401,8 +401,8 @@ Michael Lewis</a></cite>
 </blockquote>
 
 Scientists only believe ideas that make predictions, while Americans
-only believe ideas which can make money.  The importance of luck
-checks out, on both counts.
+only believe ideas which can make money.  The overwhelming importance
+of luck checks out, on both counts.
 
 <!--
 No matter who you are, most things won't work out; you have to keep
