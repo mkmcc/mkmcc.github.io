@@ -193,7 +193,13 @@
   pi: false
   year: 2014
 
-
+- agency: Gemini Observatory
+  type: telescope
+  title: Gemini Observation
+  grant: GN-2016B-FT-4
+  hours: 1.0
+  pi: false
+  year: 2016
 
 
 # PHD PROGRAMS
