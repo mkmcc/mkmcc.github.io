@@ -1,4 +1,16 @@
 - name: Invited Talk
+  place: What matter(s) around galaxies
+  date: June 2017
+
+- name: Astronomy Colloquium
+  place: University of Washington
+  date: February 2017
+
+- name: MPS Seminar
+  place: UC Santa Cruz
+  date: October 2016
+
+- name: Invited Talk
   place: Fellows at the Frontier Conference
   date: September 2016
 
@@ -62,7 +74,7 @@
   place: UCSC
   date: April 2013
 
-- name: Invited Talk 
+- name: Invited Talk
   place: SnowCluster conference
   date: March 2013
 
@@ -70,8 +82,8 @@
   place: UCSB
   date: October 2012
 
-- name: Theory Seminar 
-  place: CITA 
+- name: Theory Seminar
+  place: CITA
   date: October 2012
 
 - name: Informal Astrophysics Seminar

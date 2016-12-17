@@ -187,7 +187,7 @@
 #
 - agency: NRAO
   type: telescope
-  title: VLA Observation
+  title: VLA
   grant: VLA/14A-097
   hours: 6.0
   pi: false
@@ -195,7 +195,7 @@
 
 - agency: Gemini Observatory
   type: telescope
-  title: Gemini Observation
+  title: Gemini
   grant: GN-2016B-FT-4
   hours: 1.0
   pi: false
