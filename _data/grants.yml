@@ -217,6 +217,14 @@
   pi: false
   year: 2015
 
+- agency: NRAO
+  type: telescope
+  title: VLA
+  grant: VLA/17A-425
+  hours: 6.0
+  pi: false
+  year: 2017
+
 
 
 # PHD PROGRAMS
