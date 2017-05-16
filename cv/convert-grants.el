@@ -43,14 +43,14 @@
 (defun ct-format-entry (data)
   (let ((name   (cdr (assoc "title" data)))
         (dollar (cdr (assoc "dollar" data)))
-        (pi     (cdr (assoc "pi" data)))
+        (pi     (string-equal "true" (cdr (assoc "pi" data))))
         (year   (cdr (assoc "year"   data)))
         (sep "  &  "))
 
     (setq tab-index (1+ tab-index))
     (setq tot-dollar (+ tot-dollar (string-to-number dollar)))
 
-    (concat (format "%d" tab-index) sep
+    (concat (format "%d" tab-index) (unless pi "\\makebox[0pt][l]{*}") sep
             (format "\\textsc{\\MakeTextLowercase{%s}}" name) sep
             dollar sep year "\\\\")))
 
@@ -75,6 +75,10 @@
         (let ((entry (ct-parse-entry)))
           (when (ct-include? entry)
             (setq talk-list (-snoc talk-list entry))))))
+
+    (setq talk-list (--sort (< (string-to-int (cdr (assoc "year" it)))
+                               (string-to-int (cdr (assoc "year" other))))
+                            talk-list))
 
     (with-temp-file buf
 

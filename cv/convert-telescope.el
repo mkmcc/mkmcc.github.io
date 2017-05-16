@@ -76,6 +76,10 @@
           (when (ct-include? entry)
             (setq talk-list (-snoc talk-list entry))))))
 
+    (setq talk-list (--sort (< (string-to-int (cdr (assoc "year" it)))
+                               (string-to-int (cdr (assoc "year" other))))
+                            talk-list))
+
     (with-temp-file buf
 
       (insert "\\begin{tabular}{rlrr}" "\n\n" "\\toprule")
