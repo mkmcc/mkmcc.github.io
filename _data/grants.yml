@@ -99,7 +99,7 @@
   title: ATP Theory Grant
   type: funding
   year: 3
-  dollar: 420
+  dollar: 410
   pi: true
   year: 2017
 
@@ -181,6 +181,7 @@
   notes: literally next on the waitlist&hellip;
   year: 3
   dollar: 0
+  pi: true
   year: 2013
 
 - agency: NASA
@@ -188,6 +189,7 @@
   type: fellowship-federal
   year: 3
   dollar: 0
+  pi: true
   year: 2013
 
 - agency: NASA
@@ -195,6 +197,7 @@
   type: fellowship-federal
   year: 3
   dollar: 0
+  pi:true
   year: 2015
 
 - agency: NASA
@@ -203,6 +206,7 @@
   grant: HST-HF2-51376
   year: 3
   dollar: 350
+  pi: true
   year: 2015
 
 
