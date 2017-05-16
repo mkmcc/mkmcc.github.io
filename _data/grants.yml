@@ -101,7 +101,23 @@
   year: 3
   dollar: 420
   pi: true
-  year: 2016
+  year: 2017
+
+- agency: NASA
+  title: ATP Theory Grant
+  type: funding
+  year: 3
+  dollar: 700
+  pi: false
+  year: 2017
+
+- agency: NASA
+  title: HST Theory Grant
+  type: funding
+  year: 1
+  dollar: 0
+  pi: true
+  year: 2018
 
 
 

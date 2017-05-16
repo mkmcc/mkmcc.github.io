@@ -1,15 +1,35 @@
+- url: http://adsabs.harvard.edu/abs/2017arXiv170503462M
+  authors: Madigan, Halle, Moody, McCourt, et al.
+  year: 2017
+  pub: arxiv
+
+- url: http://adsabs.harvard.edu/abs/2017MNRAS.466.3810F
+  authors: Fielding, Quataert, McCourt, & Thompson
+  year: 2017
+  pub: MNRAS
+
+- url: http://adsabs.harvard.edu/abs/2017arXiv170406278G
+  authors: Gronke, Dijkstra, McCourt, & Oh
+  year: 2017
+  pub: arxiv
+
+- url: http://adsabs.harvard.edu/abs/2017MNRAS.465.2310M
+  authors: Madigan, McCourt, & O’Leary
+  year: 2017
+  pub: MNRAS
+
+- url: http://adsabs.harvard.edu/abs/2017ApJ...834L..19G
+  authors: Guillochon & McCourt
+  year: 2017
+  pub: ApJ
+
+- url: http://adsabs.harvard.edu/abs/2016ApJ...833L..26G
+  authors: Gronke, Dijkstra, McCourt, & Oh
+  year: 2016
+  pub: ApJ
+
 - url: http://adsabs.harvard.edu/abs/2016arXiv161001164M
   authors: McCourt, Oh, O’Leary, & Madigan
-  year: 2016
-  pub: arxiv
-
-- url: http://adsabs.harvard.edu/abs/2016arXiv160908160G
-  authors: Guillochon & McCourt
-  year: 2016
-  pub: arxiv
-
-- url: http://adsabs.harvard.edu/abs/2016arXiv160606734F
-  authors: Fielding, Quataert, McCourt, & Thompson
   year: 2016
   pub: arxiv
 
@@ -27,11 +47,6 @@
   authors: Lecoanet, McCourt, Quataert, Burns, et al.
   year: 2016
   pub: MNRAS
-
-- url: http://adsabs.harvard.edu/abs/2016arXiv160202760M
-  authors: Madigan, McCourt, & O’Leary
-  year: 2016
-  pub: arxiv
 
 - url: http://adsabs.harvard.edu/abs/2016MNRAS.455.2187M
   authors: McCourt & Madigan
