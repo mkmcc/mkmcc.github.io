@@ -34,15 +34,18 @@
 }
 
 
-/* mobile */
-/* sidebar menu is a horizontal layout in a fixed position at the top
-   of the page */
+/* mobile... */
+/* ... ipad */
+/* shrink the width of the menu a little */
 @media screen and (max-device-width: 768px){
   #menu {
     width: 6em;
   }
 }
 
+/* ... iphone */
+/* sidebar menu is a horizontal layout in a fixed position at the top
+   of the page */
 @media screen and (max-device-width: 480px){
   #menu {
     width:auto;
@@ -104,6 +107,9 @@ body {
   margin-right: auto;
 }
 
+/* mobile... */
+/* ... ipad */
+/* decrease the margin a little */
 @media screen and (max-device-width: 768px){
   body {
     margin-left: 10em;
@@ -111,7 +117,8 @@ body {
   }
 }
 
-
+/* ... iphone */
+/* no margin around the body */
 @media screen and (max-device-width: 480px){
   body {
     margin-left: 1em;

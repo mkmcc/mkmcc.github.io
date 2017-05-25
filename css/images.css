@@ -41,6 +41,8 @@ img.center {
   display:block;
 }
 
+/* mobile... */
+/* ... iphone */
 @media screen and (max-device-width: 480px){
   img {
     width:100%;

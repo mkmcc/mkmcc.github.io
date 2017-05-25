@@ -37,14 +37,16 @@
   width: 100%;
 }
 
-/* mobile */
-@media screen and (max-device-width: 480px){
+/* mobile... */
+/* ... ipad */
+@media screen and (max-device-width: 768px){
   #table-of-contents {
     display:none;
   }
 }
 
-@media screen and (max-device-width: 768px){
+/* ... iphone */
+@media screen and (max-device-width: 480px){
   #table-of-contents {
     display:none;
   }
