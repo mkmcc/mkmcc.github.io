@@ -158,6 +158,11 @@ h4 {
     margin:0;
     padding-top: 2em;
   }
+
+  h3 {
+      margin: 2.5ex 0 0.5ex 0em;
+  }
+
 }
 
 
