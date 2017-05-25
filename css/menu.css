@@ -37,6 +37,12 @@
 /* mobile */
 /* sidebar menu is a horizontal layout in a fixed position at the top
    of the page */
+@media screen and (max-device-width: 768px){
+  #menu {
+    width: 6em;
+  }
+}
+
 @media screen and (max-device-width: 480px){
   #menu {
     width:auto;
@@ -97,6 +103,14 @@ body {
   margin-left: 13em;
   margin-right: auto;
 }
+
+@media screen and (max-device-width: 768px){
+  body {
+    margin-left: 10em;
+    margin-right: 1em;
+  }
+}
+
 
 @media screen and (max-device-width: 480px){
   body {
