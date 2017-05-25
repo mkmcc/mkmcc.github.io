@@ -43,3 +43,9 @@
     display:none;
   }
 }
+
+@media screen and (max-device-width: 768px){
+  #table-of-contents {
+    display:none;
+  }
+}

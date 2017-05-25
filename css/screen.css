@@ -24,6 +24,16 @@ body {
 }
 
 /* mobile */
+@media only screen and (min-device-width: 768px){
+  body {
+    width:auto;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
 @media screen and (max-device-width: 480px){
   body {
     width:90%;
