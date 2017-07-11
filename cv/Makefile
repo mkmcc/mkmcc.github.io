@@ -6,12 +6,16 @@ all:    mkmcc-cv.pdf mkmcc-publist.pdf
 mkmcc-publist.pdf: publist.tex mkmcc-publist.tex
 	rubber --pdf --force --warn all mkmcc-publist
 
-mkmcc-cv.pdf: computinglist.tex publist.tex talklist.tex mkmcc-cv.tex
+mkmcc-cv.pdf: fundinglist.tex computinglist.tex publist.tex talklist.tex mkmcc-cv.tex
 	rubber --pdf --force --warn all mkmcc-cv
 
 computinglist.tex: convert-computing.sh convert-computing.el ../_data/grants.yml
 	./convert-computing.sh
 	@echo processed compuing grants to latex
+
+fundinglist.tex: convert-grants.sh convert-grants.el ../_data/grants.yml
+	./convert-grants.sh
+	@echo processed funding grants to latex
 
 publist.tex: convert-bib.sh convert-bib.el ../_data/my-papers.bib
 	./convert-bib.sh
