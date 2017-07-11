@@ -1,7 +1,7 @@
 ---
 title: “CV of Failure”
 layout: page
-Time-stamp: "2016-07-09 16:03:17 (mike)"
+Time-stamp: "2017-07-11 14:07:17 (mike)"
 ---
 
 I recently read an interesting
@@ -339,9 +339,7 @@ Going through this list of grants and applications, of course it's
 tempting to look for patterns... honestly, I could find nothing
 sensible.  These outcomes certainly aren't meritocratic, and in fact
 seem largely random.  Some of my best efforts were rejected, and some
-half-baked ones were successful.  In more than one case, I've simply
-re-submitted unsuccessful proposals, only to have radically different
-outcomes the second time around.
+half-baked ones were successful.
 
 I'm reminded of the essential role of <i>luck</i> in success, nicely
 outlined in this
@@ -400,13 +398,3 @@ Michael Lewis</a></cite>
 
 </blockquote>
 
-Scientists only believe ideas that make predictions, while Americans
-only believe ideas which can make money.  The overwhelming importance
-of luck checks out, on both counts.
-
-<!--
-No matter who you are, most things won't work out; you have to keep
-trying, and keep planning, until you get your break.  Our world
-rewards luck, and the only way I've found to influence that is
-tenacity.
--->
