@@ -107,6 +107,7 @@
   title: ATP Theory Grant
   type: funding
   year: 3
+  grant: NNX17AK58G
   dollar: 410
   pi: true
   year: 2017
@@ -115,6 +116,7 @@
   title: ATP Theory Grant
   type: funding
   year: 3
+  grant: NNX17AK44G
   dollar: 700
   pi: false
   year: 2017
@@ -123,7 +125,7 @@
   title: HST Theory Grant
   type: funding
   year: 1
-  dollar: 0
+  dollar: 120
   pi: true
   year: 2018
 
@@ -249,7 +251,7 @@
   type: telescope
   title: VLA
   grant: VLA/17A-425
-  hours: 6.0
+  hours: 4.0
   pi: false
   year: 2017
 
