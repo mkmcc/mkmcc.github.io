@@ -41,6 +41,12 @@ img.center {
   display:block;
 }
 
+img.headshot {
+    border: 0.5px solid #777;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* mobile... */
 /* ... iphone */
 @media screen and (max-device-width: 480px){

@@ -1,17 +1,18 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: "2025-04-03 20:05:22 (mkmcc)"
+Time-stamp: "2025-04-03 21:10:04 (mkmcc)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
-<img src="{{site.url}}/images/me_2.jpeg" width="180" class="pad top right" alt="me"/>
+<img src="{{site.url}}/images/me_2.jpeg" width="180" class="pad top right headshot" alt="me"/>
 
 I’m a data scientist, researcher, and co-founder of [Sturdy
 Statistics](https://sturdystatistics.com), where we help organizations
 unlock insight from unstructured data using practical AI tools that
-are deeply grounded in statistics.  Before starting the company, I
-spent seven years at [Invoca](https://www.invoca.com) as their Senior
+are deeply grounded in statistics.  Before starting the company with
+[Kian Ghodoussi](https://www.linkedin.com/in/kian-ghodoussi/), I spent
+seven years at [Invoca](https://www.invoca.com) as their Senior
 Principal Data Scientist, where I led development of production AI
 systems, along with the creation of several patents in explainable
 machine learning.
