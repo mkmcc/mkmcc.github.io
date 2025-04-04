@@ -2,3 +2,4 @@ _site/
 /cv/*.aux
 /cv/*.log
 /cv/*.out
+*.DS_Store
