@@ -126,7 +126,7 @@ Translate the region between FROM and TO using the table
   ;; possible bug: first or middle initials may contain braces, if
   ;; they're tex commands.  this would screw up my regexp.  it's
   ;; probably unusual to have an accented first letter, though?
-  (let* ((tmp (-map 's-trim (s-split "and" author-string)))
+  (let* ((tmp (-map 's-trim (s-split " and " author-string)))
          (authors
           (--map (replace-regexp-in-string "{\\(.*\\)}.*" "\\1" it) tmp)))
 
