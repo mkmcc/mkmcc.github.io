@@ -1,5 +1,5 @@
 * to test locally
-  $ bundle exec jekyll serve
+  $ bundle exec jekyll serve --watch
   http://localhost:4000/
 
 * to publish
