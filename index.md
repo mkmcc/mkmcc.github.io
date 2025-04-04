@@ -1,33 +1,41 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: "2016-02-11 11:10:42 (mike)"
+Time-stamp: "2025-04-03 20:05:22 (mkmcc)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
-<img src="{{site.url}}/images/me_1.png" width="180" class="pad top right" alt="me"/>
+<img src="{{site.url}}/images/me_2.jpeg" width="180" class="pad top right" alt="me"/>
 
-I'm a Hubble and KITP fellow at [UC Santa
-Barbara](http://web.physics.ucsb.edu/~astrogroup/).  Before that, I
-was an ITC Fellow at the [Harvard-Smithsonian Center for
-Astrophysics](http://cfa.harvard.edu), and a grad student in the
-[astronomy department](http://astro.berkeley.edu) at [UC
-Berkeley](http://www.berkeley.edu).  For my thesis, I worked with
-Professor [Eliot Quataert](http://astro.berkeley.edu/~eliot), studying
-the intracluster medium of galaxy clusters.
+I’m a data scientist, researcher, and co-founder of [Sturdy
+Statistics](https://sturdystatistics.com), where we help organizations
+unlock insight from unstructured data using practical AI tools that
+are deeply grounded in statistics.  Before starting the company, I
+spent seven years at [Invoca](https://www.invoca.com) as their Senior
+Principal Data Scientist, where I led development of production AI
+systems, along with the creation of several patents in explainable
+machine learning.
 
-I did my undergraduate studies at
-[Stanford University](http://www.stanford.edu), where I majored in
-physics with a concentration in theoretical physics.  My research
-there focused on modeling gravitational lensing by galaxy clusters.
+Earlier in my career, I was a researcher in astrophysics, holding
+fellowships at
+[Harvard](https://pweb.cfa.harvard.edu/opportunities/fellowships-visiting-scientist-positions/itc-fellowship),
+[NASA](https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program),
+and the [Kavli Institute for Theoretical
+Physics](https://www.kitp.ucsb.edu/apply/fellowships/graduate-fellowship-program)
+as well as a postdoc at [UC Santa
+Barbara](http://web.physics.ucsb.edu/~astrogroup/).  I earned my
+Ph.D. in Astrophysics from [UC Berkeley](https://astro.berkeley.edu),
+where I studied galaxy clusters and plasma physics with Professor
+[Eliot Quataert](https://www.astro.princeton.edu/~quataert/).  As an
+undergrad at Stanford, I majored in physics with a concentration in
+theoretical physics and performed research on gravitational lensing
+under Professor [Roger
+Blandford](https://en.wikipedia.org/wiki/Roger_Blandford).
 
-I was born in Seattle, Washington and grew up in Santa Monica,
-California.  When not in my office, I enjoy hiking, skiing,
-woodworking, growing tomatoes, traveling, and
-[photography](https://picasaweb.google.com/112418946734251241705),
-among other things.
+These days I split my time between Sturdy Statistics and starting a
+family.  I still enjoy hiking, woodworking, gardening, and
+[photography](https://www.flickr.com/photos/mkmccjr/albums/), when I
+get the chance.
 
-Feel free to stop by my desk or otherwise
-[contact me]({{site.url}}/contact/index.html) via your preferred
-method.
-
+Feel free to reach out or [get in
+touch]({{site.url}}/contact).  I’m always happy to connect.

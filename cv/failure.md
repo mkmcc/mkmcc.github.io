@@ -1,29 +1,27 @@
 ---
 title: “CV of Failure”
 layout: page
-Time-stamp: "2017-07-11 14:07:17 (mike)"
+Time-stamp: "2025-04-03 19:38:04 (mkmcc)"
 ---
 
-I recently read an interesting
-[article](http://www.nature.com/naturejobs/science/articles/10.1038/nj7322-467a)
-advocating for a "CV of Failure."  It's common practice for academics
-to maintain a CV listing *all* of our successes and achievements, no
-matter how trivial.  This masks the fact that most things don't work
-out, and I know from experience how the practice can be intimidating
-and discouraging to people early in their careers.
+I recently came across an
+[article](https://www.nature.com/articles/nj7322-467a) making the case
+for keeping a “CV of Failure.”  In academia, it’s common to maintain a
+CV with a long list of one’s successes — we make the list as long as
+possible, highlighting the tiniest successes.  That makes it easy to
+forget (or perhaps hide) the reality: that most things don’t work out.
+For people early in their careers, that can be discouraging.
 
-While I doubt I'd ever intimidate anyone, I thought I'd write up my CV
-of Failure nonetheless.  It seems somehow more honest than my
-(redacted) [professional CV](../cv/mkmcc-cv.pdf) and, if nothing else,
-it reminds me that, any time I *need* a grant, I should plan to put in
-anything from 2 to 5 applications.
+While I doubt anyone’s ever looked at my CV and felt intimidated, I
+still thought it would be honest — and maybe even useful — to share
+some of the things that didn’t go as planned.  It also helps me
+remember that getting a grant usually means applying multiple
+times.  Sometimes five.  Sometimes more.
 
-It should go without saying that many of the projects listed here were
-collaborative efforts.  I mark the grant with an asterisk if I was
-*not* the primary author of the proposal.  I include such grants only
-if I contributed a significant share of the responsibility for the
-propsoal.
-
+Many of these projects were collaborations, and I’ve marked grants
+with an asterisk if I wasn’t the lead author on the proposal.  I’ve
+included them only when I played a substantial role in writing or
+managing the application.
 
 
 Computing Resources
@@ -296,8 +294,8 @@ Ph.D. Programs
 
 
 
-Ph.D. Fellowships
------------------
+Federal Ph.D. Fellowships
+-------------------------
 
 <table>
   <!-- Table Header -->
@@ -331,29 +329,30 @@ Ph.D. Fellowships
 </table>
 
 
-
 Takeaway
 --------
 
-Going through this list of grants and applications, of course it's
-tempting to look for patterns... honestly, I could find nothing
-sensible.  These outcomes certainly aren't meritocratic, and in fact
-seem largely random.  Some of my best efforts were rejected, and some
-half-baked ones were successful.
+I’d like to say I learned some pattern or lesson from my
+experience&hellip; but if there is one, I haven’t found it.  Some of
+my best efforts were rejected, and a few that felt rushed or uncertain
+ended up getting funded.  It doesn’t seem especially meritocratic — if
+anything, it feels random at times.
 
-I'm reminded of the essential role of <i>luck</i> in success, nicely
-outlined in this
-[speech](https://www.princeton.edu/main/news/archive/S33/87/54K53/) by
-Michael Lewis:
+I’m reminded of the essential role of luck in success, nicely outlined
+in this [graduation
+speech](https://www.princeton.edu/main/news/archive/S33/87/54K53/) by
+Michael Lewis, where he talks about the illusion of merit and how we
+tend to overlook randomness in success stories:
 
 <blockquote cite="https://www.princeton.edu/main/news/archive/S33/87/54K53/">
 
-<p class="firstquote">People really don&rsquo;t like to hear success
-explained away as luck &ndash; especially successful people. As they
-age, and succeed, people feel their success was somehow
-inevitable. They don&rsquo;t want to acknowledge the role played by
-accident in their lives. There is a reason for this: the world does
-not want to acknowledge it either.</p>
+<p class="firstquote">
+People really don’t like to hear success explained away as luck –
+especially successful people. As they age, and succeed, people feel
+their success was somehow inevitable. They don’t want to acknowledge
+the role played by accident in their lives. There is a reason for
+this: the world does not want to acknowledge it either.
+</p>
 
 <p>I wrote a book about this, called &ldquo;Moneyball.&rdquo; It was
 ostensibly about baseball but was in fact about something else. There
@@ -397,4 +396,11 @@ sports can&rsquo;t distinguish between lucky and good, who can?</p>
 Michael Lewis</a></cite>
 
 </blockquote>
+
+The same lesson applies here: effort doesn’t always lead to success,
+and rejection doesn’t always mean the work was bad.  A lot depends on
+timing, reviewers, priorities, and things outside our control.  That
+doesn’t make the failures any less frustrating — but maybe it makes
+them easier to understand.
+
 

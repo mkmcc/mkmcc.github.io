@@ -1,24 +1,15 @@
 ---
 title: Contact
 layout: page
-Time-stamp: "2016-02-11 11:14:21 (mike)"
+Time-stamp: "2025-04-03 11:34:04 (mkmcc)"
 ---
 
 
 Finding Me
 ----------
 
-| mail   | mkmcc astro berkeley edu                               |
-| office | Broida Hall, 2015H                                     |
-| post   | University of California <br/> Santa Barbara, CA 93106 |
-| github | [github.com/mkmcc](https://github.com/mkmcc/)          |
+| e-mail   | mike sturdy statistics com                                 |
+| linkedin | [linkedin.com/in/mkmcc](https://www.linkedin.com/in/mkmcc) |
+| github   | [github.com/mkmcc](https://github.com/mkmcc/)              |
 
 
-My GPG Key
-----------
-
-### binary format
-[mike.gpg]({{site.url}}/files/mike-mccourt.gpg)
-
-### ASCII format
-[mike.gpg.asc]({{site.url}}/files/mike-mccourt.gpg.asc)

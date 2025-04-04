@@ -1,9 +1,9 @@
-img { 
-  vertical-align:middle; 
+img {
+  vertical-align:middle;
 }
 
 /* Make sure that the floats from one section won't run into the next.  */
-.section {
+section {
   overflow: auto;
 }
 

@@ -1,7 +1,7 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2025-03-30 18:43:10 (mkmcc)"
+Time-stamp: "2025-04-03 15:06:25 (mkmcc)"
 ---
 
 <!-- no easy way to do this in markdown, i don't think... -->
@@ -32,3 +32,15 @@ Talks
 {% endfor %}
 </ol>
 
+
+
+Patents
+-------
+
+<ol reversed>
+{% for patent in site.data.patents %}
+    <li markdown="span">
+    <i>{{ patent.authors }},</i> [{{ patent.title}}]({{ patent.URL }}). {{ patent.number}} {{ patent.date }}
+    </li>
+{% endfor %}
+</ol>

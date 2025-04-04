@@ -3,6 +3,7 @@
 @import "menu.css";
 @import "toc.css";
 @import "images.css";
+@import "slides.css";
 
 /* google web fonts */
 @import url(//fonts.googleapis.com/css?family=Inconsolata);
@@ -105,7 +106,7 @@ blockquote cite {
 blockquote cite a {
   color: #999999;
 }
- 
+
 blockquote cite:before {
   content: "\2014 \2009";
 }

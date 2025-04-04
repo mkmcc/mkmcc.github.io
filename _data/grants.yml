@@ -133,16 +133,16 @@
 
 # DEPARTMENTAL FELLOWSHIPS
 #
-- title: KITP
+- title: Caltech
   type: fellowship-departmental
   year: 3
-  award: true
+  award: false
   year: 2013
 
-- title: KIPAC
+- title: CITA
   type: fellowship-departmental
   year: 3
-  award: true
+  award: false
   year: 2013
 
 - title: IAS
@@ -157,13 +157,19 @@
   award: true
   year: 2013
 
-- title: CITA
+- title: KIPAC
   type: fellowship-departmental
   year: 3
-  award: false
+  award: true
   year: 2013
 
-- title: Caltech
+- title: KITP
+  type: fellowship-departmental
+  year: 3
+  award: true
+  year: 2013
+
+- title: PCTS
   type: fellowship-departmental
   year: 3
   award: false
@@ -188,7 +194,7 @@
 - agency: NASA
   title: Einstein Fellowship
   type: fellowship-federal
-  notes: literally next on the waitlist&hellip;
+  notes: next on the waitlist&hellip;
   year: 3
   dollar: 0
   pi: true
