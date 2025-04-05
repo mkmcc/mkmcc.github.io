@@ -1,5 +1,5 @@
 /* sidebar menu is a vertical stack of uls */
-#menu {
+nav.menu {
   bottom: 0;
   left: 0;
   top: 0;
@@ -11,26 +11,30 @@
   background: #eee8d5;
 }
 
-#menu ul {
+nav.menu ul {
   margin: 0;
   padding: 0;
 }
 
-#menu li {
+nav.menu li {
   list-style-type: none;
   margin: 0;
   padding: 0 0 0 0.5em;
 }
 
-#menu .head {
+nav.menu div.section {
   border-style: none;
   height: 3ex;
   margin: 1ex 0 0;
   padding: 1ex 0 0;
 }
 
-#menu .head:first-child {
+nav.menu div.section:first-child {
   margin-top: 0;
+}
+
+nav.menu li.sub::before {
+    content: " – "; /* " → "; */
 }
 
 
@@ -38,7 +42,7 @@
 /* ... ipad */
 /* shrink the width of the menu a little */
 @media screen and (max-device-width: 768px){
-  #menu {
+  nav.menu {
     width: 6em;
   }
 }
@@ -47,44 +51,56 @@
 /* sidebar menu is a horizontal layout in a fixed position at the top
    of the page */
 @media screen and (max-device-width: 480px){
-  #menu {
+  nav.menu {
     width:auto;
     left: 0;
     top: 0;
     bottom: auto;
     position: absolute;
-    background-color: #eee8d5;
     padding:1em;
   }
 
-  #menu ul {
+  nav.menu ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
     display: none;
   }
 
-  #menu li {
+  nav.menu li {
     display: inline-block;
     margin: 0;
     padding: 0;
   }
 
-  #menu li:not(:first-of-type) {
+  nav.menu li:not(:first-of-type) {
     margin-left: 10px;
   }
 
-  #menu .head {
+  nav.menu div.section {
     display:none;
   }
 
-  #menu .head:first-child {
+  nav.menu div.section:first-child {
     display:none;
   }
 
-  #menu ul.keep-mobile {
+  nav.menu ul.keep-mobile {
     display:block;
   }
+
+  nav.menu ul.keep-mobile li.hide-mobile {
+      display:none;
+  }
+
+  nav.menu li.sub::before {
+      content: "";
+  }
+
+  nav.menu {
+      margin-bottom: 1em;
+  }
+
 }
 
 
