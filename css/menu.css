@@ -64,8 +64,12 @@ nav.menu li.sub::before {
     padding: 0;
   }
 
-  nav.menu li:not(:first-of-type) {
-    margin-left: 10px;
+  /* nav.menu li:not(:first-of-type) { */
+  /*   margin-left: 10px; */
+  /* } */
+
+  nav.menu li:not(:last-of-type) {
+      margin-right: 10px;
   }
 
   nav.menu div.section {
