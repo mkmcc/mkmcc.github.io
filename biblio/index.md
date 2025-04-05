@@ -1,7 +1,7 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2025-04-03 20:13:36 (mkmcc)"
+Time-stamp: "2025-04-05 09:02:58 (mkmcc)"
 ---
 
 
@@ -24,6 +24,18 @@ Publications
 (<a href="https://ui.adsabs.harvard.edu/public-libraries/mwmNbnbJTXqQZahtQBn9BQ">ADS</a>,
 <a href="https://arxiv.org/a/mccourt_m_1.html">arxiv</a>)
 </h2>
+
+<a id="cy-effective-orcid-url"
+    class="underline"
+    href="https://orcid.org/0000-0003-4531-7733"
+    target="orcid.widget"
+    rel="me noopener noreferrer"
+    style="vertical-align: top">
+    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+    style="width: 1em; margin-inline-start: 0.5em"
+    alt="ORCID iD icon"/>
+    https://orcid.org/0000-0003-4531-7733
+</a>
 
 <ol reversed>
 {% for paper in site.data.papers %}
