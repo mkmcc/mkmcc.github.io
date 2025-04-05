@@ -38,15 +38,55 @@ body {
 /* ... iphone */
 @media screen and (max-device-width: 480px){
   body {
-    width:90%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     font-size: 14pt;
     line-height: 18pt;
+  }
+
+  article {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   html {
     -webkit-text-size-adjust: 100%;
   }
 }
+
+
+/* flexbox layout: navbar at left on desktop, top on mobile */
+main#content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+main#content article {
+    flex-grow: 1;
+}
+
+nav.menu {
+    flex-shrink: 0;
+}
+
+@media screen and (max-device-width: 480px) {
+    main#content {
+        flex-direction: column;
+    }
+
+    nav.menu {
+        width: 100%;
+        position: relative;
+        padding: 1em;
+    }
+}
+/* end flexbox layout */
+
+
+
 
 a, a:link {
   color: #268bd2;
@@ -180,7 +220,7 @@ h4 {
 
 
 /* postamble */
-div#postamble {
+footer#postamble {
   margin: 20pt 0 20pt 0;
   font-size: 8pt;
   text-align: right;
@@ -188,7 +228,13 @@ div#postamble {
   font-family: sans-serif;
 }
 
-div#postamble-extra {
+@media screen and (max-device-width: 480px){
+    footer#postamble {
+        margin-right: 1em;
+    }
+}
+
+footer#postamble-extra {
   font-size: 8pt;
 }
 

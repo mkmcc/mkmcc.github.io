@@ -51,15 +51,6 @@ nav.menu li.sub::before {
 /* sidebar menu is a horizontal layout in a fixed position at the top
    of the page */
 @media screen and (max-device-width: 480px){
-  nav.menu {
-    width:auto;
-    left: 0;
-    top: 0;
-    bottom: auto;
-    position: absolute;
-    padding:1em;
-  }
-
   nav.menu ul {
     list-style-type:none;
     margin: 0;
@@ -96,11 +87,6 @@ nav.menu li.sub::before {
   nav.menu li.sub::before {
       content: "";
   }
-
-  nav.menu {
-      margin-bottom: 1em;
-  }
-
 }
 
 
