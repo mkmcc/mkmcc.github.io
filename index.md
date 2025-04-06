@@ -1,7 +1,7 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: "2025-04-03 21:10:04 (mkmcc)"
+Time-stamp: "2025-04-06 15:53:33 (mkmcc)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
@@ -9,13 +9,12 @@ Time-stamp: "2025-04-03 21:10:04 (mkmcc)"
 
 I’m a data scientist, researcher, and co-founder of [Sturdy
 Statistics](https://sturdystatistics.com), where we help organizations
-unlock insight from unstructured data using practical AI tools that
-are deeply grounded in statistics.  Before starting the company with
-[Kian Ghodoussi](https://www.linkedin.com/in/kian-ghodoussi/), I spent
-seven years at [Invoca](https://www.invoca.com) as their Senior
-Principal Data Scientist, where I led development of production AI
-systems, along with the creation of several patents in explainable
-machine learning.
+turn unstructured data into insight using practical, statistically
+grounded AI tools.  Before starting the company with [Kian
+Ghodoussi](https://www.linkedin.com/in/kian-ghodoussi/), I spent seven
+years at [Invoca](https://www.invoca.com) as their Senior Principal
+Data Scientist, where I led the development of production AI systems
+and authored several patents in explainable machine learning.
 
 Earlier in my career, I was a researcher in astrophysics, holding
 fellowships at
@@ -33,10 +32,16 @@ theoretical physics and performed research on gravitational lensing
 under Professor [Roger
 Blandford](https://en.wikipedia.org/wiki/Roger_Blandford).
 
-These days I split my time between Sturdy Statistics and starting a
-family.  I still enjoy hiking, woodworking, gardening, and
-[photography](https://www.flickr.com/photos/mkmccjr/albums/), when I
-get the chance.
+These days I split my time between Sturdy Statistics and raising a
+family.  When I get the chance, I enjoy hiking, woodworking,
+gardening, and
+[photography](https://www.flickr.com/photos/mkmccjr/albums/).
+
+Interested in my [astrophysics research](/research), [AI
+patents](/patents), [software tools](/software), or
+[talks](/research/talks)? You can also browse my [figure
+gallery](/figure-gallery), [posters](/posters), [CV](/CV), or
+[publications](/biblio).
 
 Feel free to reach out or [get in
 touch]({{site.url}}/contact).  I’m always happy to connect.

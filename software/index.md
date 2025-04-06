@@ -1,19 +1,19 @@
 ---
 title: Software
 layout: page
-Time-stamp: "2025-04-06 14:09:59 (mkmcc)"
+Time-stamp: "2025-04-06 15:43:07 (mkmcc)"
 ---
 
 In addition to my research and commercial software, I occasionally get
 to work on fun (if somewhat idiosyncratic) open source projects.  As
-an undergrad I wrote [gnuplot mode](./gnuplot-mode.html), an emacs
+an undergrad I wrote [gnuplot mode](./gnuplot-mode.html), an Emacs
 major mode for editing and running gnuplot files.  In grad school I
-wrote [bibslurp](./bibslurp.html), a emacs tool to automatically
+wrote [bibslurp](./bibslurp.html), a Emacs tool to automatically
 import bibtex entries from NASA ADS into your LaTeX project.  The code
-is a bit complex, but I wrote this before ADS had an API (or at least
-before I knew about the API).  And I also wrote
+is a bit complex. I wrote it before ADS had an API — or at least
+before I knew one existed.  And I also wrote
 [Jumblr](https://github.com/mkmcc/jumblr), a word game that runs in
-emacs.  You can find these mode at MELPA using the following links:
+Emacs.  You can find these mode at MELPA using the following links:
 * [Gnuplot-Mode](https://melpa.org/#/gnuplot-mode) (over 32,000 downloads)
 * [BibSlurp](https://melpa.org/#/bibslurp) (almost 2,000 downloads)
 * [Jumblr](https://melpa.org/#/jumblr) (over 2,000 downloads)
@@ -22,7 +22,9 @@ While learning how to write massively parallel C-code for
 supercomputers using MPI, I wrote a [parallel
 renderer](https://mikemccourt.com/fractal-mpi/) for Julia sets and
 [another one](http://mikemccourt.com/strange-attractor/) for strange
-attractors.  You can see some of the resulting images here:
+attractors.  You can see some of the resulting images <a
+href="https://www.flickr.com/photos/mkmccjr/albums/72177720324931739"
+target="_blank">here</a>.
 
 <a data-flickr-embed="true"
     href="https://www.flickr.com/photos/mkmccjr/albums/72177720324931739"
