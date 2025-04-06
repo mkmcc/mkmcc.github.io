@@ -1,23 +1,8 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2025-04-05 18:47:38 (mkmcc)"
+Time-stamp: "2025-04-06 13:24:39 (mkmcc)"
 ---
-
-
-Patents
--------
-
-<ol reversed class="publist">
-{% for patent in site.data.patents %}
-    <li>
-    <i>{{ patent.authors }},</i> 
-    <a href="{{ patent.url }}" target="_blank">{{ patent.title}}</a>. 
-    {{ patent.number}} {{ patent.date }}
-    </li>
-{% endfor %}
-</ol>
-
 
 
 <!-- no easy way to do this in markdown, i don't think... -->
@@ -65,5 +50,20 @@ Talks
   <li markdown="span">
     *{{ talk.name }}*, {{talk.place }} ({{ talk.date }})
   </li>  
+{% endfor %}
+</ol>
+
+
+
+Patents
+-------
+
+<ol reversed class="publist">
+{% for patent in site.data.patents %}
+    <li>
+    <i>{{ patent.authors }},</i> 
+    <a href="{{ patent.url }}" target="_blank">{{ patent.title}}</a>. 
+    {{ patent.number}} {{ patent.date }}
+    </li>
 {% endfor %}
 </ol>
