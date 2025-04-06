@@ -1,7 +1,7 @@
 ---
 title: Patents
 layout: page
-Time-stamp: "2025-04-05 19:46:17 (mkmcc)"
+Time-stamp: "2025-04-06 09:52:39 (mkmcc)"
 ---
 
 <h2>Overview</h2>
@@ -44,6 +44,7 @@ language processing, semantic search, and biomedical signal detection.
     <i>{{ patent.authors }},</i>
     <a href="{{ patent.url }}" target="_blank">{{ patent.title}}</a>.
     {{ patent.number}} {{ patent.date }}
+    [<a href="pdf/{{ patent.file }}">PDF</a>]
 
     {% if patent.summary %}
       <p class="summary">{{ patent.summary }}</p>
