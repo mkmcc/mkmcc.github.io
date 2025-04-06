@@ -73,7 +73,7 @@ nav.menu li.sub::before {
   }
 
   nav.menu li::after {
-      content: "❧"; /* ⊛ ⚛ ∞ ⋆ ✶ ∗ ❦ ❧ ⁂ ⚜ ⁕ */
+      content: "❧"; /* ⊛ ⚛ ∞ ⋆ ✶ ∗ ❦ ❧ ☙ ⁂ ⚜ ⁕ ※ ✠ § */
       margin-left: 5px;
       color: #BBB;
   }
