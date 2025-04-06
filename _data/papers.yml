@@ -2,124 +2,149 @@
   authors: Madigan, Zderic, McCourt, & Fleisig
   year: 2018
   pub: AJ
+  title: "On the Dynamics of the Inclination Instability"
 
 - url: https://ui.adsabs.harvard.edu/abs/2018MNRAS.476..852J
   authors: Ji, Oh, & McCourt
   year: 2018
   pub: MNRAS
+  title: "The impact of magnetic fields on thermal instability"
 
 - url: https://ui.adsabs.harvard.edu/abs/2018ApJ...853..141M
   authors: Madigan, Halle, Moody, McCourt, et al.
   year: 2018
   pub: ApJ
+  title: "Dynamical Properties of Eccentric Nuclear Disks: Stability, Longevity, and Implications for Tidal Disruption Rates in Post-merger Galaxies"
 
 - url: https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.5407M
   authors: McCourt, Oh, O’Leary, & Madigan
   year: 2018
   pub: MNRAS
+  title: "A characteristic scale for cold gas"
 
 - url: https://ui.adsabs.harvard.edu/abs/2017A&A...607A..71G
   authors: Gronke, Dijkstra, McCourt, & Oh
   year: 2017
   pub: A&A
+  title: "Resonant line transfer in a fog: using Lyman-alpha to probe tiny structures in atomic gas"
 
 - url: https://ui.adsabs.harvard.edu/abs/2017MNRAS.466.3810F
   authors: Fielding, Quataert, McCourt, & Thompson
   year: 2017
   pub: MNRAS
+  title: "The impact of star formation feedback on the circumgalactic medium"
 
 - url: https://ui.adsabs.harvard.edu/abs/2017MNRAS.465.2310M
   authors: Madigan, McCourt, & O’Leary
   year: 2017
   pub: MNRAS
+  title: "Using gas clouds to probe the accretion flow around Sgr A*: G2’s delayed pericentre passage"
 
 - url: https://ui.adsabs.harvard.edu/abs/2017ApJ...834L..19G
   authors: Guillochon & McCourt
   year: 2017
   pub: ApJ
+  title: "Simulations of Magnetic Fields in Tidally Disrupted Stars"
 
 - url: https://ui.adsabs.harvard.edu/abs/2016ApJ...833L..26G
   authors: Gronke, Dijkstra, McCourt, & Oh
   year: 2016
   pub: ApJ
+  title: "From Mirrors to Windows: Lyman-alpha Radiative Transfer in a Very Clumpy Medium"
 
 - url: https://ui.adsabs.harvard.edu/abs/2016ApJ...822...48G
   authors: Guillochon, McCourt, Chen, Johnson, et al.
   year: 2016
   pub: ApJ
+  title: "Unbound Debris Streams and Remnants Resulting from the Tidal Disruptions of Stars by Supermassive Black Holes"
 
 - url: https://ui.adsabs.harvard.edu/abs/2016MNRAS.457L..89M
   authors: Madigan & McCourt
   year: 2016
   pub: MNRAS
+  title: "A new inclination instability reshapes Keplerian discs into cones: application to the outer Solar system"
 
 - url: https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.4274L
   authors: Lecoanet, McCourt, Quataert, Burns, et al.
   year: 2016
   pub: MNRAS
+  title: "A validated non-linear Kelvin-Helmholtz benchmark for numerical hydrodynamics"
 
 - url: https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.2187M
   authors: McCourt & Madigan
   year: 2016
   pub: MNRAS
+  title: "Going with the flow: using gas clouds to probe the accretion flow feeding Sgr A*"
 
 - url: https://ui.adsabs.harvard.edu/abs/2015MNRAS.449....2M
   authors: McCourt, O’Leary, Madigan, & Quataert
   year: 2015
   pub: MNRAS
+  title: "Magnetized gas clouds can survive acceleration by a hot wind"
 
 - url: https://ui.adsabs.harvard.edu/abs/2014MNRAS.442..838M
   authors: McBride & McCourt
   year: 2014
   pub: MNRAS
+  title: "Bent radio jets reveal a stripped interstellar medium in NGC 1272"
 
 - url: https://ui.adsabs.harvard.edu/abs/2014MNRAS.439.2822W
   authors: Wagh, Sharma, & McCourt
   year: 2014
   pub: MNRAS
+  title: "Thermal conduction and multiphase gas in cluster cores"
 
 - url: https://ui.adsabs.harvard.edu/abs/2013MNRAS.432..404M
   authors: McCourt, Quataert, & Parrish
   year: 2013
   pub: MNRAS
+  title: "What sets temperature gradients in galaxy clusters? Implications for non-thermal pressure support and mass-observable scaling relations"
 
 - url: https://ui.adsabs.harvard.edu/abs/2012MNRAS.427.1219S
   authors: Sharma, McCourt, Parrish, & Quataert
   year: 2012
   pub: MNRAS
+  title: "On the structure of hot gas in haloes: implications for the L$_{X}$-T$_{X}$ relation and missing baryons"
 
 - url: https://ui.adsabs.harvard.edu/abs/2012MNRAS.422..704P
   authors: Parrish, McCourt, Quataert, & Sharma
   year: 2012
   pub: MNRAS
+  title: "The effects of anisotropic viscosity on turbulence and heat transport in the intracluster medium"
 
 - url: https://ui.adsabs.harvard.edu/abs/2012MNRAS.420.3174S
   authors: Sharma, McCourt, Quataert, & Parrish
   year: 2012
   pub: MNRAS
+  title: "Thermal instability and the feedback regulation of hot haloes in clusters, groups and galaxies"
 
 - url: https://ui.adsabs.harvard.edu/abs/2012MNRAS.419.3319M
   authors: McCourt, Sharma, Quataert, & Parrish
   year: 2012
   pub: MNRAS
+  title: "Thermal instability in gravitationally stratified plasmas: implications for multiphase structure in clusters and galaxy haloes"
 
 - url: https://ui.adsabs.harvard.edu/abs/2012MNRAS.419L..29P
   authors: Parrish, McCourt, Quataert, & Sharma
   year: 2012
   pub: MNRAS
+  title: "Turbulent pressure support in the outer parts of galaxy clusters"
 
 - url: https://ui.adsabs.harvard.edu/abs/2011MNRAS.413.1295M
   authors: McCourt, Parrish, Sharma, & Quataert
   year: 2011
   pub: MNRAS
+  title: "Can conduction induce convection? On the non-linear saturation of buoyancy instabilities in dilute plasmas"
 
 - url: http://adsabs.harvard.edu/abs/2008ApJ...681..187B
   authors: Bradač, Schrabback, Erben, McCourt, et al.
   year: 2008
   pub: ApJ
+  title: "Dark Matter and Baryons in the X-Ray Luminous Merging Galaxy Cluster RX J1347.5-1145"
 
 - url: https://ui.adsabs.harvard.edu/abs/2006PhRvB..73j0407S
   authors: Samulon, Islam, Sebastian, Brooks, et al.
   year: 2006
   pub: Phys. Rev. B
+  title: "Low-temperature structural phase transition and incommensurate lattice modulation in the spin-gap compound BaCuSi$_{2}$O$_{6}$"
 

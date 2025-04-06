@@ -253,3 +253,7 @@ p.validation {
 #postamble p {
   margin: 0;
 }
+
+ol.publist li {
+    margin-bottom: 1em;
+}

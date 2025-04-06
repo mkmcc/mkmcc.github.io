@@ -144,6 +144,11 @@ Translate the region between FROM and TO using the table
                 (if (= 2 (length authors)) " & " ", & ")
                 l)))))
 
+(defun cb-format-title (title)
+  "format the title"
+  (let ((tmp (replace-regexp-in-string "{\\(.*\\)}.*" "\\1" title)))
+    (format "\"%s\"" tmp)))
+
 (defun cb-parse-entry ()
   "Parse a bibtex entry into a list of desired elements."
   (save-excursion
@@ -154,10 +159,11 @@ Translate the region between FROM and TO using the table
            (url    (cdr (assoc "adsurl" data)))
            ;; these need special attention
            (author (cb-format-author (cdr (assoc "author"  data))))
-           (pub    (cb-fix-journal   (cdr (assoc "journal" data)))))
+           (pub    (cb-fix-journal   (cdr (assoc "journal" data))))
+           (title  (cb-format-title  (cdr (assoc "title" data)))))
 
       ;; return as a simple list.  no need for anything fancier
-      (list url author year pub))))
+      (list url author year pub title))))
 
 
 ;;; "The program in itself"
@@ -190,6 +196,7 @@ Translate the region between FROM and TO using the table
                      "  authors: " (nth 1 it) "\n"
                      "  year: "    (nth 2 it) "\n"
                      "  pub: "     (nth 3 it) "\n"
+                     "  title: "   (nth 4 it) "\n"
                      "\n")
              cb-bib-list)
 

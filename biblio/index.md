@@ -1,14 +1,14 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2025-04-05 09:02:58 (mkmcc)"
+Time-stamp: "2025-04-05 17:11:27 (mkmcc)"
 ---
 
 
 Patents
 -------
 
-<ol reversed>
+<ol reversed class="publist">
 {% for patent in site.data.patents %}
     <li markdown="span">
     <i>{{ patent.authors }},</i> [{{ patent.title}}]({{ patent.URL }}). {{ patent.number}} {{ patent.date }}
@@ -37,10 +37,10 @@ Publications
     https://orcid.org/0000-0003-4531-7733
 </a>
 
-<ol reversed>
+<ol reversed class="publist">
 {% for paper in site.data.papers %}
   <li markdown="span">
-    [{{ paper.authors }}, <i>{{paper.pub}}</i> ({{paper.year }})]({{paper.url}})
+    {{ paper.authors }}. [“{{ paper.title }},”]({{ paper.url }}) <i>{{ paper.pub }}</i> ({{ paper.year }})
   </li>
 {% endfor %}
 </ol>
