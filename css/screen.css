@@ -257,3 +257,11 @@ p.validation {
 ol.publist li {
     margin-bottom: 1em;
 }
+
+
+p.summary {
+    padding-left: 1em;
+    font-size: 90%;
+    font-style: italic;
+    border-left: 1px solid #ccc;
+}

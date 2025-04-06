@@ -1,14 +1,17 @@
--  authors: Michael K. McCourt Jr.
-   title: Automatic classification of phone calls using representation learning based on the hierarchical pitman-yor process
-   number: US12230253B2
-   date: Feb 18 2025
-   url: https://patents.google.com/patent/US12230253B2
+- authors: Michael K. McCourt Jr.
+  title: Automatic classification of phone calls using representation learning based on the hierarchical pitman-yor process
+  number: US12230253B2
+  date: Feb 18 2025
+  url: https://patents.google.com/patent/US12230253B2
+  summary: Patent US12230253B2 presents a novel method for supervised classification of phone calls using a probabilistic admixture model grounded in the Hierarchical Pitman-Yor Process (HPYP).  The innovation lies in adapting HPYP — a nonparametric Bayesian prior that generalizes the Dirichlet Process — to learn sparse, structured latent representations of spoken conversations.  This approach enables flexible discovery of hierarchical topic distributions and naturally captures long-tail and power-law behaviors in conversational data.  The model is trained end-to-end alongside a classifier, allowing it to generalize to new call transcripts without retraining.  This technique not only improves the granularity and accuracy of classifications and inferred topics but also facilitates efficient downstream indexing and retrieval in systems where interpretability and scalability are critical.
+
 
 - authors: Michael K. McCourt Jr., Kian Ghodoussi, and Victor Borda
   title: Topic-based semantic search of electronic documents based on machine learning models from bayesian belief networks
   number: US20240312451A1 (pending)
-  date: Mar 17, 2023
+  date: Mar 17 2023
   url: https://patents.google.com/patent/US20240312451A1
+  summary: Patent US20240312451A1 introduces an innovative approach to semantic search of electronic documents by integrating domain knowledge into machine learning models using a mixture prior.  This method employs Bayesian belief networks to represent the sparse probabilistic relationships among topics within a document corpus.  The key advancement is the incorporation of a mixture prior that blends data-driven insights with predefined domain expertise.  This integration allows the model to be initialized with domain-relevant information, facilitating faster convergence during training and enhancing generalization capabilities, especially in scenarios with limited data.  By embedding domain knowledge directly into the prior distributions of the Bayesian framework, the system effectively narrows the hypothesis space, leading to more accurate and contextually relevant topic modeling and semantic search outcomes.
 
 
 - authors: Michael K. McCourt Jr. and Victor Borda
@@ -16,6 +19,7 @@
   number: US11429901B1
   date: Aug 30 2022
   url: https://patents.google.com/patent/US11429901B1
+  summary: Patent US11429901B1 introduces a method for document decomposition that integrates domain-specific knowledge via a mixture-model prior.  This approach allows the model to incorporate predefined keyword clusters as priors, effectively embedding domain expertise into the probabilistic framework.  By doing so, the model achieves faster convergence during training and enhances generalization capabilities, particularly in data-scarce scenarios.  This integration of domain knowledge into the modeling framework offers improved efficiency and accuracy in applications requiring nuanced understanding of specialized content.
 
 
 - authors: Michael K. McCourt Jr. and Michael Lawrence
@@ -30,6 +34,7 @@
   number: US11115520B2
   date: Sep 7 2021
   url: https://patents.google.com/patent/US11115520B2
+  summary: Patent US11115520B2 introduces a method for signal discovery in electronic communications by employing a probabilistic topic model based on the Hierarchical Pitman-Yor Process (HPYP).  The HPYP is utilized to capture the hierarchical and power-law characteristics inherent in natural language.  This approach enables the model to identify and extract meaningful patterns and topics from communication data, facilitating applications such as call classification and analysis.  By leveraging the HPYP, the method effectively models the complex structure of language, leading to improved accuracy in signal discovery tasks.  The patent describes a means to build deeply hierarchical models, producing a Bayesian form of deep learning, in which the layers naturally encode Zipfian characteristics appropriate for natural language and for genomics.
 
 
 - authors: Michael K. McCourt Jr.
@@ -37,12 +42,15 @@
   number: US10719783B2
   date: Jul 21 2020
   url: https://patents.google.com/patent/US10719783B2
+  summary: Patent US10719783B2 introduces a method to enhance the resilience of binary signal classifiers against label errors in training datasets, particularly when dealing with limited data.  The innovation involves an iterative approach where the classifier is trained on the dataset, and then the training entries are re-evaluated based on the classifier's predictions.  Entries that the classifier consistently misclassifies are identified as potentially mislabeled.  These identified entries are then either corrected or removed, and the classifier is retrained on the refined dataset.  This process is repeated until the classifier's performance stabilizes, effectively reducing the impact of incorrect labels and improving generalization.  By systematically identifying and addressing label errors, this method enhances the robustness and accuracy of classifiers trained on small, noisy datasets.
+
 
 - authors: Michael K. McCourt Jr.
   title: Performance score determiner for binary signal classifiers
   number: US11423330B2
   date: Aug 23 2022
   url: https://patents.google.com/patent/US11423330B2
+
 
 - authors: Sean Storlie, Victor Borda, Michael K. McCourt Jr, Leland Kirchhoff, Colin Kelley, and Nicholas Burwell
   title: Desired signal spotting in noisy, flawed environments

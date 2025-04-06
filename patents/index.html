@@ -1,0 +1,21 @@
+---
+title: Patents
+layout: page
+Time-stamp: "2025-04-05 18:48:21 (mkmcc)"
+---
+
+
+<ol reversed class="publist">
+{% for patent in site.data.patents %}
+    <li>
+    <i>{{ patent.authors }},</i>
+    <a href="{{ patent.url }}" target="_blank">{{ patent.title}}</a>.
+    {{ patent.number}} {{ patent.date }}
+
+    {% if patent.summary %}
+      <p class="summary">{{ patent.summary }}</p>
+    {% endif %}
+
+    </li>
+{% endfor %}
+</ol>
