@@ -1,7 +1,7 @@
 ---
 title: Publications
 layout: page
-Time-stamp: "2025-04-05 17:11:27 (mkmcc)"
+Time-stamp: "2025-04-05 17:23:47 (mkmcc)"
 ---
 
 
@@ -10,8 +10,10 @@ Patents
 
 <ol reversed class="publist">
 {% for patent in site.data.patents %}
-    <li markdown="span">
-    <i>{{ patent.authors }},</i> [{{ patent.title}}]({{ patent.URL }}). {{ patent.number}} {{ patent.date }}
+    <li>
+    <i>{{ patent.authors }},</i> 
+    <a href="{{ patent.url }}" target="blank">{{ patent.title}}</a>. 
+    {{ patent.number}} {{ patent.date }}
     </li>
 {% endfor %}
 </ol>
@@ -21,21 +23,29 @@ Patents
 <!-- no easy way to do this in markdown, i don't think... -->
 <h2>
 Publications
-(<a href="https://ui.adsabs.harvard.edu/public-libraries/mwmNbnbJTXqQZahtQBn9BQ">ADS</a>,
-<a href="https://arxiv.org/a/mccourt_m_1.html">arxiv</a>)
+(
+<a href="https://ui.adsabs.harvard.edu/public-libraries/mwmNbnbJTXqQZahtQBn9BQ" target="blank">NASA ADS</a>,
+<a href="https://orcid.org/0000-0003-4531-7733" target="blank">
+    ORCID
+    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+    style="width: 1em; "
+    alt="ORCID iD icon"/>
+    <!-- https://orcid.org/0000-0003-4531-7733 -->
+</a>
+)
 </h2>
 
-<a id="cy-effective-orcid-url"
-    class="underline"
-    href="https://orcid.org/0000-0003-4531-7733"
-    target="orcid.widget"
-    rel="me noopener noreferrer"
-    style="vertical-align: top">
-    <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-    style="width: 1em; margin-inline-start: 0.5em"
-    alt="ORCID iD icon"/>
-    https://orcid.org/0000-0003-4531-7733
-</a>
+<!-- <a id="cy-effective-orcid-url" -->
+<!--     class="underline" -->
+<!--     href="https://orcid.org/0000-0003-4531-7733" -->
+<!--     target="orcid.widget" -->
+<!--     rel="me noopener noreferrer" -->
+<!--     style="vertical-align: top"> -->
+<!--     <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" -->
+<!--     style="width: 1em; margin-inline-start: 0.5em" -->
+<!--     alt="ORCID iD icon"/> -->
+<!--     https://orcid.org/0000-0003-4531-7733 -->
+<!-- </a> -->
 
 <ol reversed class="publist">
 {% for paper in site.data.papers %}
