@@ -69,7 +69,17 @@ nav.menu li.sub::before {
   /* } */
 
   nav.menu li:not(:last-of-type) {
-      margin-right: 10px;
+      margin-right: 5px;
+  }
+
+  nav.menu li::after {
+      content: "❧"; /* ⊛ ⚛ ∞ ⋆ ✶ ∗ ❧ ⁂ */
+      margin-left: 5px;
+      color: #BBB;
+  }
+
+  nav.menu li:last-child::after {
+      content: ""; /* No divider after the last link */
   }
 
   nav.menu div.section {
