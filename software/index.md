@@ -1,7 +1,7 @@
 ---
 title: Software
 layout: page
-Time-stamp: "2025-04-06 13:58:02 (mkmcc)"
+Time-stamp: "2025-04-06 14:09:59 (mkmcc)"
 ---
 
 In addition to my research and commercial software, I occasionally get
@@ -24,11 +24,19 @@ renderer](https://mikemccourt.com/fractal-mpi/) for Julia sets and
 [another one](http://mikemccourt.com/strange-attractor/) for strange
 attractors.  You can see some of the resulting images here:
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/mkmccjr/albums/72177720324931739" title="Fractals"><img src="https://live.staticflickr.com/65535/54434664626_8d9e1e63b9_m.jpg" width="320" height="240" alt="Fractals"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"
+    href="https://www.flickr.com/photos/mkmccjr/albums/72177720324931739"
+    title="Fractals">
+    <img
+    src="https://live.staticflickr.com/65535/54434664626_8d9e1e63b9_m.jpg"
+    width="320"
+    height="240"
+    alt="Fractals"/>
+</a>
+<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 And if you're the kind of person who would buy an automatic watch,
 then immediately look for tools to disassemble and adjust it, you
 might be interested in a small
 [program](https://github.com/mkmcc/watch-calibration) I wrote to
 accurately estimate ticking frequency from sound recordings.
-
