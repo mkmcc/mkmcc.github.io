@@ -1,7 +1,7 @@
 ---
 title: Mike McCourt
 layout: page
-Time-stamp: "2025-04-06 15:53:33 (mkmcc)"
+Time-stamp: "2025-04-07 10:32:19 (mkmcc)"
 ---
 
 <!-- todo: why doesn't class="pad top right" work? -->
@@ -24,9 +24,12 @@ and the [Kavli Institute for Theoretical
 Physics](https://www.kitp.ucsb.edu/apply/fellowships/graduate-fellowship-program)
 as well as a postdoc at [UC Santa
 Barbara](http://web.physics.ucsb.edu/~astrogroup/).  I earned my
-Ph.D. in Astrophysics from [UC Berkeley](https://astro.berkeley.edu),
-where I studied galaxy clusters and plasma physics with Professor
-[Eliot Quataert](https://www.astro.princeton.edu/~quataert/).  As an
+Ph.D. in Astrophysics as a <a href="#footnotes"
+aria-describedby="footnote-label"
+id="footnotes-ref"><i>BADGrad</i></a> from [UC
+Berkeley](https://astro.berkeley.edu), where I studied galaxy clusters
+and plasma physics with Professor [Eliot
+Quataert](https://www.astro.princeton.edu/~quataert/).  As an
 undergrad at Stanford, I majored in physics with a concentration in
 theoretical physics and performed research on gravitational lensing
 under Professor [Roger
@@ -45,3 +48,23 @@ gallery](/figure-gallery), [posters](/posters), [CV](/CV), or
 
 Feel free to reach out or [get in
 touch]({{site.url}}/contact).  I’m always happy to connect.
+
+
+<footer class="notes">
+
+<h2 class="visually-hidden" id="footnote-label">Footnotes</h2>
+
+    <ol>
+    <li id="footnotes">
+        Or <i>Berkeley Astronomy Department Grad [Student].</i>
+        This was the first of many <i>dumb or overly-forced astronomical
+        acronyms</i> (<a
+        href="https://lweb.cfa.harvard.edu/~gpetitpas/Links/Astroacro.html"
+        target="_blank">DOOFAAS</a>) that I encountered in my
+        scientific career.
+    
+        <a href="#footnotes-ref" aria-label="Back to content">↩</a>
+    </li>
+    </ol>
+    
+</footer>
