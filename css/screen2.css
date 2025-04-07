@@ -85,16 +85,27 @@ h4 {
 }
 
 
-pre, code {
-  font-family: 'Inconsolata', monospace;
-  background: #eee8d5;
+/* pre boxes */
+pre {
+    /* padding: 1.0em; */
+    font-size: 10pt;
+    margin: 1.5ex 0 1.5ex 0;
+    font-family: 'Inconsolata', monospace;
 }
 
-pre {
-  padding: 1em;
-  overflow-x: auto;
-  border-left: 4px solid #657b83;
+code {
+    font-family: 'Inconsolata', monospace;
 }
+
+pre.example {
+    border-left: 4px solid #859900;
+    background: #eee8d5;
+}
+
+pre.src {
+    border-left: 4px solid #657b83;
+}
+
 
 /* === MAIN LAYOUT (FLEXBOX) === */
 main#content {
