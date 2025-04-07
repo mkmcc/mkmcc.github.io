@@ -1,3 +1,5 @@
 p.speakerdeck {
-    width: 400px;
+    /* does not have expected effect; needs to be inline? */
+    /* width: 100%; */
+    /* max-width: 600px; */
 }

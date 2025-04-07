@@ -1,0 +1,211 @@
+/* === RESET & BASE IMPORTS === */
+@import "normalize.css";
+@import "images.css";
+@import "tables.css";
+@import "toc.css";
+@import "slides.css";
+@import "menu2.css";
+
+
+@import url(//fonts.googleapis.com/css?family=Inconsolata);
+@import url(//fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic);
+@import url(//fonts.googleapis.com/css?family=Patua+One);
+@import url(//fonts.googleapis.com/css?family=Pompiere);
+
+/* === BASE TYPOGRAPHY === */
+body {
+    font-family: 'Gentium Basic', serif;
+    background-color: #fdf6e3;
+    color: #657b83;
+    font-size: 12pt;
+    line-height: 18pt;
+
+    margin: 0 auto;
+    padding: 2em;
+    padding-left: 12em;
+    box-sizing: border-box;
+}
+
+article {
+    width: 100%;
+    max-width: 600px;
+}
+
+a {
+    color: #268bd2;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    border-bottom-color: #6c71c4;
+    color: #6c71c4;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Patua One', sans-serif;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 120%;
+    margin: 2.5ex 0 0.5ex -1em;
+    color: #859900;
+    font-weight: bold;
+}
+
+h4 {
+    color: #d33682;
+    font-weight: bold;
+}
+
+*.title {
+    font-size: 300%;
+    line-height: 105%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    color: #b58900;
+    font-family: 'Pompiere';
+}
+
+/* mobile... */
+/* ... iphone */
+@media screen and (max-device-width: 800px){ /* 480px */
+    *.title {
+        margin:0;
+        padding-top: 2em;
+    }
+
+    h3 {
+        margin: 2.5ex 0 0.5ex 0em;
+    }
+}
+
+
+pre, code {
+  font-family: 'Inconsolata', monospace;
+  background: #eee8d5;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+  border-left: 4px solid #657b83;
+}
+
+/* === MAIN LAYOUT (FLEXBOX) === */
+main#content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+main#content article {
+  flex-grow: 1;
+}
+
+/* === FOOTER === */
+footer#postamble {
+    margin: 20pt 0 20pt 0;
+    font-size: 8pt;
+    text-align: right;
+    line-height: 120%;
+    font-family: sans-serif;
+}
+
+footer#postamble-extra {
+    font-size: 8pt;
+}
+
+footer#postamble p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 800px) { /* 480px */
+  body {
+    padding: 0;
+  }
+
+  article {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  main#content {
+    flex-direction: column;
+  }
+
+  footer#postamble {
+      margin-right: 1em;
+  }
+}
+
+/* === MISC === */
+ol.publist li {
+  margin-bottom: 1em;
+}
+
+p.summary {
+  font-style: italic;
+  font-size: 90%;
+  margin-left: 1em;
+  border-left: 2px solid #93a1a1;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    ol.publist {
+        padding-left: 1em;
+    }
+    p.summary {
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+    }
+}
+
+
+/* block quote */
+blockquote {
+    padding: 0.5em 10px;
+    margin: 1.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p.firstquote {
+    display: inline;
+}
+
+blockquote p {
+    font-size: 90%;
+    font-style: italic;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite a {
+    color: #999999;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}

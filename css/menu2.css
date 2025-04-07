@@ -1,0 +1,109 @@
+/* MENU LAYOUT (desktop left, mobile top) */
+nav.menu {
+  background-color: #eee8d5;
+  padding: 3em 1em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  flex-shrink: 0;
+  width: 8em;
+}
+
+/* add stubs to h2 which match the menu color */
+h2 {
+    border-color: #eee8d5;
+    border-style: none none none solid;
+    border-width: 1.75em;
+    /* extends 1em into the sidebar */
+    margin: 3ex 0 1ex -2em;
+    padding: 0 0 0 0.5em;
+    width: 70%;
+}
+
+nav.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav.menu li {
+  padding-left: 0.5em;
+}
+
+nav.menu div.section {
+    border-style: none;
+    height: 3ex;
+    margin: 1ex 0 0;
+    padding: 1ex 0 0;
+}
+
+nav.menu li.sub::before {
+    content: " – "; /* " → "; */
+}
+
+nav.menu ul li.only-mobile {
+    display:none;
+}
+
+
+/* === Mobile / Narrow Screens === */
+@media screen and (max-width: 800px) { /* 480px */
+  nav.menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1em;
+    background-color: #eee8d5;
+    z-index: 999;
+  }
+
+  nav.menu ul {
+      display: none;
+  }
+
+  nav.menu ul.keep-mobile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 0;
+  }
+
+  nav.menu li {
+      display: inline;
+      margin-right: 0.5em;
+      padding: 0;
+  }
+
+  nav.menu li::after {
+      content: " ❧";
+      color: #93a1a1;
+      margin-left: 0.3em;
+  }
+
+  nav.menu li:last-child::after {
+      content: "";
+  }
+
+  nav.menu ul.keep-mobile li.hide-mobile {
+      display:none;
+  }
+
+
+  nav.menu ul li.only-mobile {
+      display:inline;
+  }
+
+  nav.menu ul li.only-desktop {
+      display:none;
+  }
+
+  nav.menu div.section {
+      display: none;
+  }
+}
