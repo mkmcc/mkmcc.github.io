@@ -82,7 +82,7 @@ nav.menu ul li.only-mobile {
   }
 
   nav.menu li::after {
-      content: " ❧";
+      content: " ❧"; /* ⊛ ⚛ ∞ ⋆ ✶ ∗ ❦ ❧ ☙ ⁂ ⚜ ⁕ ※ ✠ § */
       color: #93a1a1;
       margin-left: 0.3em;
   }
