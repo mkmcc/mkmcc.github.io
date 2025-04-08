@@ -1,7 +1,7 @@
 ---
 title: ML and AI Patents
 layout: page
-Time-stamp: "2025-04-06 13:23:56 (mkmcc)"
+Time-stamp: "2025-04-07 18:57:59 (mkmcc)"
 ---
 
 
@@ -74,8 +74,8 @@ sequences with sparse, long-tailed statistics.
 * [US11521601B2](https://patents.google.com/patent/US11521601B2) and
   [US11804216B2](https://patents.google.com/patent/US11804216B2)
   describe direct applications of these models, including systems for
-  identifying extraneous topics or
-  discovering latent structure in noisy data environments.
+  distinguishing spontaneous, natural conversation from recordings or
+  automated agents.
 
 These innovations enable models that are naturally interpretable,
 data-efficient, and well-suited to domains where training data is
