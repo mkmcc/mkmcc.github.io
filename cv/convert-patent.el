@@ -71,14 +71,21 @@
     (bibtex-beginning-of-entry)
     (let* ((data (bibtex-parse-entry t)) ; bibtex entry in alist format
            ;; take these straight from the alist
-           (year   (cdr (assoc "year"   data)))
-           (url    (cdr (assoc "url" data)))
-           (title  (cdr (assoc "title"  data)))
+           (year   (cdr (assoc "year"    data)))
+           (month  (cdr (assoc "month"   data)))
+           (day    (cdr (assoc "day"     data)))
+           ;;
+           (url    (cdr (assoc "url"     data)))
+           (title  (cdr (assoc "title"   data)))
+           (number (cdr (assoc "number"  data)))
+           (type   (cdr (assoc "type"    data)))
+           ;;
            (author (cb-format-author (cdr (assoc "author"  data))))
-           (pub    (cdr (assoc "howpublished" data))))
+           ;;
+           (date (format "%s %s, %s" month day year)))
 
       ;; return as a simple list.  no need for anything fancier
-      (list url author year pub title))))
+      (list type author url number date title))))
 
 
 ;;; "The program in itself"
@@ -109,10 +116,10 @@
       (insert "\\begin{patnumerate}" "\n%\n")
 
       (--map (insert "\\item \\begin{minipage}[t]{\\textwidth} " (nth 1 it)
-                     (format ", \\href{%s}{\\textit{%s}}"
-                             (nth 0 it) (nth 3 it))
+                     (format ", \\href{%s}{\\textsc{%s}} (%s: %s)"
+                             (nth 2 it) (downcase (nth 3 it)) (nth 0 it) (nth 4 it))
                      "\\\\" "\n"
-                     (format "  \\papertitle{%s}" (nth 4 it)) "\\end{minipage}"
+                     (format "  \\papertitle{%s}" (nth 5 it)) "\\end{minipage}"
                      "\n"
                      "\n")
              cb-bib-list)
