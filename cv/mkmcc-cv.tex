@@ -55,7 +55,7 @@
 %% entries
 %% 
 % Set the width of the date box in each block
-\newlength{\datebox}\settowidth{\datebox}{2016--present}
+\newlength{\datebox}\settowidth{\datebox}{2024--present}
 
 % Define a command for each new block
 % - change spacing and font sizes here:
@@ -78,6 +78,10 @@
 %% 
 \newcommand{\papertitle}[1]{%
   \vspace{0.5ex}\Description{\makebox[0pt][r]{``}\textit{#1}''}}
+
+\newenvironment{patnumerate}
+{\begin{etaremune}[leftmargin=0pt,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
+{\end{etaremune}}
 
 \newenvironment{pubnumerate}
 {\begin{etaremune}[leftmargin=0pt,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}
@@ -117,12 +121,17 @@
 \begin{cv}{\spacedsmallcaps{Michael K.\ McCourt}}\vspace{1em} % Your name
 
 \NewEntry{email}%
-{\href{mailto:mkmccjr@gmail.com}{\color{black} mkmccjr@gmail.com}}
+{\href{mailto:mike@sturdystatistics.com}{\color{black} mike@studystatistics.com}}
 
 \vspace*{-0.5em}
 
 \NewEntry{website}%
-{\href{http://mkmcc.github.io/}{\color{black} astro.berkeley.edu/\texttildelow{}mkmcc}}
+{\href{https://mikemccourt.com}{\color{black} mikemccourt.com}}
+
+\vspace*{-0.5em}
+
+\NewEntry{github}%
+{\href{https://github.com/mkmcc}{\color{black} github.com/mkmcc}}
 
 \vspace*{-0.5em}
 
@@ -139,7 +148,7 @@
 %%
 \cvsection{Education and Academic Positions}
 
-\MarginText{UC Santa \\ Barbara}\NewEntry{2016--present}{KITP and Hubble Fellow}
+\MarginText{UC Santa \\ Barbara}\NewEntry{2016--2018}{KITP and Hubble Fellow}
 
 \NewEntry{2015--2016}{Postdoc}
 
@@ -165,7 +174,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% awards
 %%
-\cvsection{Awards}
+\cvsection{Academic Awards}
 
 \MarginText{UC Berkeley}\NewEntry{April 2014}{Mary Elizabeth Uhl
   Prize}
@@ -262,14 +271,14 @@ fluid dynamics ``bootcamp'' for graduate students}}
 \end{innerlist}
 
 
-%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% %% publications
-%% %%
-%% \cvsection{Publications}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% publications
+%%
+\cvsection{Publications}
 
-%% \input{publist}
+\input{publist}
 
-\clearpage
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% talks
 %%
@@ -279,7 +288,15 @@ fluid dynamics ``bootcamp'' for graduate students}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% talks
+%% publications
+%%
+\cvsection{Patents}
+
+\input{patentlist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% misc
 %%
 \cvsection{Useless and Unusual Skills}
 
@@ -288,11 +305,14 @@ fluid dynamics ``bootcamp'' for graduate students}}
 \small\itshape
 \begin{itemize}[label=$\cdotp$,itemsep=0pt,leftmargin=0pt,topsep=0pt,partopsep=0pt]
   \item building wooden boats and furniture
+  \item restoring old railroad lanterns (hot- and cold-blast)
+  \item restoring vintage cameras and fountain pens
+  \item converting cinema film for use in still cameras
   \item designing and building lightweight camping gear
-  \item growing heirloom tomatoes and peppers in hostile climates
   \item onetime holder of a federal pyrotechnics permit
 \end{itemize}
 \endgroup
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Postamble
@@ -303,8 +323,8 @@ fluid dynamics ``bootcamp'' for graduate students}}
   \begin{center}
     {\scriptsize  Last updated: \today \\
       current version: 
-      \href{http://mkmcc.github.io/cv/mkmcc-cv.pdf}%
-      {mkmcc.github.io/cv/mkmcc-cv.pdf}}
+      \href{https://mikemccourt.com/cv/mkmcc-cv.pdf}%
+      {mikemccourt.com/cv/mkmcc-cv.pdf}}
   \end{center}
   \hspace*{\fill}
 \end{minipage}

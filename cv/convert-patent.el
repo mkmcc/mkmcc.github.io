@@ -30,8 +30,6 @@
   (when (re-search-forward bibtex-entry-head nil t)
     (bibtex-beginning-of-entry)))
 
-;;; see convert-patent.el for an improved version of this function
-;;; which handles single authors
 (defun cb-format-author (author-string)
   "Format the author list for printing."
 
@@ -46,21 +44,26 @@
   ;; probably unusual to have an accented first letter, though?
   (let* ((tmp (-map 's-trim (s-split "and" author-string)))
          (authors
-          (--map (replace-regexp-in-string "{\\(.*\\)}.*" "\\1" it) tmp)))
+          (--map (replace-regexp-in-string "{\\(.*?\\)}.*" "\\1" it) tmp)))
+    (cond
+     ;; Single author
+     ((= (length authors) 1)
+      (car authors))
 
-    ;; only show three authors
-    (if (< 4 (length authors))
-        ;; add an "et. al" if the list is longer than three...
-        (mapconcat 'identity
-                   (-snoc (-take 4 authors) "et al.")
-                   ", ")
+     ;; Four or more authors → truncate and add "et al."
+     ((< 3 (length authors))
+      (mapconcat 'identity
+                 (-snoc (-take 4 authors) "et al.")
+                 ", "))
 
-      ;; ... otherwise, use commas and an &
+     ;; Two or three authors → Oxford comma and \&
+     (t
       (let ((f (-butlast authors))
             (l (car (last authors))))
         (concat (mapconcat 'identity f ", ")
-                (if (= 2 (length authors)) " \\& " ", \\& ")
-                l)))))
+                (if f " \\& " "")
+                l))))))
+
 
 (defun cb-parse-entry ()
   "Parse a bibtex entry into a list of desired elements."
@@ -69,13 +72,10 @@
     (let* ((data (bibtex-parse-entry t)) ; bibtex entry in alist format
            ;; take these straight from the alist
            (year   (cdr (assoc "year"   data)))
-           (url    (cdr (assoc "adsurl" data)))
+           (url    (cdr (assoc "url" data)))
            (title  (cdr (assoc "title"  data)))
            (author (cb-format-author (cdr (assoc "author"  data))))
-           (pub    (cdr (assoc "journal" data))))
-
-      (if (equal "ArXiv e-prints" pub)
-          (setq pub "arxiv"))
+           (pub    (cdr (assoc "howpublished" data))))
 
       ;; return as a simple list.  no need for anything fancier
       (list url author year pub title))))
@@ -86,7 +86,7 @@
 (defun parse-bib (bib-file)
   "docstring"
   (let ((inhibit-read-only t)
-        (buf "publist.tex")
+        (buf "patentlist.tex")
         (cb-bib-list nil))
 
     ;; read in the bibtex file and parse it
@@ -106,17 +106,17 @@
     ;; now, write the output
     (with-temp-file buf
       (erase-buffer)
-      (insert "\\begin{pubnumerate}" "\n%\n")
+      (insert "\\begin{patnumerate}" "\n%\n")
 
       (--map (insert "\\item \\begin{minipage}[t]{\\textwidth} " (nth 1 it)
-                     (format ", \\textit{%s} (\\href{%s}{%s})"
-                             (nth 3 it) (nth 0 it) (nth 2 it))
+                     (format ", \\href{%s}{\\textit{%s}}"
+                             (nth 0 it) (nth 3 it))
                      "\\\\" "\n"
                      (format "  \\papertitle{%s}" (nth 4 it)) "\\end{minipage}"
                      "\n"
                      "\n")
              cb-bib-list)
 
-      (insert "\\end{pubnumerate}" "\n%\n"))))
+      (insert "\\end{patnumerate}" "\n%\n"))))
 
 ;;; convert-bib.el ends here
