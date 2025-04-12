@@ -47,6 +47,15 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% page numbers
+%%
+\usepackage{lastpage}
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\rohead*{\pagemark\ of \pageref{LastPage}}  % Footer: Page X of Y
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% section
 \renewcommand{\cvheadingfont}{\LARGE\color{webbrown}}
 
@@ -152,6 +161,22 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% industry experience
+%%
+\cvsection{Industry Experience}
+
+\input{industry-experience}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% patents
+%%
+\cvsection{Patents}
+
+\input{patentlist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% degrees and positions
 %%
 \cvsection{Education and Academic Positions}
@@ -202,7 +227,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% professional service
 %%
-\cvsection{Professional Service}
+\cvsection{Academic Service}
 
 \begin{itemize}[leftmargin=0pt,topsep=0pt,partopsep=0pt]
 \item Co-instituted and co-organized a new lunch talk series at UCSB
@@ -293,14 +318,6 @@ fluid dynamics ``bootcamp'' for graduate students}}
 \cvsection{Selected Presentations}
 
 \input{talklist}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% publications
-%%
-\cvsection{Patents}
-
-\input{patentlist}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
