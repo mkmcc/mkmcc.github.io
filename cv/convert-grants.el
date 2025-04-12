@@ -1,6 +1,20 @@
 (require 's)
 (require 'dash)
 
+(defun ct-format-with-commas (n)
+  "Format integer N with commas as thousands separators."
+  (let* ((s (number-to-string (floor n)))
+         (len (length s)))
+    (if (< len 4)
+        s
+      (let ((start (% len 3))
+            (parts '()))
+        (when (> start 0)
+          (push (substring s 0 start) parts))
+        (dotimes (i (/ (- len start) 3))
+          (push (substring s (+ start (* i 3)) (+ start (* (1+ i) 3))) parts))
+        (string-join (nreverse parts) ",")))))
+
 (defun ct-beginning-of-entry ()
   "jump to beginning of the current yaml entry"
   (beginning-of-line)
@@ -76,8 +90,8 @@
           (when (ct-include? entry)
             (setq talk-list (-snoc talk-list entry))))))
 
-    (setq talk-list (--sort (< (string-to-int (cdr (assoc "year" it)))
-                               (string-to-int (cdr (assoc "year" other))))
+    (setq talk-list (--sort (< (string-to-number (cdr (assoc "year" it)))
+                               (string-to-number (cdr (assoc "year" other))))
                             talk-list))
 
     (with-temp-file buf
@@ -93,7 +107,7 @@
         (--map (insert it "\n\n") (reverse data)))
 
       (insert (concat "\\\\[-0.5ex] " "\\multicolumn{2}{r}{\\textit{total:}} & "
-                      (format "%.0f" tot-dollar) " & " "\\\\" "\n"))
+                      (ct-format-with-commas tot-dollar) " & " "\\\\" "\n"))
 
       (insert "\\bottomrule")
       (insert "\\end{tabular}" "\n"))))
