@@ -2,7 +2,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% basic packages
-%% 
+%%
 \usepackage[letterpaper]{geometry}
 \usepackage[utf8]{inputenc}
 
@@ -28,7 +28,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% tweak formatting
-%% 
+%%
 \setlength{\parindent}{0em}
 
 \newcommand*{\spacedsmallcaps}[1]{\textls[160]{\textsc{#1}}}%
@@ -60,7 +60,7 @@
 \renewcommand{\cvheadingfont}{\LARGE\color{webbrown}}
 
 \newcommand{\cvsection}[1]{\section*{#1}}
-\titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip} 
+\titlespacing*{\section}{0pt}{2.0\baselineskip}{1\baselineskip}
 \titleformat{\section}
         {\relax}
         {\textsc{\MakeTextLowercase{\thesection}}}
@@ -70,9 +70,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% entries
-%% 
+%%
 % Set the width of the date box in each block
-\newlength{\datebox}\settowidth{\datebox}{2024--present}
+\newlength{\datebox}\settowidth{\datebox}{2025--present}
 
 % Define a command for each new block
 % - change spacing and font sizes here:
@@ -80,19 +80,19 @@
 %   #2 is the italic date field and
 %   #3 is the position/employer/location field
 \newcommand{\NewEntry}[3]{%
-  \parbox{\datebox}{\small \textit{#1}}\hspace{0.5em} #2 #3 
+  \parbox{\datebox}{\small \textit{#1}}\hspace{0.5em} #2 #3
   % Add some white space after each new entry
-  \vspace{0.5em}} 
+  \vspace{0.5em}}
 
 % Define a command for descriptions of each entry
 % - change spacing and font sizes here
 \newcommand{\Description}[1]{%
-  \raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} 
+  \raggedright\footnotesize{#1}\par\normalsize\vspace{1em}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% custom list environments
-%% 
+%%
 \newcommand{\papertitle}[1]{%
   \vspace{0.5ex}\Description{\makebox[0pt][r]{``}\textit{#1}''}}
 
@@ -120,14 +120,14 @@
 \endgroup}
 
 \raggedbottom
-%% 
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% document starts here
-%% 
+%%
 \begin{document}
 \thispagestyle{empty} % Stop the page count at the bottom of the first page
 
@@ -161,47 +161,11 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% industry experience
-%%
-\cvsection{Industry Experience}
-
-\input{industry-experience}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% patents
-%%
-\cvsection{Patents}
-
-\input{patentlist}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% degrees and positions
 %%
 \cvsection{Education and Academic Positions}
 
-\MarginText{UC Santa \\ Barbara}\NewEntry{2016--2018}{KITP and Hubble Fellow}
-
-\NewEntry{2015--2016}{Postdoc}
-
-\MarginText{Harvard}\NewEntry{2014--2015}{ITC Fellow}
-
-\MarginText{UC Berkeley}\NewEntry{2008--2014}{Graduate Student}
-
-\begin{innerlist}
-\item 2014: Ph.D. astrophysics
-\item 2010: M.A. astrophysics
-\item advisor: Eliot Quataert
-\end{innerlist}
-
-\MarginText{Stanford \\ University}\NewEntry{2005--2008}{Undergraduate Student}
-
-\begin{innerlist}
-\item 2008: B.S. physics
-\item concentration in theoretical physics
-\item advisor: Roger Blandford
-\end{innerlist}
+\input{academic-experience}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -222,6 +186,22 @@
 
 \MarginText{Rose Hills Foundation}\NewEntry{Summer 2007}{Rose Hills
   Award for Undergraduate Research}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% industry experience
+%%
+\cvsection{Industry Experience}
+
+\input{industry-experience}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% patents
+%%
+\cvsection{Patents}
+
+\input{patentlist}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -255,7 +235,8 @@ peer-mentoring system.
 %%
 \cvsection{Funding Proposals}
 
-\MarginText{* denotes proposals where I was a Co-I}
+\MarginText{* denotes proposals where I was a Co-I but not the primary
+author}
 \input{fundinglist}
 
 
@@ -280,6 +261,7 @@ peer-mentoring system.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% teaching experience
 %%
+\clearpage
 \cvsection{Teaching Experience}
 
 \MarginText{UC Santa \\ Barbara}\NewEntry{2017}{\parbox[t]{3.5in}{Organized and taught a
@@ -315,6 +297,7 @@ fluid dynamics ``bootcamp'' for graduate students}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% talks
 %%
+\clearpage
 \cvsection{Selected Presentations}
 
 \input{talklist}
@@ -323,6 +306,7 @@ fluid dynamics ``bootcamp'' for graduate students}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% misc
 %%
+\clearpage
 \cvsection{Useless and Unusual Skills}
 
 \vspace*{-1ex}
@@ -341,13 +325,13 @@ fluid dynamics ``bootcamp'' for graduate students}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Postamble
-%% 
+%%
 \vfill
 \begin{minipage}[h!]{\linewidth}
   \hspace*{\fill}
   \begin{center}
     {\scriptsize  Last updated: \today \\
-      current version: 
+      current version:
       \href{https://mikemccourt.com/cv/mkmcc-cv.pdf}%
       {mikemccourt.com/cv/mkmcc-cv.pdf}}
   \end{center}
